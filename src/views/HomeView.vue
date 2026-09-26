@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <main id="main-content" class="main" tabindex="-1">
     <!-- Hero - 100vh full screen -->
     <HeroSection />
 

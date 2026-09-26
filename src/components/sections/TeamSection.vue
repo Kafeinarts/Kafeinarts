@@ -33,16 +33,21 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div class="team-portrait-img">
-                    <img :src="asset(member.img)" :alt="member.alt" loading="lazy" />
+                    <img
+                      :src="asset(member.img)"
+                      :alt="member.alt"
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <div class="team-portrait-overlay">
-                      <h4>{{ member.name }}</h4>
+                      <h3>{{ member.name }}</h3>
                       <span>{{ member.role }}</span>
                     </div>
                     <div class="team-portrait-zoom"><i class="bi bi-arrows-angle-expand"></i></div>
                   </div>
                 </div>
                 <div class="flip-card-back">
-                  <h4>{{ member.name }}</h4>
+                  <h3>{{ member.name }}</h3>
                   <span>{{ member.role }}</span>
                   <p>{{ member.bio || fallbackBio }}</p>
                   <button class="btn-flip-close" type="button" @click.stop="unflip(index)">

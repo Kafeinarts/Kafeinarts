@@ -55,6 +55,7 @@ yarn serve        # buka http://localhost:8080
 - [Central Data Store (`siteData.js`)](#-central-data-store-sitedatajs)
 - [Aset, CSS, dan Vendor](#-aset-css-dan-vendor)
 - [Fitur Interaktif](#-fitur-interaktif)
+- [Optimasi SEO](#-optimasi-seo)
 - [Alur Kerja Git (Wajib)](#-alur-kerja-git-wajib)
 - [Checklist Sebelum Pull Request](#-checklist-sebelum-pull-request)
 - [Troubleshooting](#-troubleshooting)
@@ -130,10 +131,11 @@ yarn lint --fix
 ```text
 Kafeinarts/
 ├── public/
-│   ├── index.html                 # Head halaman: SEO, fonts, vendor CSS & JS
 │   ├── favicon.ico
-│   ├── img/icons/                 # Ikon PWA (manifest)
-│   ├── robots.txt
+│   ├── img/icons/                 # Ikon PWA (manifest) 16-512px
+│   ├── robots.txt                 # Izin crawler + URL sitemap
+│   ├── sitemap.xml                # Sitemap (one-page: 1 URL utama)
+│   ├── index.html                 # Head: SEO meta, fonts, vendor CSS & JS
 │   └── assets/                    # Aset statis (di-copy apa adanya ke /dist)
 │       ├── css/main.css           # Style global ±4000 baris (hero 100vh, team, lightbox)
 │       ├── img/                   # teams/1-5.png, hero-img.png, why-us.png, bg/, blog/, dll.
@@ -150,6 +152,7 @@ Kafeinarts/
 │   ├── utils/
 │   │   ├── asset.js               # asset('assets/img/x.png') → '/assets/img/x.png'
 │   │   ├── aos.js                 # initAOS() / refreshAOS()
+│   │   ├── seo.js                 # JSON-LD, canonical, <title> (SEO)
 │   │   └── whatsapp.js            # resolveWhatsAppNumber(), buildWhatsAppUrl()
 │   ├── components/
 │   │   ├── layout/
@@ -264,6 +267,7 @@ team: {
 | :--- | :--- | :--- |
 | Ganti foto tim | `public/assets/img/teams/` | Ukuran portrait, rekomendasi 3:4 |
 | Ganti hero/why-us | `public/assets/img/` | `hero-img.png`, `why-us.png` |
+| Ganti gambar sosial (og:image) | `public/assets/img/og-image.png` | 1200×630, juga dipakai Twitter Card |
 | Ganti warna aksen | `public/assets/css/main.css` | Cari `--accent-color` / `#00205D` |
 | Tambah font | `public/index.html` | Link Google Fonts |
 | Vendor (Bootstrap/AOS/Swiper) | `public/assets/vendor/` | Jangan hapus — dipakai `index.html` |
@@ -291,6 +295,106 @@ team: {
 - [x] **Preloader** hilang setelah halaman dimuat (fallback 2,5 detik).
 - [x] **Scroll-to-top** muncul setelah `scrollY > 100`.
 - [x] **AOS** — seluruh section beranimasi saat masuk viewport.
+
+---
+
+## 🔍 Optimasi SEO
+
+SEO on-page sudah diterapkan. Aturan utamanya:
+
+> **Meta statis** (title, description, Open Graph, canonical) → `public/index.html`
+> **Structured data / JSON-LD** → dibangun dari `src/data/siteData.js` lewat `src/utils/seo.js`
+> **URL produksi** → `https://kafeinarts.vercel.app`
+
+### 1. Meta halaman (`public/index.html`)
+
+| Tag | Fungsi | Lokasi ubah |
+| :--- | :--- | :--- |
+| `<title>` | Judul hasil pencarian (≤65 karakter) | `public/index.html` |
+| `meta[name=description]` | Deskripsi hasil pencarian (≤160 karakter) | `public/index.html` |
+| `meta[name=keywords]` | Kata kunci utama (bantuan, bobot kecil) | `public/index.html` |
+| `meta[name=robots]` | `index, follow, max-image-preview:large, max-snippet:-1` | `public/index.html` |
+| `link[rel=canonical]` | URL resmi → mencegah duplikasi konten | `public/index.html` + `src/utils/seo.js` |
+| `meta[name=theme-color]` | Warna browser `#00205D` | `public/index.html` + `vue.config.js` |
+| `meta[name=geo.*]`, `ICBM` | Local SEO (Depok, Jawa Barat) | `public/index.html` |
+| Open Graph (`og:*`) | Pratinjau Facebook / LinkedIn / WhatsApp | `public/index.html` |
+| Twitter/X Card (`twitter:*`) | Pratinjau Twitter/X | `public/index.html` |
+
+### 2. Structured data (JSON-LD)
+
+Dibangun otomatis oleh `initSeo()` (dipanggil dari `App.vue`):
+
+| Schema.org | Sumber data |
+| :--- | :--- |
+| `Organization` | `siteData.seo`, `siteData.contact` |
+| `WebSite` | `siteData.seo` |
+| `LocalBusiness` + `ProfessionalService` (alamat, koordinat, area layanan) | `siteData.seo`, `siteData.contact` |
+| `FAQPage` (5 pertanyaan) | `siteData.faq` |
+| `ItemList` → `Service` (4 layanan) | `siteData.services` |
+
+> Cek hasilnya: [Google Rich Results Test](https://search.google.com/test/rich-results)
+> dan [Schema.org Validator](https://validator.schema.org/).
+> **Jangan menambah rating/review palsu** — schema `aggregateRating` sengaja tidak dipakai.
+
+### 3. Hierarki heading (wajib dijaga)
+
+```text
+h1  → hanya 1 di halaman: judul Hero (HeroSection)
+  h2 → judul tiap section (.section-title) + judul Why Us / Skills / CTA
+    h3 → item accordion, judul kartu layanan, nama anggota tim, info kontak, judul footer
+```
+
+- `<h1>` **hanya boleh satu** — logo di header memakai `<div class="sitename">`.
+- Mengubah level heading **wajib** menambahkan selector-nya di
+  `public/assets/css/main.css` (contoh: `.why-us .content h2, .why-us .content h3 { ... }`)
+  agar ukuran/berat font tetap 1:1 dengan template asli.
+
+### 4. `robots.txt` & `sitemap.xml`
+
+| File | Isi | Catatan |
+| :--- | :--- | :--- |
+| `public/robots.txt` | `Allow: /` + URL sitemap | Perbarui URL bila domain berganti |
+| `public/sitemap.xml` | 1 URL utama (one-page) | **Update `<lastmod>` setiap konten berubah** |
+
+### 5. Manifest & ikon (PWA)
+
+- `vue.config.js` → `pwa.manifestOptions` (nama, deskripsi, warna, bahasa `id-ID`)
+- `pwa.iconPaths.faviconSVG: null` — file `favicon.svg` tidak ada, sengaja dimatikan
+  agar tidak memicu request **404**.
+- Ikon: `public/img/icons/*` (16/32/144/152/192/512 px) + `public/assets/img/logo.png`.
+
+### 6. Gambar sosial (Open Graph)
+
+`public/assets/img/og-image.png` — **1200×630**, dipakai saat link dibagikan ke
+Facebook / LinkedIn / WhatsApp / Twitter. Bila dibuat ulang dari logo:
+
+```bash
+convert -size 1200x630 xc:'#00205D' \
+  -fill '#002C6E' -draw "polygon 820,0 1200,0 1200,630 560,630" \
+  -fill '#001A44' -draw "polygon 1200,180 1200,630 780,630" \
+  \( public/assets/img/logo.png -resize x230 \) -geometry +60+62 -composite \
+  -font DejaVu-Sans-Bold -pointsize 64 -fill '#FFFFFF' -annotate +60+382 'Kafeinarts Interactive' \
+  -font DejaVu-Sans -pointsize 32 -fill '#C9D6EA' -annotate +60+440 'Mitra SaaS, Website & Sistem Manajemen' \
+  -fill '#F4C430' -draw "rectangle 60,478 200,486" \
+  -font DejaVu-Sans -pointsize 28 -fill '#8FA6C7' -annotate +60+545 'kafeinarts.vercel.app  |  Depok, Jawa Barat' \
+  public/assets/img/og-image.png
+```
+
+### 7. Gambar & performa
+
+- Gambar hero: `fetchpriority="high"` (prioritas LCP); gambar lain: `loading="lazy"` + `decoding="async"`.
+- Semua `<img>` punya `alt` deskriptif dari `siteData`.
+- Skip link **"Lewati ke konten utama"** (muncul saat tombol Tab dipakai) → `App.vue` + `#main-content`.
+
+### ✅ Checklist SEO sebelum buka PR
+
+- [ ] `<title>` ≤65 karakter dan `description` ≤160 karakter.
+- [ ] `canonical`, `og:url`, `sitemap.xml`, `robots.txt` memakai **URL yang sama**.
+- [ ] `<lastmod>` pada `sitemap.xml` diperbarui.
+- [ ] Hanya **satu `<h1>`** di halaman (`document.querySelectorAll("h1").length === 1`).
+- [ ] Konten FAQ/layanan di `siteData` tidak diubah tanpa mengecek JSON-LD.
+- [ ] Validasi: [Rich Results Test](https://search.google.com/test/rich-results) → 0 error.
+- [ ] [PageSpeed Insights](https://pagespeed.web.dev/) dijalankan untuk skor mobile.
 
 ---
 

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import { syncSeoForRoute } from '@/utils/seo'
 
 const routes = [
   {
@@ -22,6 +23,12 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+// SEO: selaraskan <title> & <link rel="canonical"> setiap kali route berubah.
+// Landing page bersifat one-page, sehingga selalu mengarah ke halaman utama.
+router.afterEach(() => {
+  syncSeoForRoute()
 })
 
 export default router

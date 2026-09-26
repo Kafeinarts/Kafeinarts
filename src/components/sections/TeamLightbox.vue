@@ -44,7 +44,7 @@
         @click.stop="next"
       />
       <div class="team-lightbox-caption">
-        <h4>{{ currentMember.name }}</h4>
+        <h3>{{ currentMember.name }}</h3>
         <span>{{ currentMember.role }}</span>
         <div class="team-lightbox-counter">{{ current + 1 }} / {{ members.length }}</div>
       </div>

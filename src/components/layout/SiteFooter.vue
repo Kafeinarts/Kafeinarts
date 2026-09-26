@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-6">
-            <h4>{{ data.newsletter.title }}</h4>
+            <h3>{{ data.newsletter.title }}</h3>
             <p>{{ data.newsletter.desc }}</p>
             <form class="php-email-form" @submit.prevent="subscribe">
               <div class="newsletter-form" v-show="!subscribed">
@@ -52,7 +52,7 @@
 
         <!-- Link Navigasi -->
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Tautan Berguna</h4>
+          <h3>Tautan Berguna</h3>
           <ul>
             <li v-for="link in data.links.useful" :key="link.label">
               <i class="bi bi-chevron-right"></i>
@@ -63,7 +63,7 @@
 
         <!-- Link Layanan -->
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Layanan Kami</h4>
+          <h3>Layanan Kami</h3>
           <ul>
             <li v-for="link in data.links.services" :key="link.label">
               <i class="bi bi-chevron-right"></i>
@@ -74,13 +74,18 @@
 
         <!-- Sosial Media -->
         <div class="col-lg-4 col-md-12">
-          <h4>Ikuti Kami</h4>
+          <h3>Ikuti Kami</h3>
           <p>
             Temukan inspirasi digital, pembaruan proyek, dan wawasan seputar dunia
             teknologi di media sosial kami.
           </p>
           <div class="social-links d-flex">
-            <a v-for="s in data.social" :key="s.icon" :href="s.href" :aria-label="s.icon">
+            <a
+              v-for="s in data.social"
+              :key="s.icon"
+              :href="s.href"
+              :aria-label="s.label || s.icon"
+            >
               <i class="bi" :class="s.icon"></i>
             </a>
           </div>
