@@ -265,6 +265,9 @@ team: {
 
 | Kebutuhan | Lokasi | Catatan |
 | :--- | :--- | :--- |
+| Ganti logo navbar | `public/assets/img/logo-header.png` | Mark `#EAEAEA` + **latar transparan** (hasil crop dari logo 1200×1200) |
+| Ganti logo kotak (favicon/PWA/JSON-LD) | `public/assets/img/logo.png`, `logo-192.png`, `logo-512.png` | Latar `#0B1120`, mark dipusatkan (76% sisi) |
+| Ganti favicon 16/32 px | `public/assets/img/favicon-16.png`, `favicon.png` | Hanya huruf **K** — mark penuh tidak terbaca di 16 px |
 | Ganti foto tim | `public/assets/img/teams/` | Ukuran portrait, rekomendasi 3:4 |
 | Ganti hero/why-us | `public/assets/img/` | `hero-img.png`, `why-us.png` |
 | Ganti gambar sosial (og:image) | `public/assets/img/og-image.png` | 1200×630, juga dipakai Twitter Card |
@@ -274,6 +277,10 @@ team: {
 
 - Path gambar di `siteData.js` ditulis relatif: `"assets/img/teams/1.png"`.
   Saat dirender gunakan helper `asset()` agar tetap benar bila app di-deploy di sub-folder.
+- **Logo navbar wajib berlatar transparan** (atau warna `#00205D`): navbar transparan di
+  atas hero navy, jadi kotak gelap pada logo akan terlihat sebagai blok hitam.
+  Ukurannya diatur lewat `--logo-img-height` di `SiteHeader.vue` (bukan inline `height`),
+  dan `main.css` memakai `width: auto` karena logo berasio lebar (~1.27:1).
 - CSS vendor dirujuk dari `public/index.html` (bukan di-import JS) agar urutan cascade
   sama persis dengan versi HTML.
 
@@ -361,7 +368,10 @@ h1  → hanya 1 di halaman: judul Hero (HeroSection)
 - `vue.config.js` → `pwa.manifestOptions` (nama, deskripsi, warna, bahasa `id-ID`)
 - `pwa.iconPaths.faviconSVG: null` — file `favicon.svg` tidak ada, sengaja dimatikan
   agar tidak memicu request **404**.
-- Ikon: `public/img/icons/*` (16/32/144/152/192/512 px) + `public/assets/img/logo.png`.
+- Ikon: `public/img/icons/*` (16/32/60/76/120/144/152/180/192/512 px, plus
+  `android-chrome-maskable-*` untuk maskable) + `public/assets/img/logo.png`.
+  `favicon-16x16.png` / `favicon-32x32.png` memakai huruf **K** saja agar tetap
+  terbaca; sisanya memakai mark penuh.
 
 ### 6. Gambar sosial (Open Graph)
 
@@ -369,10 +379,11 @@ h1  → hanya 1 di halaman: judul Hero (HeroSection)
 Facebook / LinkedIn / WhatsApp / Twitter. Bila dibuat ulang dari logo:
 
 ```bash
+# logo-header.png = mark terang + latar transparan (blend mulus ke navy)
 convert -size 1200x630 xc:'#00205D' \
   -fill '#002C6E' -draw "polygon 820,0 1200,0 1200,630 560,630" \
   -fill '#001A44' -draw "polygon 1200,180 1200,630 780,630" \
-  \( public/assets/img/logo.png -resize x230 \) -geometry +60+62 -composite \
+  \( public/assets/img/logo-header.png -resize x230 \) -geometry +60+62 -composite \
   -font DejaVu-Sans-Bold -pointsize 64 -fill '#FFFFFF' -annotate +60+382 'Kafeinarts Interactive' \
   -font DejaVu-Sans -pointsize 32 -fill '#C9D6EA' -annotate +60+440 'Mitra SaaS, Website & Sistem Manajemen' \
   -fill '#F4C430' -draw "rectangle 60,478 200,486" \

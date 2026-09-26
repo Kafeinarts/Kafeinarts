@@ -178,7 +178,9 @@ h6 {
   filter: none !important;
   object-fit: contain;
   aspect-ratio: auto;
-  width: var(--logo-img-height, 46px);
+  /* Logo berlatar transparan dengan rasio lebar (~1.27:1) -> lebar mengikuti tinggi */
+  width: auto;
+  max-width: 150px;
   height: var(--logo-img-height, 46px);
   display: block;
 }
