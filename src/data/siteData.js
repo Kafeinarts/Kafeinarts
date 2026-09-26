@@ -11,7 +11,8 @@
 export const siteData = {
   brand: {
     name: "Kafeinarts",
-    logo: "assets/img/logo.png",
+    // Logo navbar: markercase + latar transparan (sudah di-crop dari logo 1200x1200)
+    logo: "assets/img/logo-header.png",
     favicon: "assets/img/favicon.png",
     appleTouchIcon: "assets/img/apple-touch-icon.png",
     accent: "#00205D",
@@ -275,6 +276,22 @@ export const siteData = {
         bio: "Mengelola kampanye & analitik untuk meningkatkan engagement dan konversi pelanggan.",
         delay: 300,
       },
+      {
+        name: "Alfarobby",
+        role: "Front end Developer",
+        img: "assets/img/teams/6.png",
+        alt: "Alfarobby - Front end Developer",
+        bio: "Membangun fondasi frontend yang responsif dan user-friendly.",
+        delay: 350,
+      },
+      {
+        name: "Muhammad Nur Maulana",
+        role: "UI/UX Designer",
+        img: "assets/img/teams/7.png",
+        alt: "Muhammad Nur Maulana - UI/UX Designer",
+        bio: "Pembuatan desain UI/UX yang menarik dan user-friendly.",
+        delay: 400,
+      },
     ],
   },
 
@@ -351,7 +368,11 @@ export const siteData = {
       { icon: "bi-facebook", href: "#", label: "Kafeinarts di Facebook" },
       { icon: "bi-instagram", href: "#", label: "Kafeinarts di Instagram" },
       { icon: "bi-linkedin", href: "#", label: "Kafeinarts di LinkedIn" },
-      { icon: "bi-github", href: "https://github.com/Kafeinarts/Kafeinarts", label: "Kafeinarts di GitHub" },
+      {
+        icon: "bi-github",
+        href: "https://github.com/Kafeinarts/Kafeinarts",
+        label: "Kafeinarts di GitHub",
+      },
     ],
     copyright: {
       year: "2026",

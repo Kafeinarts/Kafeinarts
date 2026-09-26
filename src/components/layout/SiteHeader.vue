@@ -4,7 +4,7 @@
       <a
         :href="homeHash"
         class="logo d-flex align-items-center me-auto"
-        style="--logo-size: 40px; --logo-img-height: 62px"
+        style="--logo-size: 40px; --logo-img-height: 70px"
         @click="handleNavClick(homeHash)"
       >
         <!-- LOGO KAFEINARTS -->
@@ -12,7 +12,6 @@
           :src="asset(brand.logo)"
           :alt="`${brand.name} Logo`"
           class="logo-img-elegant"
-          style="max-height: 85px; height: 85px"
         />
         <!-- Bukan <h1>: hanya Hero yang boleh punya satu <h1> (hierarki heading SEO) -->
         <div class="sitename" style="color: azure; font-size: 34px; letter-spacing: 3px; margin: 0">
