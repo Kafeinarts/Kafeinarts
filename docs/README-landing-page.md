@@ -20,12 +20,12 @@ Landing Page ini menerjemahkan materi dari presentasi (PPT) Kafeinarts menjadi s
 
 ## 🔗 Repository
 **GitHub Repository:**
-[https://github.com/itsmebroarif/Kafeinarts](https://github.com/itsmebroarif/Kafeinarts)
+[https://github.com/Kafeinarts/Kafeinarts](https://github.com/Kafeinarts/Kafeinarts)
 
 **Live Preview (lokal):**
 ```bash
 # clone
-git clone https://github.com/itsmebroarif/Kafeinarts.git
+git clone https://github.com/Kafeinarts/Kafeinarts.git
 cd Kafeinarts
 # jalankan dengan Live Server / http server
 python -m http.server 8000
@@ -230,7 +230,7 @@ Kafeinarts/
 
 1. **Clone & buka:**
    ```bash
-   git clone https://github.com/itsmebroarif/Kafeinarts.git
+   git clone https://github.com/Kafeinarts/Kafeinarts.git
    cd Kafeinarts
    ```
 2. **Jalankan lokal:**
@@ -240,14 +240,13 @@ Kafeinarts/
 
 ---
 
-## 👨‍💻 Tim Pengembang (2-Player Co-op)
+## 👨‍💻 Tim Pengembang
 
 Kolaborasi pengembangan ini dikerjakan oleh:
 
 | Nama | GitHub Profile | Peran / Fokus |
 | :--- | :--- | :--- |
 | **Arif Permana Putrasuryana** | [@itsmebroarif](https://github.com/itsmebroarif) | Full-stack & UI Integration |
-| **Mahabbatul Auliya** | [@mhbbtuliyaa](https://github.com/mhbbtuliyaa) | Frontend & Layouting |
 | **Fahrul Saputra** | — | Chief Executive Officer (konten tim) |
 | **Hanif Wisanggeni P.** | — | Back End Developer |
 | **Arief Ramadhan Al-Hazmi** | — | Digital Marketer |

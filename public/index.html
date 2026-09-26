@@ -4,20 +4,79 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Kafeinarts - Mitra Digital SaaS &amp; Sistem Manajemen</title>
+
+    <!--
+      ==================================================================
+      SEO - META UTAMA (satu-satunya sumber meta halaman)
+      Ubah URL produksi di 4 tempat bila domain berganti:
+        1. <link rel="canonical">       (di bawah)
+        2. og:url + og:image + twitter:image (di bawah)
+        3. public/sitemap.xml  &  public/robots.txt
+        4. SITE_URL pada src/utils/seo.js (JSON-LD)
+      ==================================================================
+    -->
+    <title>Kafeinarts — Jasa SaaS, Website &amp; Sistem Manajemen di Depok</title>
     <meta
       name="description"
-      content="Kafeinarts Interactive - Mitra teknis andal SaaS full-stack, website, aplikasi, cloud & keamanan. Depok, Jawa Barat."
+      content="Kafeinarts Interactive: mitra teknis SaaS full-stack, pembuatan website &amp; aplikasi, cloud dan keamanan sistem di Depok, Jawa Barat. Konsultasi gratis!"
     />
     <meta
       name="keywords"
-      content="Kafeinarts, SaaS, Website, Aplikasi, Cloud, Depok"
+      content="Kafeinarts, jasa SaaS, jasa pembuatan website, jasa aplikasi, sistem manajemen, pengembang web Depok, cloud, keamanan sistem, Jawa Barat"
     />
+    <meta name="author" content="Kafeinarts Interactive" />
+    <meta name="creator" content="Kafeinarts Interactive" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://kafeinarts.vercel.app/" />
+    <meta name="theme-color" content="#00205D" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- Local SEO (Indonesia - Depok, Jawa Barat) -->
+    <meta name="geo.region" content="ID-JB" />
+    <meta name="geo.placename" content="Depok, Jawa Barat" />
+    <meta name="geo.position" content="-6.4025;106.7942" />
+    <meta name="ICBM" content="-6.4025, 106.7942" />
 
     <!-- Favicons - Kafeinarts only -->
     <link href="<%= BASE_URL %>assets/img/logo.png" rel="icon" />
     <link href="<%= BASE_URL %>assets/img/logo.png" rel="apple-touch-icon" />
     <link href="<%= BASE_URL %>assets/img/logo.png" rel="icon" type="image/png" />
+    <meta name="apple-mobile-web-app-title" content="Kafeinarts" />
+
+    <!--
+      Open Graph (Facebook, LinkedIn, WhatsApp) & Twitter/X Card
+      Gambar sosial: 1200x630 -> public/assets/img/og-image.png
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kafeinarts Interactive" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://kafeinarts.vercel.app/" />
+    <meta property="og:title" content="Kafeinarts — Jasa SaaS, Website &amp; Sistem Manajemen di Depok" />
+    <meta
+      property="og:description"
+      content="Mitra teknis SaaS full-stack, pembuatan website &amp; aplikasi, cloud dan keamanan sistem untuk bisnis Anda. Depok, Jawa Barat."
+    />
+    <meta property="og:image" content="https://kafeinarts.vercel.app/assets/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Kafeinarts Interactive - Mitra SaaS, Website & Sistem Manajemen" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kafeinarts — Jasa SaaS, Website &amp; Sistem Manajemen di Depok" />
+    <meta
+      name="twitter:description"
+      content="Mitra teknis SaaS full-stack, pembuatan website &amp; aplikasi, cloud dan keamanan sistem untuk bisnis Anda. Depok, Jawa Barat."
+    />
+    <meta name="twitter:image" content="https://kafeinarts.vercel.app/assets/img/og-image.png" />
+    <meta name="twitter:image:alt" content="Kafeinarts Interactive - Mitra SaaS, Website & Sistem Manajemen" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />

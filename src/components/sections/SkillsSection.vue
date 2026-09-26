@@ -3,11 +3,17 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-6 d-flex align-items-center">
-          <img :src="asset(skills.image)" class="img-fluid" :alt="skills.imageAlt" />
+          <img
+            :src="asset(skills.image)"
+            class="img-fluid"
+            :alt="skills.imageAlt"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div class="col-lg-6 pt-4 pt-lg-0 content">
-          <h3>{{ skills.heading }}</h3>
+          <h2>{{ skills.heading }}</h2>
           <p class="fst-italic">{{ skills.desc }}</p>
 
           <div ref="animationRoot" class="skills-content skills-animation">

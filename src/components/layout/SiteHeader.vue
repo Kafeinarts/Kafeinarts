@@ -14,9 +14,10 @@
           class="logo-img-elegant"
           style="max-height: 85px; height: 85px"
         />
-        <h1 class="sitename" style="font-size: 34px; letter-spacing: 3px">
+        <!-- Bukan <h1>: hanya Hero yang boleh punya satu <h1> (hierarki heading SEO) -->
+        <div class="sitename" style="color: azure; font-size: 34px; letter-spacing: 3px; margin: 0">
           KAFEIN<span>ARTS</span>
-        </h1>
+        </div>
       </a>
 
       <nav id="navmenu" class="navmenu">

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap landing page Kafeinarts (one-page: seluruh konten berada di URL utama).
+  Perbarui <lastmod> setiap kali konten halaman berubah,
+  dan sesuaikan <loc> bila domain produksi berganti.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kafeinarts.vercel.app/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

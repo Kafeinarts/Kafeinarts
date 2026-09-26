@@ -1,4 +1,7 @@
 <template>
+  <!-- Skip link: aksesibilitas & SEO (lewati navigasi header) -->
+  <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
   <SiteHeader />
 
   <router-view />
@@ -16,6 +19,7 @@ import SiteHeader from "@/components/layout/SiteHeader.vue"
 import SiteFooter from "@/components/layout/SiteFooter.vue"
 import ScrollTop from "@/components/layout/ScrollTop.vue"
 import { initAOS, refreshAOS } from "@/utils/aos"
+import { initSeo } from "@/utils/seo"
 
 export default {
   name: "App",
@@ -33,6 +37,9 @@ export default {
     // Kelas halaman dipakai CSS: .index-page .header (navbar transparan)
     // dan .index-page.scrolled .header (navbar solid #00205D)
     document.body.classList.add("index-page")
+
+    // Structured data (JSON-LD) + sinkronisasi <title>/canonical
+    initSeo()
 
     // Preloader dihapus setelah halaman selesai dimuat
     const hidePreloader = () => {

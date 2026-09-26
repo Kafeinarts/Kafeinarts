@@ -4,7 +4,7 @@
       <div class="row gy-4">
         <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
           <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-            <h3 v-html="whyUs.heading"></h3>
+            <h2 v-html="whyUs.heading"></h2>
             <p>{{ whyUs.desc }}</p>
           </div>
 
@@ -31,6 +31,8 @@
             :src="asset(whyUs.image)"
             class="img-fluid"
             :alt="whyUs.imageAlt"
+            loading="lazy"
+            decoding="async"
             data-aos="zoom-in"
             data-aos-delay="100"
           />

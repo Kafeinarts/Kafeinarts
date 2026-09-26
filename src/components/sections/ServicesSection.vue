@@ -20,7 +20,7 @@
             <div class="icon mx-auto mb-4 d-flex align-items-center justify-content-center">
               <i class="bi fs-1" :class="service.icon"></i>
             </div>
-            <h4><a href="" class="stretched-link">{{ service.title }}</a></h4>
+            <h3><a href="#contact" class="stretched-link">{{ service.title }}</a></h3>
             <p>{{ service.desc }}</p>
           </div>
         </div>

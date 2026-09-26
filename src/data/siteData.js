@@ -18,23 +18,53 @@ export const siteData = {
     headingColor: "#37517e",
   },
 
+  /**
+   * Konfigurasi SEO (dipakai src/utils/seo.js untuk JSON-LD & <title>).
+   * Meta deskripsi/keywords/Open Graph tetap di public/index.html —
+   * pastikan isinya konsisten dengan blok ini bila ada perubahan.
+   */
+  seo: {
+    url: "https://kafeinarts.vercel.app",
+    name: "Kafeinarts Interactive",
+    title: "Kafeinarts — Jasa SaaS, Website & Sistem Manajemen di Depok",
+    description:
+      "Kafeinarts Interactive: mitra teknis SaaS full-stack, pembuatan website & aplikasi, cloud dan keamanan sistem di Depok, Jawa Barat. Konsultasi gratis!",
+    image: "assets/img/og-image.png",
+    imageAlt: "Kafeinarts Interactive - Mitra SaaS, Website & Sistem Manajemen",
+    logo: "assets/img/logo-512.png",
+    inLanguage: "id-ID",
+    // Profil/publikasi resmi yang benar-benar valid (hindari URL palsu)
+    sameAs: ["https://github.com/Kafeinarts/Kafeinarts"],
+    areaServed: ["Depok", "Jawa Barat", "Indonesia"],
+    // Koordinat pusat kota Depok (untuk schema LocalBusiness)
+    geo: { latitude: -6.4025, longitude: 106.7942 },
+  },
+
   nav: [
     { label: "Beranda", href: "#hero" },
     { label: "Tentang", href: "#about" },
     { label: "Kelebihan", href: "#why-us" },
     { label: "Keahlian", href: "#skills" },
     { label: "Layanan", href: "#services" },
+    
     { label: "Tim", href: "#team" },
-    { label: "FAQ", href: "#faq-2" },
     { label: "Kontak", href: "#contact" },
   ],
 
   hero: {
     title: "Inovasi Digital Bersama<br>Kafeinarts Interactive",
     subtitle:
-      'Mitra teknis andal dalam merancang sistem manajemen dan produk SaaS <em>full-stack</em> yang tangguh untuk mempercepat operasional serta skalabilitas bisnis Anda.',
-    ctaPrimary: { label: "Pelajari Lebih Lanjut", href: "#about", icon: "bi-book" },
-    ctaSecondary: { label: "Hubungi Kami", href: "#contact", icon: "bi-telephone" },
+      "Mitra teknis andal dalam merancang sistem manajemen dan produk SaaS <em>full-stack</em> yang tangguh untuk mempercepat operasional serta skalabilitas bisnis Anda.",
+    ctaPrimary: {
+      label: "Pelajari Lebih Lanjut",
+      href: "#about",
+      icon: "bi-book",
+    },
+    ctaSecondary: {
+      label: "Hubungi Kami",
+      href: "#contact",
+      icon: "bi-telephone",
+    },
     image: "assets/img/hero-img.png",
     imageAlt: "Kafeinarts Interactive SaaS Dashboard",
   },
@@ -63,39 +93,34 @@ export const siteData = {
       ],
     },
     right: {
-      text:
-        "Berawal dari dedikasi tinggi terhadap pengembangan <em>software</em> dan seni digital, Kafeinarts hadir sebagai mitra teknis andal untuk bisnis Anda. Kami tidak sekadar menulis kode; kami merancang ekosistem digital yang utuh—dari infrastruktur <em>backend</em> yang tangguh untuk sistem manajemen atau operasional, hingga <em>frontend</em> interaktif yang memanjakan mata. Kami siap membantu Anda mengubah ide kompleks menjadi produk digital yang berkinerja tinggi.",
+      text: "Berawal dari dedikasi tinggi terhadap pengembangan <em>software</em> dan seni digital, Kafeinarts hadir sebagai mitra teknis andal untuk bisnis Anda. Kami tidak sekadar menulis kode; kami merancang ekosistem digital yang utuh—dari infrastruktur <em>backend</em> yang tangguh untuk sistem manajemen atau operasional, hingga <em>frontend</em> interaktif yang memanjakan mata. Kami siap membantu Anda mengubah ide kompleks menjadi produk digital yang berkinerja tinggi.",
       cta: { label: "Kenali Kami Lebih Jauh", href: "#" },
     },
   },
 
   whyUs: {
     heading:
-      '<span>Mengapa Memilih Kafeinarts? </span><strong>Mitra Tepat untuk Transformasi Digital Anda</strong>',
-    desc:
-      "Kami tidak sekadar menulis kode atau menggambar desain. Kami merancang solusi teknologi yang disesuaikan dengan kebutuhan bisnis Anda, menggabungkan performa tinggi di balik layar dengan visual yang memukau di layar depan.",
+      "<span>Mengapa Memilih Kafeinarts? </span><strong>Mitra Tepat untuk Transformasi Digital Anda</strong>",
+    desc: "Kami tidak sekadar menulis kode atau menggambar desain. Kami merancang solusi teknologi yang disesuaikan dengan kebutuhan bisnis Anda, menggabungkan performa tinggi di balik layar dengan visual yang memukau di layar depan.",
     image: "assets/img/why-us.png",
     imageAlt: "Kafeinarts Web Development Illustration",
     items: [
       {
         id: "01",
         title: "Pendekatan Full-Stack & Desain Estetis",
-        desc:
-          "Dari arsitektur <em>database</em> yang kokoh hingga antarmuka pengguna yang responsif. Kami memastikan setiap baris kode dan elemen desain bekerja secara harmonis untuk menciptakan pengalaman pengguna (UI/UX) yang intuitif dan berkesan.",
+        desc: "Dari arsitektur <em>database</em> yang kokoh hingga antarmuka pengguna yang responsif. Kami memastikan setiap baris kode dan elemen desain bekerja secara harmonis untuk menciptakan pengalaman pengguna (UI/UX) yang intuitif dan berkesan.",
         active: true,
       },
       {
         id: "02",
         title: "Solusi SaaS yang Skalabel & Efisien",
-        desc:
-          "Aplikasi yang kami bangun dirancang untuk tumbuh bersama bisnis Anda. Kami berfokus pada digitalisasi alur kerja dan sistem manajemen yang kompleks agar operasional harian Anda menjadi lebih cepat, terstruktur, dan efisien.",
+        desc: "Aplikasi yang kami bangun dirancang untuk tumbuh bersama bisnis Anda. Kami berfokus pada digitalisasi alur kerja dan sistem manajemen yang kompleks agar operasional harian Anda menjadi lebih cepat, terstruktur, dan efisien.",
         active: false,
       },
       {
         id: "03",
         title: "Teknologi Modern & Keandalan Jangka Panjang",
-        desc:
-          "Kami memanfaatkan <em>tech-stack</em> pengembangan web terkini untuk membangun ekosistem digital yang tangguh. Hasilnya adalah produk <em>software</em> yang tidak hanya cepat saat diluncurkan, tetapi juga aman dan mudah dipelihara di masa depan.",
+        desc: "Kami memanfaatkan <em>tech-stack</em> pengembangan web terkini untuk membangun ekosistem digital yang tangguh. Hasilnya adalah produk <em>software</em> yang tidak hanya cepat saat diluncurkan, tetapi juga aman dan mudah dipelihara di masa depan.",
         active: false,
       },
     ],
@@ -103,8 +128,7 @@ export const siteData = {
 
   skills: {
     heading: "Berbekal Ekosistem Teknologi Modern & Andal",
-    desc:
-      "Kami memadukan arsitektur sistem yang tangguh, framework mutakhir, serta elemen desain visual untuk membangun aplikasi SaaS yang cepat, aman, dan memanjakan mata.",
+    desc: "Kami memadukan arsitektur sistem yang tangguh, framework mutakhir, serta elemen desain visual untuk membangun aplikasi SaaS yang cepat, aman, dan memanjakan mata.",
     image: "assets/img/illustration/illustration-10.webp",
     imageAlt: "Kafeinarts Technology Stack",
     items: [
@@ -119,29 +143,25 @@ export const siteData = {
     {
       icon: "bi-laptop",
       title: "Website & Sistem Bisnis",
-      desc:
-        "Hadirkan wajah profesional di dunia digital sekaligus otomatisasi proses operasional harian Anda dalam satu platform.",
+      desc: "Hadirkan wajah profesional di dunia digital sekaligus otomatisasi proses operasional harian Anda dalam satu platform.",
       delay: 100,
     },
     {
       icon: "bi-phone",
       title: "Aplikasi Pelanggan",
-      desc:
-        "Jangkau target pasar lebih dekat melalui aplikasi smartphone yang dirancang untuk meningkatkan loyalitas dan interaksi pelanggan.",
+      desc: "Jangkau target pasar lebih dekat melalui aplikasi smartphone yang dirancang untuk meningkatkan loyalitas dan interaksi pelanggan.",
       delay: 200,
     },
     {
       icon: "bi-cloud-arrow-up",
       title: "Infrastruktur Digital",
-      desc:
-        "Sistem penyimpanan terpusat yang fleksibel, memastikan bisnis Anda tetap berjalan lancar dan siap dikembangkan kapan saja.",
+      desc: "Sistem penyimpanan terpusat yang fleksibel, memastikan bisnis Anda tetap berjalan lancar dan siap dikembangkan kapan saja.",
       delay: 300,
     },
     {
       icon: "bi-shield-lock",
       title: "Perlindungan Data",
-      desc:
-        "Amankan aset digital, privasi pelanggan, dan data rahasia perusahaan Anda agar bisnis dapat terus beroperasi dengan tenang.",
+      desc: "Amankan aset digital, privasi pelanggan, dan data rahasia perusahaan Anda agar bisnis dapat terus beroperasi dengan tenang.",
       delay: 400,
     },
   ],
@@ -150,44 +170,38 @@ export const siteData = {
     bg: "assets/img/bg/bg-8.webp",
     bgAlt: "Latar Belakang Kafeinarts",
     title: "Siap Mewujudkan Ide Digital Anda?",
-    desc:
-      "Jangan biarkan ide cemerlang Anda hanya menjadi rencana. Baik itu pengembangan aplikasi SaaS, sistem manajemen, hingga solusi cloud, kami siap berkolaborasi merancang teknologi yang mempercepat pertumbuhan bisnis Anda. Mari diskusikan kebutuhan Anda bersama Kafeinarts.",
+    desc: "Jangan biarkan ide cemerlang Anda hanya menjadi rencana. Baik itu pengembangan aplikasi SaaS, sistem manajemen, hingga solusi cloud, kami siap berkolaborasi merancang teknologi yang mempercepat pertumbuhan bisnis Anda. Mari diskusikan kebutuhan Anda bersama Kafeinarts.",
     button: { label: "Mulai Konsultasi", href: "#contact" },
   },
 
   faq: [
     {
       q: "Layanan digital apa saja yang disediakan oleh Kafeinarts?",
-      a:
-        "Kami berfokus pada pengembangan produk SaaS (Software as a Service), pembuatan website atau aplikasi web khusus (custom), perancangan antarmuka pengguna (UI/UX), hingga pengelolaan <em>cloud</em> dan keamanan sistem untuk mendukung operasional bisnis Anda dari hulu ke hilir.",
+      a: "Kami berfokus pada pengembangan produk SaaS (Software as a Service), pembuatan website atau aplikasi web khusus (custom), perancangan antarmuka pengguna (UI/UX), hingga pengelolaan <em>cloud</em> dan keamanan sistem untuk mendukung operasional bisnis Anda dari hulu ke hilir.",
       active: true,
       delay: 200,
     },
     {
       q: "Berapa lama estimasi waktu pengerjaan untuk satu proyek aplikasi SaaS?",
-      a:
-        "Waktu pengerjaan sangat bergantung pada skala, fitur, dan kompleksitas proyek. Untuk sistem manajemen skala kecil hingga menengah biasanya memakan waktu 4-8 minggu. Kami akan memberikan jadwal (<em>timeline</em>) yang transparan dan terukur setelah tahap diskusi dan analisis kebutuhan awal selesai.",
+      a: "Waktu pengerjaan sangat bergantung pada skala, fitur, dan kompleksitas proyek. Untuk sistem manajemen skala kecil hingga menengah biasanya memakan waktu 4-8 minggu. Kami akan memberikan jadwal (<em>timeline</em>) yang transparan dan terukur setelah tahap diskusi dan analisis kebutuhan awal selesai.",
       active: false,
       delay: 300,
     },
     {
       q: "Teknologi apa saja yang digunakan dalam proses pengembangan?",
-      a:
-        "Kami menyusun arsitektur sistem menggunakan ekosistem teknologi yang tangguh dan modern. Secara umum, kami memanfaatkan PHP, Laravel, atau Node.js untuk <em>backend</em>; HTML, CSS, Tailwind, dan JavaScript untuk <em>frontend</em> yang responsif; serta arsitektur <em>database</em> relasional seperti MySQL untuk menjamin integritas data Anda.",
+      a: "Kami menyusun arsitektur sistem menggunakan ekosistem teknologi yang tangguh dan modern. Secara umum, kami memanfaatkan PHP, Laravel, atau Node.js untuk <em>backend</em>; HTML, CSS, Tailwind, dan JavaScript untuk <em>frontend</em> yang responsif; serta arsitektur <em>database</em> relasional seperti MySQL untuk menjamin integritas data Anda.",
       active: false,
       delay: 400,
     },
     {
       q: "Apakah ada layanan pemeliharaan (maintenance) setelah aplikasi dirilis?",
-      a:
-        "Tentu saja. Kami memahami bahwa produk digital membutuhkan pengawasan agar tetap aman dan berjalan optimal. Kami menawarkan paket dukungan teknis dan pemeliharaan jangka panjang untuk menangani perbaikan <em>bug</em>, pembaruan keamanan, hingga penambahan fitur baru di masa mendatang.",
+      a: "Tentu saja. Kami memahami bahwa produk digital membutuhkan pengawasan agar tetap aman dan berjalan optimal. Kami menawarkan paket dukungan teknis dan pemeliharaan jangka panjang untuk menangani perbaikan <em>bug</em>, pembaruan keamanan, hingga penambahan fitur baru di masa mendatang.",
       active: false,
       delay: 500,
     },
     {
       q: "Bagaimana langkah pertama untuk memulai kerja sama?",
-      a:
-        "Sangat mudah! Anda cukup menghubungi kami melalui form kontak atau tombol konsultasi. Kita akan menjadwalkan diskusi santai untuk memahami kendala, target, dan kebutuhan bisnis Anda. Setelah itu, kami akan menyusun draf proposal yang mencakup solusi teknis serta estimasi investasi yang dibutuhkan.",
+      a: "Sangat mudah! Anda cukup menghubungi kami melalui form kontak atau tombol konsultasi. Kita akan menjadwalkan diskusi santai untuk memahami kendala, target, dan kebutuhan bisnis Anda. Setelah itu, kami akan menyusun draf proposal yang mencakup solusi teknis serta estimasi investasi yang dibutuhkan.",
       active: false,
       delay: 600,
     },
@@ -195,7 +209,8 @@ export const siteData = {
 
   team: {
     title: "Tim Kami",
-    subtitle: "Kenali talenta kreatif & teknis di balik setiap inovasi Kafeinarts",
+    subtitle:
+      "Kenali talenta kreatif & teknis di balik setiap inovasi Kafeinarts",
     swiper: {
       loop: true,
       speed: 600,
@@ -203,8 +218,15 @@ export const siteData = {
       slidesPerView: 1,
       spaceBetween: 24,
       grabCursor: true,
-      pagination: { el: ".swiper-pagination", type: "bullets", clickable: true },
-      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       breakpoints: {
         576: { slidesPerView: 2, spaceBetween: 20 },
         768: { slidesPerView: 3, spaceBetween: 22 },
@@ -270,11 +292,27 @@ export const siteData = {
     form: {
       whatsapp: {
         // Nomor sudah dalam format internasional tanpa + — dropdown Staff IT / Staff Customer Service
-        spvIT: { label: "Staff IT", display: "0858-1704-8200", wa: "6285817048200" },
-        marketing: { label: "Staff Customer Service", display: "0895-3318-47715", wa: "62895331847715" },
+        spvIT: {
+          label: "Staff IT",
+          display: "0858-1704-8200",
+          wa: "6285817048200",
+        },
+        marketing: {
+          label: "Staff Customer Service",
+          display: "0895-3318-47715",
+          wa: "62895331847715",
+        },
         // alias agar kompatibel dengan kode lama & baru
-        staffIT: { label: "Staff IT", display: "0858-1704-8200", wa: "6285817048200" },
-        staffCS: { label: "Staff Customer Service", display: "0895-3318-47715", wa: "62895331847715" },
+        staffIT: {
+          label: "Staff IT",
+          display: "0858-1704-8200",
+          wa: "6285817048200",
+        },
+        staffCS: {
+          label: "Staff Customer Service",
+          display: "0895-3318-47715",
+          wa: "62895331847715",
+        },
       },
       // Default tujuan jika tidak memilih
       defaultTarget: "staffIT",
@@ -284,8 +322,7 @@ export const siteData = {
   footer: {
     newsletter: {
       title: "Dapatkan Pembaruan Terbaru",
-      desc:
-        "Berlangganan newsletter kami untuk mendapatkan wawasan teknologi, tips pengembangan SaaS, dan berita terbaru dari Kafeinarts!",
+      desc: "Berlangganan newsletter kami untuk mendapatkan wawasan teknologi, tips pengembangan SaaS, dan berita terbaru dari Kafeinarts!",
       placeholder: "Masukkan email Anda",
       button: "Berlangganan",
     },
@@ -310,14 +347,18 @@ export const siteData = {
       ],
     },
     social: [
-      { icon: "bi-twitter-x", href: "#" },
-      { icon: "bi-facebook", href: "#" },
-      { icon: "bi-instagram", href: "#" },
-      { icon: "bi-linkedin", href: "#" },
-      { icon: "bi-github", href: "#" },
+      { icon: "bi-twitter-x", href: "#", label: "Kafeinarts di Twitter / X" },
+      { icon: "bi-facebook", href: "#", label: "Kafeinarts di Facebook" },
+      { icon: "bi-instagram", href: "#", label: "Kafeinarts di Instagram" },
+      { icon: "bi-linkedin", href: "#", label: "Kafeinarts di LinkedIn" },
+      { icon: "bi-github", href: "https://github.com/Kafeinarts/Kafeinarts", label: "Kafeinarts di GitHub" },
     ],
-    copyright: { year: "2026", brand: "Kafeinarts", note: "Dilindungi Undang-Undang" },
+    copyright: {
+      year: "2026",
+      brand: "Kafeinarts",
+      note: "Dilindungi Undang-Undang",
+    },
   },
-}
+};
 
-export default siteData
+export default siteData;

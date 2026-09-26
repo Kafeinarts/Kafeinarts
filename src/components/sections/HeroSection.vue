@@ -28,7 +28,13 @@
           data-aos="zoom-out"
           data-aos-delay="200"
         >
-          <img :src="asset(hero.image)" class="img-fluid animated" :alt="hero.imageAlt" />
+          <img
+            :src="asset(hero.image)"
+            class="img-fluid animated"
+            :alt="hero.imageAlt"
+            fetchpriority="high"
+            decoding="async"
+          />
         </div>
       </div>
     </div>
