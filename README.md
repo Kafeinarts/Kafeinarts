@@ -49,7 +49,7 @@ yarn serve        # buka http://localhost:8080
 
 - [Profil Perusahaan](#-profil-perusahaan--kafeinarts-interactive)
 - [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
-- [Setup & Perintah](#️-setup--perintah)
+- [Setup & Perintah](#-setup--perintah)
 - [Struktur Folder](#-struktur-folder)
 - [Struktur Halaman & Pemetaan Komponen](#-struktur-halaman--pemetaan-komponen)
 - [Central Data Store (`siteData.js`)](#-central-data-store-sitedatajs)
@@ -100,7 +100,7 @@ bisnis.
 
 ```bash
 # 1. clone
-git clone https://github.com/itsmebroarif/Kafeinarts.git
+git clone https://github.com/Kafeinarts/Kafeinarts.git
 cd Kafeinarts
 
 # 2. install dependensi
@@ -357,7 +357,7 @@ Setelah PR dibuka, **wajib konfirmasi** ke
 ```text
 Halo Mas Arif, ada Pull Request baru yang perlu direview & di-merge:
 
-🔗 Link PR   : https://github.com/itsmebroarif/Kafeinarts/pull/XXXX
+🔗 Link PR   : https://github.com/Kafeinarts/Kafeinarts/pull/XXXX
 🌿 Branch    : feat/navbar-glow → main
 📋 Isi       : <ringkasan 1-2 kalimat>
 ✅ Checklist : yarn lint lolos, build sukses, screenshot terlampir
@@ -411,7 +411,7 @@ Mohon review dan merge jika sudah sesuai. Terima kasih 🙏
 
 - **Spesifikasi desain & section (versi HTML asli):** [`docs/README-landing-page.md`](docs/README-landing-page.md)
 - **Konfigurasi Vue CLI:** [Configuration Reference](https://cli.vuejs.org/config/)
-- **Repo:** [https://github.com/itsmebroarif/Kafeinarts](https://github.com/itsmebroarif/Kafeinarts)
+- **Repo:** [https://github.com/Kafeinarts/Kafeinarts](https://github.com/Kafeinarts/Kafeinarts)
 
 ---
 
@@ -420,7 +420,6 @@ Mohon review dan merge jika sudah sesuai. Terima kasih 🙏
 | Nama | GitHub Profile | Peran / Fokus |
 | :--- | :--- | :--- |
 | **Arif Permana Putrasuryana** | [@itsmebroarif](https://github.com/itsmebroarif) | Full-stack & UI Integration — **Reviewer / Merge owner** |
-| **Mahabbatul Auliya** | [@mhbbtuliyaa](https://github.com/mhbbtuliyaa) | Frontend & Layouting |
 | **Fahrul Saputra** | — | Chief Executive Officer (konten tim) |
 | **Hanif Wisanggeni P.** | — | Back End Developer |
 | **Arief Ramadhan Al-Hazmi** | — | Digital Marketer |
