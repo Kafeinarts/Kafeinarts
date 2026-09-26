@@ -4,8 +4,6 @@ Landing page **Kafeinarts Interactive** yang sudah dimigrasi dari HTML statis
 (`public/templates` pada versi sebelumnya) menjadi project **Vue 3 + Vue Router + Vuex**
 menggunakan Vue CLI.
 
-> Dokumentasi desain/template asli (Arsha by BootstrapMade) tersimpan di
-> [`docs/README-landing-page.md`](docs/README-landing-page.md).
 
 ## Project setup
 
