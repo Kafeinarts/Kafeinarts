@@ -46,7 +46,7 @@ export const siteData = {
     { label: "Kelebihan", href: "#why-us" },
     { label: "Keahlian", href: "#skills" },
     { label: "Layanan", href: "#services" },
-    
+    { label: "FAQ", href: "#faq-2" },
     { label: "Tim", href: "#team" },
     { label: "Kontak", href: "#contact" },
   ],
@@ -351,7 +351,11 @@ export const siteData = {
       { icon: "bi-facebook", href: "#", label: "Kafeinarts di Facebook" },
       { icon: "bi-instagram", href: "#", label: "Kafeinarts di Instagram" },
       { icon: "bi-linkedin", href: "#", label: "Kafeinarts di LinkedIn" },
-      { icon: "bi-github", href: "https://github.com/Kafeinarts/Kafeinarts", label: "Kafeinarts di GitHub" },
+      {
+        icon: "bi-github",
+        href: "https://github.com/Kafeinarts/Kafeinarts",
+        label: "Kafeinarts di GitHub",
+      },
     ],
     copyright: {
       year: "2026",
