@@ -46,7 +46,7 @@ export const siteData = {
     { label: "Kelebihan", href: "#why-us" },
     { label: "Keahlian", href: "#skills" },
     { label: "Layanan", href: "#services" },
-    
+    { label: "FAQ", href: "#faq-2" },
     { label: "Tim", href: "#team" },
     { label: "Kontak", href: "#contact" },
   ],
