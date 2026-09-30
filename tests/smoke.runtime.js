@@ -5,9 +5,6 @@
  * Pemakaian: node tests/smoke.runtime.js [--full]
  *   --full : juga klik semua link nav (SPA navigation) & halaman produk.
  */
-const fs = require("fs")
-const path = require("path")
-
 const BASE = "http://localhost:8080"
 const FULL = process.argv.includes("--full")
 

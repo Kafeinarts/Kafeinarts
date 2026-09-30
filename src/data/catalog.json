@@ -1,0 +1,42 @@
+{
+  "catalogPage": {
+    "title": "Produk Digital Siap Pakai untuk Bisnis Anda",
+    "subtitle": "Serangkaian sistem manajemen dan aplikasi yang dirancang, dibangun, dan dirawat oleh tim Kafeinarts — siap disesuaikan dengan kebutuhan operasional Anda.",
+    "ctaPrimary": {
+      "label": "Konsultasi Harga",
+      "to": {
+        "name": "consultation"
+      },
+      "icon": "bi-calculator"
+    },
+    "ctaSecondary": {
+      "label": "Layanan Kami",
+      "to": {
+        "name": "services"
+      },
+      "icon": "bi-grid"
+    }
+  },
+  "categories": [
+    {
+      "key": "system",
+      "label": "Sistem & Aplikasi"
+    },
+    {
+      "key": "website",
+      "label": "Website"
+    }
+  ],
+  "_catatan": "Detail tiap produk (fitur, harga, FAQ) ada di src/data/products/<slug>.json",
+  "products": [
+    { "slug": "erp", "shortName": "ERP" },
+    { "slug": "simrs", "shortName": "SIMRS" },
+    { "slug": "lms", "shortName": "LMS" },
+    { "slug": "cms", "shortName": "CMS" },
+    { "slug": "event-management", "shortName": "Event Management" },
+    { "slug": "company-profile", "shortName": "Company Profile" },
+    { "slug": "landing-page", "shortName": "Landing Page" },
+    { "slug": "web-profile", "shortName": "Web Profile" },
+    { "slug": "e-commerce", "shortName": "E-Commerce" }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "slug": "e-commerce",
+    "name": "Website E-Commerce",
+    "shortName": "E-Commerce",
+    "category": "website",
+    "icon": "bi-cart3",
+    "color": "#be123c",
+    "route": "/products/e-commerce"
+  },
+  "hero": {
+    "name": "Website E-Commerce",
+    "tagline": "Toko online lengkap dengan pembayaran & pengiriman.",
+    "headline": "Toko online milik sendiri, bebas aturan marketplace",
+    "description": "Platform toko online dengan katalog produk, keranjang, checkout, integrasi payment gateway (VA, QRIS, e-wallet), ongkir otomatis, dan dashboard admin untuk mengelola pesanan serta stok harian.",
+    "icon": "bi-cart3",
+    "highlights": [
+      "Payment gateway penuh",
+      "Ongkir otomatis",
+      "Dashboard admin lengkap"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang Website E-Commerce",
+    "paragraphs": [
+      "Menjual hanya di marketplace berarti tunduk pada kenaikan biaya admin, aturan perubahan algoritma, dan data pelanggan yang tidak bisa diakses.",
+      "Toko online milik sendiri memutus ketergantungan itu: transaksi langsung ke rekening Anda, data pelanggan adalah aset Anda, dan tampilan toko sepenuhnya sesuai brand."
+    ],
+    "points": [
+      "Katalog produk dengan variasi & galeri",
+      "Checkout aman: VA, QRIS, e-wallet",
+      "Ongkir otomatis dari berbagai kurir",
+      "Dashboard admin untuk pesanan & stok"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Fitur penjualan online lengkap dari katalog hingga resi.",
+    "items": [
+      {
+        "icon": "bi-grid",
+        "title": "Katalog & Variasi",
+        "desc": "Produk dengan variasi ukuran, warna, dan foto galeri."
+      },
+      {
+        "icon": "bi-credit-card",
+        "title": "Payment Gateway",
+        "desc": "Terima VA bank, QRIS, dan e-wallet secara otomatis."
+      },
+      {
+        "icon": "bi-truck",
+        "title": "Ongkir Otomatis",
+        "desc": "Integrasi kurir dengan cek resi dan biaya kirim real-time."
+      },
+      {
+        "icon": "bi-speedometer2",
+        "title": "Dashboard Admin",
+        "desc": "Kelola pesanan, stok, dan laporan penjualan dari satu tempat."
+      },
+      {
+        "icon": "bi-ticket-percent",
+        "title": "Promo & Kupon",
+        "desc": "Diskon, voucher, dan flash sale yang diatur dari dasbor."
+      },
+      {
+        "icon": "bi-bell",
+        "title": "Notifikasi Pesanan",
+        "desc": "Pesanan baru masuk ke email/WA admin beserta detailnya."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Sesuaikan dengan skala katalog dan volume transaksi Anda.",
+    "note": "Biaya transaksi payment gateway mengikuti tarif penyedia (±0,7% QRIS dsb.) dan langsung masuk rekening Anda.",
+    "plans": [
+      {
+        "name": "Starter Store",
+        "tagline": "Untuk UMKM yang mulai jualan online",
+        "price": 6500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Toko online ramping dengan fitur jualan esensial.",
+        "features": [
+          "Hingga 100 produk",
+          "Keranjang & checkout",
+          "Payment gateway (QRIS/VA)",
+          "Ongkir flat/regional",
+          "Dashboard pesanan"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Growth Store",
+        "tagline": "Paling populer untuk brand yang bertumbuh",
+        "price": 15000000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Katalog besar, promo, dan ongkir otomatis penuh.",
+        "features": [
+          "Produk tak terbatas",
+          "Variasi & galeri produk",
+          "Kupon & flash sale",
+          "Ongkir otomatis multi-kurir",
+          "Laporan penjualan & stok",
+          "Integrasi ekspedisi penuh"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Commerce Suite",
+        "tagline": "Untuk operasional omnichannel",
+        "priceLabel": "Hubungi Kami",
+        "description": "Multi-gudang, marketplace sync, dan integrasi ERP.",
+        "features": [
+          "Multi-gudang/outlet",
+          "Sinkron marketplace",
+          "Integrasi ERP/POS",
+          "Loyalty & membership",
+          "SLA enterprise"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Pengerjaan",
+    "subheading": "Toko online Anda siap menerima pesanan dalam 6–8 minggu.",
+    "steps": [
+      {
+        "title": "Analisis Produk",
+        "desc": "Kami petakan kategori, variasi, dan alur pengiriman Anda."
+      },
+      {
+        "title": "Desain Toko",
+        "desc": "Tampilan katalog, halaman produk, dan checkout dirancang."
+      },
+      {
+        "title": "Integrasi & Uji",
+        "desc": "Payment, kurir, dan notifikasi diuji end-to-end."
+      },
+      {
+        "title": "Training & Launching",
+        "desc": "Tim dilatih mengelola pesanan, lalu toko resmi dibuka."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai model bisnis jual-beli online.",
+    "items": [
+      {
+        "icon": "bi-bag-check",
+        "title": "Brand Fashion",
+        "desc": "Variasi ukuran/warna dan foto galeri per produk."
+      },
+      {
+        "icon": "bi-basket",
+        "title": "FMCG & Grocery",
+        "desc": "Katalog besar dengan pencarian dan filter cepat."
+      },
+      {
+        "icon": "bi-cpu",
+        "title": "Gadget & Elektronik",
+        "desc": "Spesifikasi detail, garansi, dan bundling produk."
+      },
+      {
+        "icon": "bi-flower2",
+        "title": "Herbal & Kosmetik",
+        "desc": "Membership, langganan, dan konten edukasi produk."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan pemilik brand.",
+    "items": [
+      {
+        "q": "Uang penjualan masuk ke mana?",
+        "a": "Langsung ke rekening/merchant Anda via payment gateway. Kami tidak memegang dana maupun memotong per transaksi."
+      },
+      {
+        "q": "Apakah bisa sinkron dengan marketplace?",
+        "a": "Bisa, pada paket Commerce Suite: stok dan pesanan marketplace tersinkron agar tidak oversell."
+      },
+      {
+        "q": "Bagaimana pengelolaan stok?",
+        "a": "Stok berkurang otomatis saat pesanan masuk; ada peringatan stok minimum dan riwayat pergerakan stok."
+      },
+      {
+        "q": "Apakah pembeli perlu daftar akun?",
+        "a": "Tersedia checkout sebagai guest. Namun akun pelanggan memberi kemudahan lacak pesanan dan riwayat belanja."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Website E-Commerce?",
+    "description": "Ceritakan produk dan target pasar Anda — kami bantu pilih skema toko yang tepat."
+  }
+}

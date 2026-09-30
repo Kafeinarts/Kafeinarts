@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "slug": "erp",
+    "name": "Kafeinarts ERP",
+    "shortName": "ERP",
+    "category": "system",
+    "icon": "bi-diagram-3",
+    "color": "#2563eb",
+    "route": "/products/erp"
+  },
+  "hero": {
+    "name": "Kafeinarts ERP",
+    "tagline": "Kelola seluruh operasional bisnis dalam satu platform terpadu.",
+    "headline": "Enterprise Resource Planning untuk bisnis yang bertumbuh",
+    "description": "Sistem Enterprise Resource Planning yang menyatukan keuangan, inventori, pembelian, penjualan, dan SDM dalam satu dasbor terpusat sehingga keputusan bisnis diambil berdasarkan data yang akurat dan real-time.",
+    "icon": "bi-diagram-3",
+    "highlights": [
+      "10+ modul terintegrasi",
+      "Laporan real-time",
+      "Multi-cabang & multi-gudang"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang ERP",
+    "paragraphs": [
+      "Kafeinarts ERP dirancang untuk perusahaan yang mulai terbengkalai oleh spreadsheet: data keuangan, stok, dan penjualan tersebar di banyak file sehingga laporan selalu terlambat dan rawan salah.",
+      "Dengan satu database terpusat, setiap transaksi dari cabang mana pun langsung tercatat dan tersinkron. Manajemen dapat memantau performa bisnis dari dasbor kapan saja, tanpa menunggu rekap manual akhir bulan."
+    ],
+    "points": [
+      "Satu sumber data untuk semua departemen",
+      "Role & hak akses per pengguna",
+      "Audit trail setiap perubahan data",
+      "Siap dikembangkan dengan modul tambahan"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Semua yang Anda butuhkan untuk menjalankan operasional perusahaan secara efektif.",
+    "items": [
+      {
+        "icon": "bi-cash-stack",
+        "title": "Modul Keuangan",
+        "desc": "Pembukuan, jurnal otomatis, dan laporan keuangan sesuai standar."
+      },
+      {
+        "icon": "bi-box-seam",
+        "title": "Manajemen Inventori",
+        "desc": "Stok multi-gudang dengan peringatan stok minimum secara real-time."
+      },
+      {
+        "icon": "bi-cart-check",
+        "title": "Sales & Purchasing",
+        "desc": "Alur order, PO, dan faktur yang terintegrasi dari hulu ke hilir."
+      },
+      {
+        "icon": "bi-people",
+        "title": "HR & Payroll",
+        "desc": "Data karyawan, absensi, dan penggajian otomatis dalam satu modul."
+      },
+      {
+        "icon": "bi-graph-up",
+        "title": "Dasbor Eksekutif",
+        "desc": "Grafik penjualan, margin, dan arus kas untuk pengambilan keputusan cepat."
+      },
+      {
+        "icon": "bi-shield-lock",
+        "title": "Keamanan & Audit",
+        "desc": "Backup otomatis, aktivitas pengguna tercatat, dan kontrol akses granular."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Mulai dari skala kecil hingga enterprise — pilih paket sesuai tahap pertumbuhan bisnis Anda.",
+    "note": "Harga di atas adalah titik awal dan dapat menyesuaikan jumlah pengguna, cabang, serta kebutuhan kustomisasi.",
+    "plans": [
+      {
+        "name": "Starter",
+        "tagline": "Untuk UKM yang baru rapi-kan pembukuan",
+        "price": 3500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Modul inti siap pakai: keuangan, inventori, dan penjualan.",
+        "features": [
+          "Modul Keuangan & Inventori",
+          "Hingga 5 pengguna",
+          "1 lokasi/gudang",
+          "Laporan standar",
+          "Training onboarding 1 sesi"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Business",
+        "tagline": "Paling populer untuk bisnis multi-departemen",
+        "price": 12500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Modul lengkap + kustomisasi alur kerja sesuai proses bisnis Anda.",
+        "features": [
+          "Semua modul Starter",
+          "Sales & Purchasing + HR Payroll",
+          "Hingga 25 pengguna",
+          "Multi-gudang (maks. 3)",
+          "Kustomisasi laporan & alur kerja",
+          "Prioritas dukungan 3 bulan"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "tagline": "Untuk perusahaan multi-cabang berskala besar",
+        "priceLabel": "Hubungi Kami",
+        "description": "Skema kerja sama khusus: deployment on-premise/cloud, integrasi sistem lama, dan SLA.",
+        "features": [
+          "Pengguna & cabang tak terbatas",
+          "Deployment on-premise/cloud",
+          "Integrasi API pihak ketiga",
+          "SLA & dedikasi tim support",
+          "Training tim berkelanjutan"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Implementasi",
+    "subheading": "Dari analisis hingga go-live, kami mendampingi setiap tahap.",
+    "steps": [
+      {
+        "title": "Analisis Proses Bisnis",
+        "desc": "Kami petakan alur kerja keuangan, stok, dan penjualan Anda saat ini."
+      },
+      {
+        "title": "Desain & Konfigurasi",
+        "desc": "Struktur data, hak akses, dan template dokumen disesuaikan dengan proses Anda."
+      },
+      {
+        "title": "Migrasi Data",
+        "desc": "Data master dan saldo awal dipindahkan dan diverifikasi bersama tim Anda."
+      },
+      {
+        "title": "Training Pengguna",
+        "desc": "Sesi pelatihan untuk admin dan operator, lengkap dengan panduan tertulis."
+      },
+      {
+        "title": "Go-Live & Pendampingan",
+        "desc": "Sistem aktif dengan pendampingan ketat selama masa transisi awal."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai model bisnis yang butuh data terpusat.",
+    "items": [
+      {
+        "icon": "bi-buildings",
+        "title": "Distributor & Wholesale",
+        "desc": "Kelola stok multi-gudang dan harga per pelanggan secara rapi."
+      },
+      {
+        "icon": "bi-shop",
+        "title": "Retail Multi-outlet",
+        "desc": "Pantau penjualan setiap outlet dan rekap otomatis ke pusat."
+      },
+      {
+        "icon": "bi-gear-wide-connected",
+        "title": "Manufaktur Ringan",
+        "desc": "Hitung kebutuhan bahan baku dan biaya produksi per pesanan."
+      },
+      {
+        "icon": "bi-truck",
+        "title": "Logistik & Jasa",
+        "desc": "Pantau aset, armada, dan penagihan proyek dalam satu sistem."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan calon pengguna ERP.",
+    "items": [
+      {
+        "q": "Apakah bisa diakses dari beberapa cabang?",
+        "a": "Bisa. ERP berbasis web sehingga setiap cabang cukup membuka browser dengan akun masing-masing; data langsung tersinkron ke pusat."
+      },
+      {
+        "q": "Apakah data kami bisa di-migrate dari Excel?",
+        "a": "Ya. Tim kami membantu migrasi data master dan saldo awal dari Excel atau software lama, lengkap dengan verifikasi bersama."
+      },
+      {
+        "q": "Apakah ada biaya bulanan?",
+        "a": "Paket Starter dan Business adalah pembelian sekali proyek. Biaya tahunan hanya untuk hosting, maintenance, dan update — dihitung transparan di awal."
+      },
+      {
+        "q": "Bagaimana dengan keamanan data?",
+        "a": "Data dienkripsi saat transit, backup otomatis harian, dan setiap aktivitas pengguna tercatat pada audit trail yang tidak bisa dihapus."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Kafeinarts ERP?",
+    "description": "Tim kami siap mendemokan langsung bagaimana ERP dapat menyesuaikan diri dengan alur kerja bisnis Anda."
+  }
+}

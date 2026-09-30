@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "slug": "lms",
+    "name": "Kafeinarts LMS",
+    "shortName": "LMS",
+    "category": "system",
+    "icon": "bi-mortarboard",
+    "color": "#7c3aed",
+    "route": "/products/lms"
+  },
+  "hero": {
+    "name": "Kafeinarts LMS",
+    "tagline": "Platform pembelajaran online untuk sekolah dan korporat.",
+    "headline": "Learning Management System yang mudah dipakai semua kalangan",
+    "description": "Learning Management System untuk mengelola kelas virtual, materi, kuis, sertifikasi, hingga pelaporan progres belajar — cocok untuk institusi pendidikan maupun pelatihan internal perusahaan.",
+    "icon": "bi-mortarboard",
+    "highlights": [
+      "Kelas virtual & live class",
+      "Kuis dengan penilaian otomatis",
+      "Sertifikat terbit otomatis"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang LMS",
+    "paragraphs": [
+      "Mengelola pembelajaran lewat grup chat dan file Drive membuat materi tercecer, tugas sulit dilacak, dan progres siswa tidak terpantau menyeluruh.",
+      "LMS kami menyatukan kurikulum, materi, kuis, dan penilaian dalam satu platform. Pengajar fokus mengajar, peserta belajar terstruktur, dan administrator melihat progres secara real-time."
+    ],
+    "points": [
+      "Struktur kelas sesuai kurikulum Anda",
+      "Materi teks, video, dan live class",
+      "Kuis & ujian dengan penilaian otomatis",
+      "Sertifikat otomatis saat peserta lulus"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Semua kebutuhan belajar-mengajar dalam satu platform.",
+    "items": [
+      {
+        "icon": "bi-easel",
+        "title": "Kelas Virtual",
+        "desc": "Materi teks, video, dan live class dengan integrasi meeting."
+      },
+      {
+        "icon": "bi-ui-checks",
+        "title": "Kuis & Ujian",
+        "desc": "Bank soal, penilaian otomatis, dan anti-cheating sederhana."
+      },
+      {
+        "icon": "bi-award",
+        "title": "Sertifikat Otomatis",
+        "desc": "Sertifikat diterbitkan otomatis saat peserta lulus kursus."
+      },
+      {
+        "icon": "bi-graph-up-arrow",
+        "title": "Analitik Belajar",
+        "desc": "Pantau progres siswa/tim dengan dashboard visual per kelas."
+      },
+      {
+        "icon": "bi-chat-square-text",
+        "title": "Diskusi & Tanya Jawab",
+        "desc": "Forum per kelas untuk diskusi materi dan klarifikasi tugas."
+      },
+      {
+        "icon": "bi-envelope-check",
+        "title": "Notifikasi Otomatis",
+        "desc": "Pengingat jadwal, deadline tugas, dan pengumuman via email/WA."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Sesuaikan dengan jumlah peserta dan skala program pembelajaran Anda.",
+    "note": "Harga paket adalah biaya implementasi sekali bayar; langganan tahunan untuk hosting & dukungan dihitung terpisah dan transparan.",
+    "plans": [
+      {
+        "name": "Kelas",
+        "tagline": "Untuk guru/lembaga yang baru mulai daring",
+        "price": 2500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Satu institusi dengan kelas terbatas, siap pakai dalam hitungan hari.",
+        "features": [
+          "Hingga 100 peserta",
+          "10 kelas",
+          "Materi & kuis dasar",
+          "Sertifikat otomatis",
+          "Panduan penggunaan"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Institusi",
+        "tagline": "Paling populer untuk sekolah & pelatihan",
+        "price": 7500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Multi-kelas, multi-peran, dan pelaporan lengkap untuk institusi.",
+        "features": [
+          "Hingga 1.000 peserta",
+          "Kelas tak terbatas",
+          "Live class terintegrasi",
+          "Analitik per kelas",
+          "Branding institusi",
+          "Dukungan prioritas"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Korporat",
+        "tagline": "Untuk akademi pelatihan internal perusahaan",
+        "priceLabel": "Hubungi Kami",
+        "description": "Integrasi HRIS, SSO perusahaan, dan pelaporan kompetensi karyawan.",
+        "features": [
+          "Peserta tak terbatas",
+          "Integrasi HRIS/SSO",
+          "Learning path karyawan",
+          "Multi-bahasa",
+          "SLA & on-premise opsional"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Implementasi",
+    "subheading": "Kelas online Anda aktif dalam empat langkah.",
+    "steps": [
+      {
+        "title": "Pemetaan Kurikulum",
+        "desc": "Kami bantu susun struktur kelas, materi, dan sistem penilaian."
+      },
+      {
+        "title": "Setup Platform",
+        "desc": "Kelas, peran pengguna, dan template sertifikat dikonfigurasi."
+      },
+      {
+        "title": "Impor Data",
+        "desc": "Data peserta dan pengajar diimpor dari Excel/sistem sekolah."
+      },
+      {
+        "title": "Training & Go-Live",
+        "desc": "Pelatihan pengajar, lalu kelas langsung bisa digunakan."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai bentuk institusi pembelajaran.",
+    "items": [
+      {
+        "icon": "bi-school",
+        "title": "Sekolah & Madrasah",
+        "desc": "Pembelajaran blended: tatap muka + tugas dan kuis online."
+      },
+      {
+        "icon": "bi-briefcase",
+        "title": "Pelatihan Korporat",
+        "desc": "Onboarding karyawan dan pelatihan bersertifikat internal."
+      },
+      {
+        "icon": "bi-easel2",
+        "title": "Bimbel & Kursus",
+        "desc": "Kelas reguler, tryout, dan laporan progres ke orang tua."
+      },
+      {
+        "icon": "bi-globe2",
+        "title": "Akademi Online",
+        "desc": "Jual kursus daring dengan materi video dan kuis."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan lembaga pendidikan.",
+    "items": [
+      {
+        "q": "Apakah peserta perlu install aplikasi?",
+        "a": "Tidak. LMS berbasis web dan responsif, sehingga bisa dipakai dari browser HP maupun laptop tanpa instalasi."
+      },
+      {
+        "q": "Apakah mendukung materi video dari YouTube?",
+        "a": "Mendukung. Video dapat diunggah langsung atau disematkan dari YouTube/Vimeo dengan kontrol akses per kelas."
+      },
+      {
+        "q": "Bagaimana mencegah kecurangan saat ujian?",
+        "a": "Tersedia acak urutan soal, timer per soal, pembatasan tab, dan rekap log aktivitas peserta selama ujian."
+      },
+      {
+        "q": "Apakah sertifikat bisa memakai logo kami?",
+        "a": "Bisa. Template sertifikat memakai logo, tanda tangan, dan nomor seri sesuai identitas institusi Anda."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Kafeinarts LMS?",
+    "description": "Coba demonya bersama tim kami dan rasakan betapa mudahnya mengelola kelas digital."
+  }
+}

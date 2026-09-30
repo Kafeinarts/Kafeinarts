@@ -116,6 +116,9 @@ yarn build
 # 5. lint / auto-fix
 yarn lint
 yarn lint --fix
+
+# 6. uji integritas data (produk, route, katalog — dipakai juga di CI)
+yarn test
 ```
 
 | Perintah | Fungsi |
@@ -123,6 +126,7 @@ yarn lint --fix
 | `yarn serve` | Dev server + hot-reload |
 | `yarn build` | Bundle optimasi ke `dist/` (siap deploy) |
 | `yarn lint` | Cek kode dengan ESLint (wajib **0 error** sebelum PR) |
+| `yarn test` | Cek data produk/route konsisten (wajib **0 error** di CI) |
 
 ---
 
@@ -148,7 +152,13 @@ Kafeinarts/
 │   ├── router/index.js            # Route "/" (landing) + "/about" & catch-all redirect
 │   ├── store/index.js             # Vuex (opsional, masih kosong)
 │   ├── data/
-│   │   └── siteData.js            # ★ SEMUA KONTEN terpusat di sini
+│   │   ├── siteData.js            # ★ Index seluruh konten (import semua JSON)
+│   │   ├── brand.json / nav.json / pages.json / contact.json / footer.json / consultation.json
+│   │   ├── catalog.json           # Halaman katalog produk (title, kategori, urutan)
+│   │   └── products/              # ★ KONTEN LENGKAP TIAP PRODUK (1 file JSON per produk)
+│   │       ├── erp.json / simrs.json / lms.json / cms.json / event-management.json
+│   │       ├── company-profile.json / landing-page.json / web-profile.json / e-commerce.json
+│   │       └── index.js           # Agregator: mapping JSON → objek produk + format harga
 │   ├── utils/
 │   │   ├── asset.js               # asset('assets/img/x.png') → '/assets/img/x.png'
 │   │   ├── aos.js                 # initAOS() / refreshAOS()
@@ -221,8 +231,35 @@ Semua section memakai `AOS` dan grid responsif Bootstrap 5.
 
 ## 🗂️ Central Data Store (`siteData.js`)
 
-**Semua konten teks/gambar terpusat di `src/data/siteData.js`.**
-Jika hanya ingin mengubah konten (teks, foto, nomor, FAQ, tim), cukup edit file itu saja.
+**Konten situs terpusat di `src/data/` (file JSON per modul), dirangkai oleh `src/data/siteData.js`.**
+Jika hanya ingin mengubah konten (teks, foto, nomor, FAQ, tim), cukup edit file JSON terkait.
+
+### ★ Produk — satu file JSON per produk
+
+Konten halaman tiap produk ada di **`src/data/products/<slug>.json`** (bukan di komponen Vue).
+Mengubah isi website produk = mengedit JSON-nya saja:
+
+```text
+src/data/products/erp.json   →  seluruh konten /products/erp
+├── meta       : slug, nama, ikon, warna, kategori
+├── hero       : tagline, headline, deskripsi, highlights
+├── overview   : paragraf "sekilas tentang" + poin keunggulan
+├── features   : daftar fitur (ikon, judul, deskripsi)
+├── pricing    : PAKET HARGA (angka Rp atau label "Hubungi Kami") + fitur per paket
+├── workflow   : alur kerja implementasi (langkah 1..n)
+├── useCases   : "cocok untuk" siapa
+├── faqs       : pertanyaan umum produk
+└── cta        : ajakan penutup
+```
+
+- Harga ditulis angka (`"price": 3500000`) → otomatis diformat `Rp 3.500.000` oleh
+  `formatPrice()` di `src/data/products/index.js`; atau pakai `"priceLabel": "Hubungi Kami"`.
+- Halaman Vue-nya tipis: `src/views/products/<slug>/index.vue` hanya meng-import JSON,
+  memetakan dengan `mapProduct()`, lalu merender `ProductDetailView.vue` (layout bersama).
+- Katalog `/products` & menu navbar otomatis mengikuti (`priceFrom` = paket termurah).
+
+**Tambah produk baru:** buat `<slug>.json` + daftarkan di `PRODUCTS_JSON` (`src/data/products/index.js`)
++ buat `src/views/products/<slug>/index.vue` (contoh: `erp/index.vue`). Route & menu otomatis.
 
 ```js
 import { siteData } from "@/data/siteData"

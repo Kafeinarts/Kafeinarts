@@ -1,17 +1,32 @@
 <template>
   <!--
-    STARTER TEMPLATE — Website E-Commerce
-    Konten: src/data/products.json (slug: "e-commerce")
-    Modifikasi layout khusus di sini; konten umum lewat JSON.
-  -->
-  <ProductPageView slug="e-commerce" />
+    ============================================================
+    HALAMAN PRODUK — Website E-Commerce
+    ============================================================
+    Konten  : src/data/products/e-commerce.json (detail, harga, FAQ, dst.)
+    Layout  : src/views/products/components/ProductDetailView.vue
+    Route   : /products/e-commerce (otomatis dari src/router/index.js)
+
+    Untuk mengubah isi halaman ini, edit file JSON-nya saja:
+    → src/data/products/e-commerce.json
+    -->
+  <ProductDetailView :product="product" />
 </template>
 
 <script>
-import ProductPageView from "@/views/ProductPageView.vue"
+// Import JSON + pemetaan rapi (tertata di satu tempat).
+import productJson from "@/data/products/e-commerce.json"
+import { mapProduct } from "@/data/products/index.js"
+import ProductDetailView from "@/views/products/components/ProductDetailView.vue"
 
 export default {
-  name: "EcommerceProduct",
-  components: { ProductPageView },
+  name: "ECommerceProduct",
+  components: { ProductDetailView },
+  data() {
+    return {
+      // Pemetaan JSON → objek siap pakai (slug, harga terformat, dsb.)
+      product: mapProduct(productJson),
+    }
+  },
 }
 </script>

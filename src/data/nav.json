@@ -1,17 +1,62 @@
 {
   "items": [
-    { "label": "Beranda", "to": { "name": "home" } },
-    { "label": "Tentang", "to": { "name": "about" } },
-    { "label": "Kelebihan", "to": { "name": "why-us" } },
-    { "label": "Keahlian", "to": { "name": "skills" } },
-    { "label": "Layanan", "to": { "name": "services" } },
-    { "label": "Produk", "dropdown": "products" },
-    { "label": "FAQ", "to": { "name": "faq" } },
-    { "label": "Tim", "to": { "name": "team" } },
-    { "label": "Kontak", "to": { "name": "contact" } }
+    {
+      "label": "Beranda",
+      "to": {
+        "name": "home"
+      }
+    },
+    {
+      "label": "Tentang",
+      "to": {
+        "name": "about"
+      }
+    },
+    {
+      "label": "Kelebihan",
+      "to": {
+        "name": "why-us"
+      }
+    },
+    {
+      "label": "Keahlian",
+      "to": {
+        "name": "skills"
+      }
+    },
+    {
+      "label": "Layanan",
+      "to": {
+        "name": "services"
+      }
+    },
+    {
+      "label": "Produk",
+      "dropdown": "products"
+    },
+    {
+      "label": "FAQ",
+      "to": {
+        "name": "faq"
+      }
+    },
+    {
+      "label": "Tim",
+      "to": {
+        "name": "team"
+      }
+    },
+    {
+      "label": "Kontak",
+      "to": {
+        "name": "contact"
+      }
+    }
   ],
   "cta": {
     "label": "Konsultasi",
-    "to": { "name": "consultation" }
+    "to": {
+      "name": "consultation"
+    }
   }
 }

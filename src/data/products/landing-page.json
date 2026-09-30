@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "slug": "landing-page",
+    "name": "Landing Page",
+    "shortName": "Landing Page",
+    "category": "website",
+    "icon": "bi-rocket-takeoff",
+    "color": "#d97706",
+    "route": "/products/landing-page"
+  },
+  "hero": {
+    "name": "Landing Page",
+    "tagline": "Satu halaman yang fokus pada konversi penjualan.",
+    "headline": "Landing page cepat yang mengubah klik jadi leads",
+    "description": "Landing page high-conversion untuk kampanye iklan, peluncuran produk, atau promo: hero meyakinkan, social proof, penjelasan manfaat, FAQ, dan CTA yang mengarah langsung ke WhatsApp atau form pendaftaran.",
+    "icon": "bi-rocket-takeoff",
+    "highlights": [
+      "Live 1–2 minggu",
+      "Mobile first",
+      "Siap pixel iklan"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang Landing Page",
+    "paragraphs": [
+      "Mengarahkan iklan ke beranda website membuat pengunjung bingung dan iklan terbuang: tidak ada satu ajakan yang jelas, dan beban halaman besar membuat biaya klik jadi sia-sia.",
+      "Landing page kami dirancang dengan satu tujuan: mengubah pengunjung menjadi leads. Struktur copywriting, social proof, dan CTA disusun mengikuti praktik terbaik kampanye digital."
+    ],
+    "points": [
+      "Struktur copywriting teruji (AIDA)",
+      "Form leads & tombol WhatsApp",
+      "Terpasang pixel Meta/Google Ads",
+      "Skor Core Web Vitals hijau"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Semua elemen penunjang konversi sudah termasuk.",
+    "items": [
+      {
+        "icon": "bi-bullseye",
+        "title": "Fokus Konversi",
+        "desc": "Struktur copywriting dan CTA yang dirancang menghasilkan leads."
+      },
+      {
+        "icon": "bi-lightning-charge",
+        "title": "Super Cepat",
+        "desc": "Optimasi Core Web Vitals untuk skor iklan dan SEO yang lebih baik."
+      },
+      {
+        "icon": "bi-megaphone",
+        "title": "Siap Kampanye",
+        "desc": "Integrasi pixel tracking (Meta, Google) dan form leads."
+      },
+      {
+        "icon": "bi-phone",
+        "title": "Mobile First",
+        "desc": "Tampilan sempurna di smartphone tempat mayoritas traffic berada."
+      },
+      {
+        "icon": "bi-chat-quote",
+        "title": "Social Proof",
+        "desc": "Testimoni, logo klien, dan penghitung statistik untuk membangun trust."
+      },
+      {
+        "icon": "bi-question-circle",
+        "title": "FAQ Objection Handling",
+        "desc": "Jawaban atas keraguan umum yang sering menghambat keputusan."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Investasi kecil dibanding biaya iklan yang Anda hemat.",
+    "note": "Semua paket termasuk domain/hosting selama kampanye, pemasangan pixel, dan 1x revisi besar.",
+    "plans": [
+      {
+        "name": "Basic",
+        "tagline": "Untuk promo & kampanye tunggal",
+        "price": 1500000,
+        "currency": "IDR",
+        "period": "halaman",
+        "description": "Satu halaman konversi dengan copywriting dasar.",
+        "features": [
+          "1 halaman",
+          "Copywriting dasar",
+          "Form leads + WhatsApp",
+          "Pixel Meta/Google",
+          "Mobile responsive"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Conversion",
+        "tagline": "Paling populer untuk peluncuran produk",
+        "price": 3500000,
+        "currency": "IDR",
+        "period": "halaman",
+        "description": "Copywriting penuh, social proof, dan optimasi kecepatan.",
+        "features": [
+          "Copywriting penjualan penuh",
+          "Testimoni & social proof",
+          "FAQ objection handling",
+          "Optimasi Core Web Vitals",
+          "Notifikasi leads via WA/email",
+          "A/B siap 2 varian"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Campaign Suite",
+        "tagline": "Untuk kampanye multi-audiens",
+        "priceLabel": "Hubungi Kami",
+        "description": "Beberapa variasi halaman untuk pengujian audiens dan penawaran.",
+        "features": [
+          "3+ varian halaman",
+          "A/B testing terpandu",
+          "Integrasi CRM/Sheet",
+          "Dashboard leads",
+          "Optimasi lanjutan bersama media buyer"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Pengerjaan",
+    "subheading": "Halaman siap tayang dalam 1–2 minggu.",
+    "steps": [
+      {
+        "title": "Riset & Copywriting",
+        "desc": "Kami riset audiens dan susun pesan penjualan utama."
+      },
+      {
+        "title": "Desain Halaman",
+        "desc": "Visual disusun mengikuti alur baca yang mendorong aksi."
+      },
+      {
+        "title": "Bangun & Integrasi",
+        "desc": "Halaman dibangun, pixel dipasang, form diuji kirim."
+      },
+      {
+        "title": "Tayang & Monitor",
+        "desc": "Go-live, lalu kami bantu baca data kunjungan awal."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai kebutuhan kampanye digital.",
+    "items": [
+      {
+        "icon": "bi-megaphone",
+        "title": "Iklan Meta & Google",
+        "desc": "Tujuan iklan yang relevan demi skor kualitas lebih baik."
+      },
+      {
+        "icon": "bi-box-seam",
+        "title": "Peluncuran Produk",
+        "desc": "Pre-order dan launching dengan CTA pendaftaran."
+      },
+      {
+        "icon": "bi-tags",
+        "title": "Promo & Diskon",
+        "desc": "Halaman penawaran terbatas dengan hitung mundur."
+      },
+      {
+        "icon": "bi-calendar-event",
+        "title": "Pendaftaran Webinar",
+        "desc": "Form registrasi dengan pengingat via WhatsApp."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan pengiklan.",
+    "items": [
+      {
+        "q": "Apa bedanya dengan website biasa?",
+        "a": "Website punya banyak tujuan; landing page punya satu tujuan konversi. Struktur dan copywriting-nya fokus mengarahkan pengunjung pada satu aksi."
+      },
+      {
+        "q": "Apakah copywriting disediakan?",
+        "a": "Ya, pada paket Conversion ke atas copywriting penjualan disusun dari riset produk dan audiens Anda — tinggal direview."
+      },
+      {
+        "q": "Leads masuk ke mana?",
+        "a": "Notifikasi langsung ke WhatsApp/email tim Anda; data leads juga tersimpan dan bisa diekspor ke Excel/CRM."
+      },
+      {
+        "q": "Apakah bisa dipakai untuk A/B test iklan?",
+        "a": "Bisa, terutama paket Campaign Suite: beberapa varian halaman untuk menguji pesan dan penawaran berbeda."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Landing Page?",
+    "description": "Ceritakan produk dan target audiens Anda — kami susun struktur halaman konversinya."
+  }
+}

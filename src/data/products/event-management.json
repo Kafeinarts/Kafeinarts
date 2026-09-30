@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "slug": "event-management",
+    "name": "Kafeinarts EMS",
+    "shortName": "Event Management",
+    "category": "system",
+    "icon": "bi-calendar2-event",
+    "color": "#db2777",
+    "route": "/products/event-management"
+  },
+  "hero": {
+    "name": "Kafeinarts EMS",
+    "tagline": "Atur event dari pendaftaran hingga sertifikat peserta.",
+    "headline": "Platform manajemen acara menyeluruh",
+    "description": "Platform manajemen acara menyeluruh: pendaftaran peserta, pembayaran tiket, QR check-in, absensi sesi, hingga laporan kehadiran. Dirancang untuk seminar, konferensi, dan event korporat berskala besar.",
+    "icon": "bi-calendar2-event",
+    "highlights": [
+      "QR check-in 3 detik",
+      "Payment gateway QRIS",
+      "Sertifikat peserta otomatis"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang Event Management System",
+    "paragraphs": [
+      "Mengelola ratusan hingga ribuan peserta lewat spreadsheet dan form manual membuat panitia kewalahan: data ganda, pembayaran sulit direkonsiliasi, dan check-in antre panjang.",
+      "EMS kami mengotomatiskan seluruh siklus event — dari pendaftaran, pembayaran, hingga laporan akhir — sehingga panitia bisa fokus memastikan acara berjalan sukses."
+    ],
+    "points": [
+      "Pendaftaran online dengan konfirmasi otomatis",
+      "Pembayaran QRIS/VA yang terekonsiliasi sendiri",
+      "Check-in QR di bawah 3 detik per peserta",
+      "Laporan kehadiran & demografi siap unduh"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Semua yang dibutuhkan panitia dari H-30 hingga H+1.",
+    "items": [
+      {
+        "icon": "bi-ticket-perforated",
+        "title": "Tiket & Pendaftaran",
+        "desc": "Jenis tiket, kuota, early bird, dan konfirmasi otomatis."
+      },
+      {
+        "icon": "bi-qr-code-scan",
+        "title": "QR Check-in",
+        "desc": "Scan QR fisik perangkat apa pun dengan sinkronisasi real-time."
+      },
+      {
+        "icon": "bi-credit-card-2-front",
+        "title": "Pembayaran",
+        "desc": "Integrasi payment gateway VA, QRIS, dan e-wallet."
+      },
+      {
+        "icon": "bi-bar-chart-line",
+        "title": "Laporan Event",
+        "desc": "Rekap kehadiran, demografi peserta, dan export data."
+      },
+      {
+        "icon": "bi-person-lines-fill",
+        "title": "Absensi Sesi",
+        "desc": "Rekam kehadiran per sesi/ruangan untuk event multi-sesi."
+      },
+      {
+        "icon": "bi-patch-check",
+        "title": "Sertifikat Peserta",
+        "desc": "Sertifikat diterbitkan otomatis sesuai kehadiran minimal."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Sesuaikan dengan skala dan frekuensi event yang Anda selenggarakan.",
+    "note": "Harga mengikuti jumlah peserta per event dan jumlah event per tahun. Skema sewa per-event tersedia.",
+    "plans": [
+      {
+        "name": "Seminar",
+        "tagline": "Untuk seminar/workshop satu hari",
+        "price": 3000000,
+        "currency": "IDR",
+        "period": "event",
+        "description": "Pendaftaran, tiket, dan check-in untuk satu acara.",
+        "features": [
+          "Hingga 500 peserta",
+          "Pendaftaran & tiket",
+          "QR check-in",
+          "Sertifikat kehadiran",
+          "Laporan dasar"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Konferensi",
+        "tagline": "Paling populer untuk konferensi multi-sesi",
+        "price": 9000000,
+        "currency": "IDR",
+        "period": "event",
+        "description": "Multi-sesi, pembayaran online, dan laporan lengkap.",
+        "features": [
+          "Hingga 2.000 peserta",
+          "Multi-sesi & ruangan",
+          "Payment gateway penuh",
+          "Absensi per sesi",
+          "Dashboard panitia real-time",
+          "Tim support on-site opsional"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "tagline": "Untuk event besar & penyelenggara rutin",
+        "priceLabel": "Hubungi Kami",
+        "description": "Kontrak tahunan multi-event dengan kustomisasi dan SLA.",
+        "features": [
+          "Peserta & event tak terbatas",
+          "Multi-event satu kontrak",
+          "Kustomisasi alur registrasi",
+          "Integrasi CRM/tiket lama",
+          "SLA & support on-site"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Implementasi",
+    "subheading": "Sistem siap dipakai jauh sebelum hari-H.",
+    "steps": [
+      {
+        "title": "Brief Event",
+        "desc": "Kami petakan jenis tiket, sesi, dan kebutuhan panitia."
+      },
+      {
+        "title": "Setup Event",
+        "desc": "Halaman pendaftaran, kelas tiket, dan template sertifikat disiapkan."
+      },
+      {
+        "title": "Uji Coba",
+        "desc": "Simulasi pendaftaran-pembayaran-check-in bersama panitia inti."
+      },
+      {
+        "title": "Hari-H & Laporan",
+        "desc": "Tim kami standby saat check-in, lalu serahkan laporan lengkap."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai jenis acara dan penyelenggara.",
+    "items": [
+      {
+        "icon": "bi-mic",
+        "title": "Seminar & Workshop",
+        "desc": "Kuota tiket, early bird, dan sertifikat otomatis."
+      },
+      {
+        "icon": "bi-bank",
+        "title": "Konferensi Korporat",
+        "desc": "Multi-sesi, undangan VIP, dan laporan kehadiran resmi."
+      },
+      {
+        "icon": "bi-mortarboard-fill",
+        "title": "Event Kampus",
+        "desc": "ODMBM, malam gala, dan pendaftaran mahasiswa massal."
+      },
+      {
+        "icon": "bi-trophy",
+        "title": "Kompetisi & Liga",
+        "desc": "Pendaftaran tim, jadwal, dan rekap hasil pertandingan."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan penyelenggara event.",
+    "items": [
+      {
+        "q": "Apakah peserta harus install aplikasi?",
+        "a": "Tidak. Pendaftaran dan e-tiket berbasis web; QR check-in cukup di-scan dari kamera HP panitia via browser."
+      },
+      {
+        "q": "Bagaimana uang tiket masuk ke mana?",
+        "a": "Pembayaran masuk langsung ke rekening/merchant Anda via payment gateway — kami tidak memegang dana Anda."
+      },
+      {
+        "q": "Apakah bisa untuk event multi-hari?",
+        "a": "Bisa. Jadwal sesi per hari dan per ruangan dapat diatur, termasuk kuota dan absensi per sesi."
+      },
+      {
+        "q": "Bagaimana bila peserta transfer tetapi belum konfirmasi?",
+        "a": "Status pembayaran diperbarui otomatis oleh webhook gateway; panitia juga bisa memverifikasi manual dari dasbor bila diperlukan."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Kafeinarts EMS?",
+    "description": "Diskusikan skala event Anda dan biar tim kami siapkan simulasi pendaftarannya."
+  }
+}

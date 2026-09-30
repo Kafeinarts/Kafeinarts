@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "slug": "web-profile",
+    "name": "Web Profil Bisnis",
+    "shortName": "Web Profile",
+    "category": "website",
+    "icon": "bi-person-vcard",
+    "color": "#4f46e5",
+    "route": "/products/web-profile"
+  },
+  "hero": {
+    "name": "Web Profil Bisnis",
+    "tagline": "Situs ringkas untuk personal brand & UMKM.",
+    "headline": "Cara tercepat tampil kredibel secara online",
+    "description": "Web profil satu-dua halaman yang memperkenalkan diri, jasa, katalog, dan kontak secara singkat — solusi tercepat dan termurah untuk UMKM, konsultan, freelancer, dan profesional yang ingin tampil kredibel secara online.",
+    "icon": "bi-person-vcard",
+    "highlights": [
+      "Jadi 1 minggu",
+      "Investasi hemat",
+      "Order via WhatsApp"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang Web Profil Bisnis",
+    "paragraphs": [
+      "Belum semua usaha butuh website besar. Sering kali yang dibutuhkan hanyalah satu alamat online rapi untuk dibagikan saat calon pelanggan bertanya \"punya website tidak?\".",
+      "Web profil menjawab kebutuhan itu: satu-dua halaman ringkas yang memuat siapa Anda, apa jasa/produk Anda, katalog, dan cara menghubungi — tanpa biaya berlebihan."
+    ],
+    "points": [
+      "1–2 halaman ringkas dan fungsional",
+      "Katalog produk/jasa + tombol pesan",
+      "Link hub semua kontak penting",
+      "Hemat biaya, cepat jadi"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Yang Anda butuhkan, tanpa fitur berlebih.",
+    "items": [
+      {
+        "icon": "bi-badge-ad",
+        "title": "Personal Branding",
+        "desc": "Perkenalkan keahlian, pengalaman, dan kredensial secara menarik."
+      },
+      {
+        "icon": "bi-shop",
+        "title": "Katalog Produk/Jasa",
+        "desc": "Pajangan katalog ringkas dengan tombol pesan langsung."
+      },
+      {
+        "icon": "bi-link-45deg",
+        "title": "Link Hub",
+        "desc": "Kumpulkan semua link penting bisnis Anda dalam satu halaman."
+      },
+      {
+        "icon": "bi-whatsapp",
+        "title": "Order via WhatsApp",
+        "desc": "Pengunjung dapat memesan langsung tanpa daftar akun."
+      },
+      {
+        "icon": "bi-map",
+        "title": "Peta & Jam Operasional",
+        "desc": "Lokasi toko/office dan jam buka yang mudah ditemukan."
+      },
+      {
+        "icon": "bi-share",
+        "title": "Mudah Dibagikan",
+        "desc": "Tampil rapi saat link dibagikan ke WA dan media sosial."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Harga bersahabat untuk memulai kehadiran online.",
+    "note": "Semua paket termasuk domain .com 1 tahun dan hosting 1 tahun.",
+    "plans": [
+      {
+        "name": "One Page",
+        "tagline": "Untuk personal brand & freelancer",
+        "price": 750000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Satu halaman profil yang memuat semuanya.",
+        "features": [
+          "1 halaman lengkap",
+          "Profil + jasa",
+          "Tombol WhatsApp",
+          "Link hub sosial media",
+          "Domain & hosting 1 tahun"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Bisnis",
+        "tagline": "Paling populer untuk UMKM & toko",
+        "price": 1500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Profil + katalog produk/jasa dengan tombol pesan per item.",
+        "features": [
+          "2 halaman",
+          "Katalog hingga 20 item",
+          "Tombol pesan per produk",
+          "Peta & jam operasional",
+          "Revisi konten 1x",
+          "Domain & hosting 1 tahun"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Plus",
+        "tagline": "Untuk bisnis yang butuh sedikit lebih",
+        "priceLabel": "Hubungi Kami",
+        "description": "Katalog besar, galeri, atau kebutuhan khusus lainnya.",
+        "features": [
+          "Katalog tak terbatas",
+          "Galeri foto kegiatan",
+          "Form pemesanan terstruktur",
+          "Google Maps tersemat",
+          "Setup Google Business Profile"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Pengerjaan",
+    "subheading": "Website profil Anda jadi dalam sepekan.",
+    "steps": [
+      {
+        "title": "Kirim Materi",
+        "desc": "Foto produk, daftar jasa, dan kontak dikirim via form singkat."
+      },
+      {
+        "title": "Susun Halaman",
+        "desc": "Kami susun konten dan tampilan yang rapi dan menarik."
+      },
+      {
+        "title": "Review Cepat",
+        "desc": "Anda cek hasilnya dan minta penyesuaian bila perlu."
+      },
+      {
+        "title": "Tayang",
+        "desc": "Website aktif di domain Anda, siap dibagikan ke pelanggan."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Individu dan usaha kecil yang ingin tampil profesional.",
+    "items": [
+      {
+        "icon": "bi-person-workspace",
+        "title": "Freelancer",
+        "desc": "Portofolio singkat dan cara menghubungi dalam satu link."
+      },
+      {
+        "icon": "bi-store",
+        "title": "UMKM & Toko",
+        "desc": "Katalog produk dengan tombol pesan WhatsApp langsung."
+      },
+      {
+        "icon": "bi-mortarboard",
+        "title": "Konsultan & Pengajar",
+        "desc": "Kredensial, layanan, dan jadwal yang mudah dibagikan."
+      },
+      {
+        "icon": "bi-flower1",
+        "title": "Home Industry",
+        "desc": "Perkenalkan produk olahan dengan tampilan yang menarik."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan sebelum order.",
+    "items": [
+      {
+        "q": "Apakah perlu bisa komputer dulu?",
+        "a": "Tidak perlu. Anda cukup kirim materi (foto, daftar produk, kontak) via WhatsApp; susun halaman kami yang kerjakan."
+      },
+      {
+        "q": "1 minggu benar-benar jadi?",
+        "a": "Ya, selama materi lengkap. Rata-rata website tayang 3–5 hari kerja setelah materi diterima."
+      },
+      {
+        "q": "Kalau nanti mau upgrade ke website besar?",
+        "a": "Sangat bisa. Struktur konten disusun agar mudah dikembangkan menjadi company profile atau toko online."
+      },
+      {
+        "q": "Apakah ada biaya bulanan?",
+        "a": "Tidak ada. Yang ada hanya perpanjangan domain & hosting tahunan (atau pindah ke milik Anda sendiri)."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Web Profil Bisnis?",
+    "description": "Kirim materi usaha Anda sekarang dan dalam sepekan website Anda sudah tayang."
+  }
+}

@@ -1,23 +1,32 @@
 <template>
   <!--
-    STARTER TEMPLATE — Kafeinarts CMS
-    ------------------------------------------------------------------
-    Halaman single-page produk CMS. Konten default diambil dari
-    siteData.products (slug: "cms") di src/data/siteData.js.
+    ============================================================
+    HALAMAN PRODUK — Kafeinarts CMS
+    ============================================================
+    Konten  : src/data/products/cms.json (detail, harga, FAQ, dst.)
+    Layout  : src/views/products/components/ProductDetailView.vue
+    Route   : /products/cms (otomatis dari src/router/index.js)
 
-    Cara modifikasi:
-    1. Konten umum (nama, fitur, stats) -> edit entri "cms" di siteData.js
-    2. Konten/layout khusus halaman ini -> tambahkan section/baris baru
-       di bawah ini (template sudah siap dikembangkan).
-  -->
-  <ProductPageView slug="cms" />
+    Untuk mengubah isi halaman ini, edit file JSON-nya saja:
+    → src/data/products/cms.json
+    -->
+  <ProductDetailView :product="product" />
 </template>
 
 <script>
-import ProductPageView from "@/views/ProductPageView.vue"
+// Import JSON + pemetaan rapi (tertata di satu tempat).
+import productJson from "@/data/products/cms.json"
+import { mapProduct } from "@/data/products/index.js"
+import ProductDetailView from "@/views/products/components/ProductDetailView.vue"
 
 export default {
   name: "CmsProduct",
-  components: { ProductPageView },
+  components: { ProductDetailView },
+  data() {
+    return {
+      // Pemetaan JSON → objek siap pakai (slug, harga terformat, dsb.)
+      product: mapProduct(productJson),
+    }
+  },
 }
 </script>

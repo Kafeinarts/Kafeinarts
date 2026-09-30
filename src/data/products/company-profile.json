@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "slug": "company-profile",
+    "name": "Website Company Profile",
+    "shortName": "Company Profile",
+    "category": "website",
+    "icon": "bi-buildings",
+    "color": "#0f766e",
+    "route": "/products/company-profile"
+  },
+  "hero": {
+    "name": "Website Company Profile",
+    "tagline": "Wajah profesional perusahaan Anda di dunia digital.",
+    "headline": "Company profile elegan yang membangun kredibilitas",
+    "description": "Website company profile elegan untuk membangun kredibilitas bisnis: profil, visi-misi, layanan, portofolio, hingga halaman kontak yang terhubung WhatsApp — lengkap dengan CMS agar mudah dikelola sendiri.",
+    "icon": "bi-buildings",
+    "highlights": [
+      "Selesai 2–3 minggu",
+      "Termasuk CMS",
+      "Terhubung WhatsApp"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang Website Company Profile",
+    "paragraphs": [
+      "Calon klien dan mitra bisnis hampir selalu mencari perusahaan Anda di Google sebelum bekerja sama. Tidak menemukan website yang meyakinkan bisa berarti kehilangan kepercayaan di menit pertama.",
+      "Website company profile kami menyusun identitas, layanan, dan bukti kerja Anda secara profesional — dirancang meyakinkan di desktop maupun HP, dan mudah diperbarui lewat CMS."
+    ],
+    "points": [
+      "Desain premium sesuai identitas brand",
+      "Halaman Profil, Layanan, Portofolio, Kontak",
+      "Tombol WhatsApp & form terintegrasi",
+      "Dasar SEO on-page yang benar"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Semua yang dibutuhkan untuk tampil kredibel di mata klien.",
+    "items": [
+      {
+        "icon": "bi-person-badge",
+        "title": "Profil & Visi Misi",
+        "desc": "Sampaikan identitas, sejarah, dan nilai perusahaan dengan elegan."
+      },
+      {
+        "icon": "bi-briefcase",
+        "title": "Layanan & Portofolio",
+        "desc": "Pajangan layanan dan portofolio proyek yang menarik calon klien."
+      },
+      {
+        "icon": "bi-chat-dots",
+        "title": "Terhubung WhatsApp",
+        "desc": "Tombol kontak langsung ke WhatsApp dan form yang terintegrasi."
+      },
+      {
+        "icon": "bi-search",
+        "title": "SEO Dasar",
+        "desc": "Struktur semantic, meta tag, dan kecepatan muat yang optimal."
+      },
+      {
+        "icon": "bi-pencil-square",
+        "title": "CMS Mandiri",
+        "desc": "Perbarui konten, portofolio, dan artikel tanpa bantuan developer."
+      },
+      {
+        "icon": "bi-translate",
+        "title": "Multi-bahasa (opsional)",
+        "desc": "Dukungan dua bahasa untuk menjangkau klien internasional."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Paket transparan sesuai kebutuhan tampilan dan fitur.",
+    "note": "Semua paket termasuk domain .com 1 tahun, hosting 1 tahun, dan libre maintenance awal.",
+    "plans": [
+      {
+        "name": "Essential",
+        "tagline": "Untuk usaha yang baru membangun kehadiran online",
+        "price": 2500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Website 5 halaman dengan desain profesional.",
+        "features": [
+          "5 halaman (Beranda, Profil, dst.)",
+          "Desain template premium",
+          "Slider portofolio",
+          "Form & tombol WhatsApp",
+          "SEO dasar"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Professional",
+        "tagline": "Paling populer untuk perusahaan yang serius branding",
+        "price": 5500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Desain kustom + CMS agar konten dapat dikelola sendiri.",
+        "features": [
+          "Halaman tak terbatas",
+          "Desain kustom sesuai brand",
+          "CMS kelola sendiri",
+          "Blog/artikel",
+          "Galeri & video profil",
+          "Google Analytics terpasang"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "tagline": "Untuk korporasi & grup usaha",
+        "priceLabel": "Hubungi Kami",
+        "description": "Multi-bahasa, integrasi sistem internal, dan kebutuhan khusus lainnya.",
+        "features": [
+          "Multi-bahasa",
+          "Integrasi API internal",
+          "Career/job portal",
+          "Optimasi performa lanjutan",
+          "SLA & maintenance tahunan"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Pengerjaan",
+    "subheading": "Website Anda live dalam 2–3 minggu.",
+    "steps": [
+      {
+        "title": "Brief & Materi",
+        "desc": "Pengumpulan materi profil, layanan, portofolio, dan foto."
+      },
+      {
+        "title": "Desain Konsep",
+        "desc": "Mockup tampilan disiapkan dan disepakati bersama."
+      },
+      {
+        "title": "Pembangunan",
+        "desc": "Website dibangun, diisi konten, dan diuji di berbagai perangkat."
+      },
+      {
+        "title": "Review & Go-Live",
+        "desc": "Revisi akhir, lalu website tayang di domain Anda."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai jenis bisnis dan institusi.",
+    "items": [
+      {
+        "icon": "bi-building",
+        "title": "Kontraktor & Manufaktur",
+        "desc": "Tunjukkan katalog proyek dan kapabilitas perusahaan."
+      },
+      {
+        "icon": "bi-briefcase",
+        "title": "Konsultan & Biro Jasa",
+        "desc": "Bangun kepercayaan dengan profil dan kredensial yang rapi."
+      },
+      {
+        "icon": "bi-shop",
+        "title": "Distributor & Supplier",
+        "desc": "Pajang katalog produk dengan tombol permintaan penawaran."
+      },
+      {
+        "icon": "bi-heart-pulse",
+        "title": "Klinik & Yayasan",
+        "desc": "Informasi layanan, jadwal, dan profil lembaga yang jelas."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan sebelum order.",
+    "items": [
+      {
+        "q": "Berapa lama pengerjaannya?",
+        "a": "Umumnya 2–3 minggu sejak materi lengkap. Desain kustom skala besar bisa lebih lama dan disepakati di awal."
+      },
+      {
+        "q": "Apakah saya bisa update konten sendiri?",
+        "a": "Ya, pada paket Professional ke atas. CMS disertakan sehingga Anda bisa mengubah teks, gambar, dan portofolio sendiri."
+      },
+      {
+        "q": "Apakah domain dan hosting disediakan?",
+        "a": "Ya, domain .com dan hosting 1 tahun sudah termasuk di semua paket; perpanjangan tahun berikutnya dapat melanjutkan milik Anda."
+      },
+      {
+        "q": "Bagaimana kalau sudah punya website lama?",
+        "a": "Kami bisa membangun ulang sekaligus memigrasikan konten penting dan memasang redirect agar peringkat SEO tidak hilang."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Website Company Profile?",
+    "description": "Kirimkan profil bisnis Anda dan tim kami siap menyusun konsep desainnya."
+  }
+}

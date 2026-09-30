@@ -10,9 +10,24 @@
   "whatsapp": {
     "defaultTarget": "general",
     "targets": [
-      { "key": "general", "label": "Kafeinarts", "display": "0858-1704-8266", "wa": "6285817048266" },
-      { "key": "staffIT", "label": "Staff IT", "display": "0858-1704-8200", "wa": "6285817048200" },
-      { "key": "staffCS", "label": "Staff Customer Service", "display": "0895-3318-47715", "wa": "62895331847715" }
+      {
+        "key": "general",
+        "label": "Kafeinarts",
+        "display": "0858-1704-8266",
+        "wa": "6285817048266"
+      },
+      {
+        "key": "staffIT",
+        "label": "Staff IT",
+        "display": "0858-1704-8200",
+        "wa": "6285817048200"
+      },
+      {
+        "key": "staffCS",
+        "label": "Staff Customer Service",
+        "display": "0895-3318-47715",
+        "wa": "62895331847715"
+      }
     ]
   }
 }

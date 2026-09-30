@@ -1,23 +1,32 @@
 <template>
   <!--
-    STARTER TEMPLATE — Kafeinarts ERP
-    ------------------------------------------------------------------
-    Halaman single-page produk ERP. Konten default diambil dari
-    siteData.products (slug: "erp") di src/data/siteData.js.
+    ============================================================
+    HALAMAN PRODUK — Kafeinarts ERP
+    ============================================================
+    Konten  : src/data/products/erp.json (detail, harga, FAQ, dst.)
+    Layout  : src/views/products/components/ProductDetailView.vue
+    Route   : /products/erp (otomatis dari src/router/index.js)
 
-    Cara modifikasi:
-    1. Konten umum (nama, fitur, stats) -> edit entri "erp" di siteData.js
-    2. Konten/layout khusus halaman ini -> tambahkan section/baris baru
-       di bawah ini (template sudah siap dikembangkan).
-  -->
-  <ProductPageView slug="erp" />
+    Untuk mengubah isi halaman ini, edit file JSON-nya saja:
+    → src/data/products/erp.json
+    -->
+  <ProductDetailView :product="product" />
 </template>
 
 <script>
-import ProductPageView from "@/views/ProductPageView.vue"
+// Import JSON + pemetaan rapi (tertata di satu tempat).
+import productJson from "@/data/products/erp.json"
+import { mapProduct } from "@/data/products/index.js"
+import ProductDetailView from "@/views/products/components/ProductDetailView.vue"
 
 export default {
   name: "ErpProduct",
-  components: { ProductPageView },
+  components: { ProductDetailView },
+  data() {
+    return {
+      // Pemetaan JSON → objek siap pakai (slug, harga terformat, dsb.)
+      product: mapProduct(productJson),
+    }
+  },
 }
 </script>

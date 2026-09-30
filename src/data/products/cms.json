@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "slug": "cms",
+    "name": "Kafeinarts CMS",
+    "shortName": "CMS",
+    "category": "system",
+    "icon": "bi-layout-text-window-reverse",
+    "color": "#ea580c",
+    "route": "/products/cms"
+  },
+  "hero": {
+    "name": "Kafeinarts CMS",
+    "tagline": "Kelola konten website tanpa perlu menyentuh kode.",
+    "headline": "Content Management System yang ringan dan aman",
+    "description": "Content Management System yang ringan dan aman untuk mengelola artikel, halaman, galeri, hingga landing page promosi. Dilengkapi editor visual dan manajemen media yang mudah dipahami siapa pun.",
+    "icon": "bi-layout-text-window-reverse",
+    "highlights": [
+      "Editor visual WYSIWYG",
+      "Pustaka media rapi",
+      "SEO friendly"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang CMS",
+    "paragraphs": [
+      "Banyak pemilik website bergantung pada developer untuk ganti teks atau unggah artikel sederhana — lambat dan berbiaya.",
+      "CMS kami memberi kendali penuh ke tim Anda: tulis artikel, susun halaman, unggah galeri, semua lewat editor visual yang intuitif tanpa takut merusak tampilan website."
+    ],
+    "points": [
+      "Editor WYSIWYG dengan pratinjau langsung",
+      "Pustaka media dengan crop & optimasi",
+      "Draft, review, dan jadwal terbit",
+      "Struktur URL dan meta ramah SEO"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Semua yang dibutuhkan tim konten modern.",
+    "items": [
+      {
+        "icon": "bi-pencil-square",
+        "title": "Editor Visual",
+        "desc": "Tulis dan susun konten dengan editor WYSIWYG yang intuitif."
+      },
+      {
+        "icon": "bi-images",
+        "title": "Manajemen Media",
+        "desc": "Upload, crop, dan organisasi gambar/file dalam satu pustaka."
+      },
+      {
+        "icon": "bi-search",
+        "title": "SEO Friendly",
+        "desc": "Meta, sitemap, dan struktur URL yang ramah mesin pencari."
+      },
+      {
+        "icon": "bi-person-lock",
+        "title": "Peran & Hak Akses",
+        "desc": "Admin, editor, penulis — atur wewenang masing-masing."
+      },
+      {
+        "icon": "bi-clock-history",
+        "title": "Jadwal Terbit",
+        "desc": "Tulis hari ini, terbitkan otomatis di tanggal/jam yang ditentukan."
+      },
+      {
+        "icon": "bi-shield-check",
+        "title": "Keamanan & Backup",
+        "desc": "Login aman, rate limit, dan backup konten otomatis."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Mulai dari website personal hingga portal konten besar.",
+    "note": "Semua paket termasuk instalasi, konfigurasi awal, dan training singkat untuk tim konten Anda.",
+    "plans": [
+      {
+        "name": "Personal",
+        "tagline": "Untuk blog & website personal",
+        "price": 1500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Satu website dengan fitur konten esensial.",
+        "features": [
+          "1 website",
+          "Artikel & halaman statis",
+          "Pustaka media 5 GB",
+          "Editor visual",
+          "Update keamanan 1 tahun"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Business",
+        "tagline": "Paling populer untuk website perusahaan",
+        "price": 4500000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Multi-penulis, kategori konten, dan optimasi SEO lanjutan.",
+        "features": [
+          "Hingga 10 pengguna",
+          "Kategori & tag konten",
+          "Jadwal terbit otomatis",
+          "SEO on-page lanjutan",
+          "Form leads terintegrasi",
+          "Dukungan prioritas"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Portal",
+        "tagline": "Untuk portal berita & konten berskala besar",
+        "priceLabel": "Hubungi Kami",
+        "description": "Skala besar: multi-site, cache tingkat lanjut, dan API headless.",
+        "features": [
+          "Pengguna tak terbatas",
+          "Multi-site/channel",
+          "Headless API",
+          "Cache & CDN",
+          "SLA enterprise"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Implementasi",
+    "subheading": "Website konten Anda siap dalam waktu singkat.",
+    "steps": [
+      {
+        "title": "Analisis Kebutuhan",
+        "desc": "Kami petakan jenis konten dan alur kerja tim Anda."
+      },
+      {
+        "title": "Setup & Desain",
+        "desc": "Struktur konten dan tampilan halaman disiapkan sesuai brand."
+      },
+      {
+        "title": "Migrasi Konten",
+        "desc": "Artikel dan media lama dipindahkan dan dirapikan."
+      },
+      {
+        "title": "Training & Go-Live",
+        "desc": "Tim konten dilatih, lalu website langsung aktif."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai kebutuhan pengelolaan konten.",
+    "items": [
+      {
+        "icon": "bi-newspaper",
+        "title": "Portal Berita",
+        "desc": "Multi-penulis dengan jadwal terbit dan arsip rapi."
+      },
+      {
+        "icon": "bi-building",
+        "title": "Website Perusahaan",
+        "desc": "Halaman profil, artikel, dan galeri yang dikelola sendiri."
+      },
+      {
+        "icon": "bi-journal-richtext",
+        "title": "Blog & Media Niche",
+        "desc": "Fokus SEO dengan struktur konten yang bersih."
+      },
+      {
+        "icon": "bi-calendar-week",
+        "title": "Website Event",
+        "desc": "Halaman promosi acara dengan konten yang mudah diperbarui."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan pengelola konten.",
+    "items": [
+      {
+        "q": "Apakah perlu keahlian coding?",
+        "a": "Tidak. Editor visual memungkinkan Anda menulis, memformat, dan menyisipkan gambar seperti di pengolah kata biasa."
+      },
+      {
+        "q": "Apakah bisa lebih dari satu penulis?",
+        "a": "Bisa. Tersedia peran Admin, Editor, dan Penulis dengan hak akses berbeda — misal penulis hanya bisa mengajukan draft."
+      },
+      {
+        "q": "Bagaimana dengan performa website?",
+        "a": "CMS dilengkapi cache halaman, optimasi gambar otomatis, dan struktur HTML bersih sehingga muat tetap cepat."
+      },
+      {
+        "q": "Apakah konten lama bisa dipindahkan?",
+        "a": "Bisa. Artikel, gambar, dan struktur kategori dari WordPress/sistem lama dapat dimigrasikan oleh tim kami."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Kafeinarts CMS?",
+    "description": "Lihat demo langsung bagaimana tim Anda mengelola website tanpa perlu developer."
+  }
+}

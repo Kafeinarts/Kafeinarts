@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "slug": "simrs",
+    "name": "Kafeinarts SIMRS",
+    "shortName": "SIMRS",
+    "category": "system",
+    "icon": "bi-hospital",
+    "color": "#0d9488",
+    "route": "/products/simrs"
+  },
+  "hero": {
+    "name": "Kafeinarts SIMRS",
+    "tagline": "Sistem Informasi Manajemen Rumah Sakit yang tepat guna.",
+    "headline": "SIMRS berstandar SATUSEHAT untuk rumah sakit modern",
+    "description": "SIMRS berstandar SATUSEHAT yang menghubungkan pendaftaran, rawat jalan, rawat inap, farmasi, laboratorium, hingga klaim BPJS dalam satu alur kerja yang mulus untuk seluruh unit rumah sakit.",
+    "icon": "bi-hospital",
+    "highlights": [
+      "Standar SATUSEHAT",
+      "Bridging BPJS VClaim",
+      "RME terintegrasi"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang SIMRS",
+    "paragraphs": [
+      "Rumah sakit menghadapi tantangan ganda: pelayanan harus cepat, sementara pelaporan ke Kemenkes dan BPJS menuntut data yang akurat. Sistem yang terpisah-pisah membuat petugas menginput ulang data yang sama berkali-kali.",
+      "SIMRS kami menyatukan seluruh alur pelayanan — dari pendaftaran hingga kasir — dengan satu rekam medis elektronik yang mengalir otomatis ke setiap unit pelayanan."
+    ],
+    "points": [
+      "Satu RME untuk rawat jalan, inap, dan IGD",
+      "Bridging SATUSEHAT & BPJS (VClaim)",
+      "Antrean online terintegrasi (Mobile JKN)",
+      "Laporan mutu dan statistik bulanan otomatis"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Modul lengkap untuk seluruh unit pelayanan rumah sakit.",
+    "items": [
+      {
+        "icon": "bi-clipboard2-pulse",
+        "title": "Rawat Jalan & Inap",
+        "desc": "Pendaftaran, antrean, rekam medis elektronik (RME), dan CPPT."
+      },
+      {
+        "icon": "bi-capsule",
+        "title": "Farmasi & Gudang",
+        "desc": "Resep digital, stok obat, dan pharmacovigilance terintegrasi."
+      },
+      {
+        "icon": "bi-shield-check",
+        "title": "Klaim BPJS",
+        "desc": "Verifikasi eligibilitas VClaim dan bridging SEP secara otomatis."
+      },
+      {
+        "icon": "bi-hdd-network",
+        "title": "Integrasi SATUSEHAT",
+        "desc": "Pertukaran data FHIR sesuai regulasi Kemenkes."
+      },
+      {
+        "icon": "bi-clipboard2-data",
+        "title": "Laboratorium & Radiologi",
+        "desc": "Order pemeriksaan, hasil terintegrasi ke RME pasien."
+      },
+      {
+        "icon": "bi-cash-coin",
+        "title": "Kasir & Klaim",
+        "desc": "Tagihan gabungan umum/BPJS, rekap klaim, dan laporan pendapatan."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Penawaran disusun sesuai kelas rumah sakit dan jumlah unit pelayanan.",
+    "note": "Nilai investasi final mengikuti kelas RS, jumlah tempat tidur, dan modul yang diaktifkan. Konsultasi awal gratis.",
+    "plans": [
+      {
+        "name": "Klinik & RS Kelas D",
+        "tagline": "Untuk fasilitas kesehatan primer",
+        "price": 45000000,
+        "currency": "IDR",
+        "period": "proyek",
+        "description": "Modul inti pelayanan dengan integrasi SATUSEHAT.",
+        "features": [
+          "Pendaftaran & RME",
+          "Rawat jalan + farmasi",
+          "Integrasi SATUSEHAT",
+          "Laporan SIRS online",
+          "Training petugas"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "RS Kelas B/C",
+        "tagline": "Paling populer untuk RS umum",
+        "priceLabel": "Penawaran Khusus",
+        "description": "Modul lengkap rawat jalan, inap, IGD, hingga bridging BPJS penuh.",
+        "features": [
+          "Semua modul pelayanan",
+          "Rawat inap & IGD",
+          "Bridging BPJS VClaim",
+          "Antrean online",
+          "Pendampingan akreditasi"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "RS Kelas A / Jaringan",
+        "tagline": "Untuk RS rujukan & grup rumah sakit",
+        "priceLabel": "Hubungi Kami",
+        "description": "Skema khusus multi-rumah sakit dengan data warehouse dan BI.",
+        "features": [
+          "Multi-RS satu platform",
+          "Data warehouse & BI",
+          "Integrasi alat laboratorium",
+          "SLA khusus 24/7",
+          "Tim implementasi dedikasi"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Implementasi",
+    "subheading": "Implementasi RS kami jalankan bertahap agar pelayanan tidak terganggu.",
+    "steps": [
+      {
+        "title": "Survei & Analisis",
+        "desc": "Survei unit pelayanan, alur pasien, dan kebutuhan pelaporan."
+      },
+      {
+        "title": "Perencanaan & Konfigurasi",
+        "desc": "Master data, form CPPT, dan aturan tarif disusun bersama tim RS."
+      },
+      {
+        "title": "Bridging & Integrasi",
+        "desc": "Koneksi SATUSEHAT, BPJS, dan alat medis yang mendukung."
+      },
+      {
+        "title": "Training Petugas",
+        "desc": "Pelatihan per unit: pendaftaran, perawat, dokter, farmasi, kasir."
+      },
+      {
+        "title": "Go-Live Bertahap",
+        "desc": "Aktivasi per unit dengan pendampingan hingga seluruh RS berjalan penuh."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai fasilitas pelayanan kesehatan.",
+    "items": [
+      {
+        "icon": "bi-hospital",
+        "title": "RS Umum",
+        "desc": "Seluruh alur rawat jalan hingga rawat inap dalam satu sistem."
+      },
+      {
+        "icon": "bi-heart-pulse",
+        "title": "Klinik Primer",
+        "desc": "Pelayanan poliklinik, MCU, dan farmasi yang ringkas."
+      },
+      {
+        "icon": "bi-bandaid",
+        "title": "RS Ibu & Anak",
+        "desc": "Modul kebidanan, NICU, dan imunisasi terintegrasi."
+      },
+      {
+        "icon": "bi-people",
+        "title": "Grup RS",
+        "desc": "Beberapa rumah sakit dikelola dari satu platform pusat."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan manajemen rumah sakit.",
+    "items": [
+      {
+        "q": "Apakah sudah sesuai standar SATUSEHAT?",
+        "a": "Ya. SIMRS kami mengikuti standar interoperabilitas SATUSEHAT (FHIR) dan terus menyesuaikan setiap ada pembaruan regulasi Kemenkes."
+      },
+      {
+        "q": "Apakah bisa bridging dengan BPJS?",
+        "a": "Bisa. Tersedia bridging VClaim untuk verifikasi eligibilitas, SEP, dan pengajuan klaim, serta antrean online terintegrasi Mobile JKN."
+      },
+      {
+        "q": "Bagaimana bila internet mati?",
+        "a": "Tersedia mode offline untuk unit pelayanan kritis; data akan tersinkron otomatis begitu koneksi kembali normal."
+      },
+      {
+        "q": "Berapa lama implementasi sampai go-live?",
+        "a": "Umumnya 8–12 minggu tergantung jumlah unit dan kesiapan data master. Jadwal rinci disusun bersama saat kontrak."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Kafeinarts SIMRS?",
+    "description": "Jadwalkan demo bersama tim kami dan lihat langsung bagaimana alur pelayanan RS Anda berjalan di sistem."
+  }
+}

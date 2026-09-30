@@ -8,6 +8,11 @@
       <h3>{{ product.name }}</h3>
       <p class="product-card-tagline">{{ product.tagline }}</p>
       <p class="product-card-desc">{{ product.desc }}</p>
+      <!-- Ringkasan harga (dari paket termurah di data/products/<slug>.json) -->
+      <p v-if="product.priceFrom" class="product-card-price">
+        <i class="bi bi-tag"></i>Mulai <strong>{{ product.priceFrom.label }}</strong>
+        <span v-if="product.priceFrom.period" class="price-period">/ {{ product.priceFrom.period }}</span>
+      </p>
       <span class="product-card-cta">
         Lihat Detail <i class="bi bi-arrow-right"></i>
       </span>
@@ -86,8 +91,31 @@ export default {
 .product-card-desc {
   font-size: 0.92rem;
   line-height: 1.65;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   flex-grow: 1;
+}
+
+.product-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--default-color);
+  margin-bottom: 16px;
+}
+
+.product-card-price i {
+  color: var(--accent-color);
+  align-self: center;
+}
+
+.product-card-price strong {
+  color: var(--heading-color);
+  font-size: 0.95rem;
+}
+
+.price-period {
+  font-size: 0.78rem;
 }
 
 .product-card-cta {

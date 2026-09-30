@@ -1,23 +1,32 @@
 <template>
   <!--
-    STARTER TEMPLATE — Kafeinarts LMS
-    ------------------------------------------------------------------
-    Halaman single-page produk LMS. Konten default diambil dari
-    siteData.products (slug: "lms") di src/data/siteData.js.
+    ============================================================
+    HALAMAN PRODUK — Kafeinarts LMS
+    ============================================================
+    Konten  : src/data/products/lms.json (detail, harga, FAQ, dst.)
+    Layout  : src/views/products/components/ProductDetailView.vue
+    Route   : /products/lms (otomatis dari src/router/index.js)
 
-    Cara modifikasi:
-    1. Konten umum (nama, fitur, stats) -> edit entri "lms" di siteData.js
-    2. Konten/layout khusus halaman ini -> tambahkan section/baris baru
-       di bawah ini (template sudah siap dikembangkan).
-  -->
-  <ProductPageView slug="lms" />
+    Untuk mengubah isi halaman ini, edit file JSON-nya saja:
+    → src/data/products/lms.json
+    -->
+  <ProductDetailView :product="product" />
 </template>
 
 <script>
-import ProductPageView from "@/views/ProductPageView.vue"
+// Import JSON + pemetaan rapi (tertata di satu tempat).
+import productJson from "@/data/products/lms.json"
+import { mapProduct } from "@/data/products/index.js"
+import ProductDetailView from "@/views/products/components/ProductDetailView.vue"
 
 export default {
   name: "LmsProduct",
-  components: { ProductPageView },
+  components: { ProductDetailView },
+  data() {
+    return {
+      // Pemetaan JSON → objek siap pakai (slug, harga terformat, dsb.)
+      product: mapProduct(productJson),
+    }
+  },
 }
 </script>
