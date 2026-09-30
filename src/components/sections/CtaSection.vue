@@ -9,7 +9,7 @@
           <p>{{ cta.desc }}</p>
         </div>
         <div class="col-xl-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" :href="cta.button.href">{{ cta.button.label }}</a>
+          <router-link class="cta-btn align-middle" :to="{ name: 'consultation' }">{{ cta.button.label }}</router-link>
         </div>
       </div>
     </div>
@@ -18,13 +18,18 @@
 
 <script>
 import { asset } from "@/utils/asset"
-import { siteData } from "@/data/siteData"
 
 export default {
   name: "CtaSection",
   data() {
     return {
-      cta: siteData.cta,
+      cta: {
+        bg: "assets/img/bg/bg-8.webp",
+        bgAlt: "Latar Belakang Kafeinarts",
+        title: "Siap Mewujudkan Ide Digital Anda?",
+        desc: "Jangan biarkan ide cemerlang Anda hanya menjadi rencana. Baik itu pengembangan aplikasi SaaS, sistem manajemen, hingga solusi cloud, kami siap berkolaborasi merancang teknologi yang mempercepat pertumbuhan bisnis Anda.",
+        button: { label: "Mulai Konsultasi" },
+      },
     }
   },
   methods: {

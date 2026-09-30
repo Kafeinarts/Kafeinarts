@@ -1,0 +1,45 @@
+{
+  "newsletter": {
+    "title": "Dapatkan Pembaruan Terbaru",
+    "desc": "Berlangganan newsletter kami untuk mendapatkan wawasan teknologi, tips pengembangan SaaS, dan berita terbaru dari Kafeinarts!",
+    "placeholder": "Masukkan email Anda",
+    "button": "Berlangganan"
+  },
+  "about": {
+    "title": "Kafeinarts",
+    "address": ["Depok, Jawa Barat", "Indonesia"],
+    "phone": "+62 858-1704-8266",
+    "email": "halo@kafeinarts.com"
+  },
+  "links": {
+    "useful": [
+      { "label": "Beranda", "to": { "name": "home" } },
+      { "label": "Tentang Kami", "to": { "name": "about" } },
+      { "label": "Layanan", "to": { "name": "services" } },
+      { "label": "Produk", "to": { "name": "products" } }
+    ],
+    "services": [
+      { "label": "Website Company Profile", "to": { "name": "product-company-profile" } },
+      { "label": "Landing Page", "to": { "name": "product-landing-page" } },
+      { "label": "Sistem ERP", "to": { "name": "product-erp" } },
+      { "label": "Sistem SIMRS", "to": { "name": "product-simrs" } }
+    ],
+    "support": [
+      { "label": "FAQ", "to": { "name": "faq" } },
+      { "label": "Konsultasi & Penawaran", "to": { "name": "consultation" } },
+      { "label": "Kontak", "to": { "name": "contact" } }
+    ]
+  },
+  "social": [
+    { "icon": "bi-twitter-x", "href": "#", "label": "Kafeinarts di Twitter / X" },
+    { "icon": "bi-facebook", "href": "#", "label": "Kafeinarts di Facebook" },
+    { "icon": "bi-instagram", "href": "#", "label": "Kafeinarts di Instagram" },
+    { "icon": "bi-linkedin", "href": "#", "label": "Kafeinarts di LinkedIn" },
+    { "icon": "bi-github", "href": "https://github.com/Kafeinarts/Kafeinarts", "label": "Kafeinarts di GitHub" }
+  ],
+  "copyright": {
+    "year": "2026",
+    "brand": "Kafeinarts",
+    "note": "Dilindungi Undang-Undang"
+  }
+}

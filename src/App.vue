@@ -18,7 +18,7 @@
 import SiteHeader from "@/components/layout/SiteHeader.vue"
 import SiteFooter from "@/components/layout/SiteFooter.vue"
 import ScrollTop from "@/components/layout/ScrollTop.vue"
-import { initAOS, refreshAOS } from "@/utils/aos"
+import { initAOS, refreshAosSafely } from "@/utils/aos"
 import { initSeo } from "@/utils/seo"
 
 export default {
@@ -56,16 +56,18 @@ export default {
     // Seluruh section sudah dirender oleh child components sebelum mounted() ini
     this.$nextTick(() => {
       initAOS()
-      // Posisi animasi dihitung ulang setelah gambar selesai dimuat
-      window.addEventListener("load", refreshAOS, { once: true })
-      this.aosTimer = setTimeout(refreshAOS, 500)
+      this.aosTimer = setTimeout(() => refreshAosSafely(), 500)
+    })
+
+    // SPA: refresh posisi animasi AOS setiap pindah halaman
+    this.$router.afterEach(() => {
+      this.$nextTick(() => refreshAosSafely())
     })
   },
   beforeUnmount() {
     document.body.classList.remove("index-page", "scrolled", "mobile-nav-active")
     if (this.preloaderTimer) clearTimeout(this.preloaderTimer)
     if (this.aosTimer) clearTimeout(this.aosTimer)
-    window.removeEventListener("load", refreshAOS)
   },
 }
 </script>

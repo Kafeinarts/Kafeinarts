@@ -14,6 +14,7 @@
  * bisa dibaca crawler tanpa JavaScript — semuanya ada di public/index.html.
  */
 import { siteData } from "@/data/siteData"
+import { getWhatsAppTargets } from "@/utils/whatsapp"
 
 /** URL produksi. Ganti di sini + public/index.html + sitemap.xml + robots.txt */
 export const SITE_URL = "https://kafeinarts.vercel.app"
@@ -35,13 +36,17 @@ export const absoluteUrl = (path = "") =>
  * @returns {Array<Object>} daftar objek schema.org (siap di-JSON.stringify)
  */
 export function buildJsonLd() {
-  const { contact, faq, seo, services } = siteData
+  const { contact, seo } = siteData
+  // JSON baru: faq & services berbentuk objek dengan key "items"
+  const faq = siteData.faq.items
+  const services = siteData.services.items
 
   const organizationId = `${SITE_URL}/#organization`
   const imageUrl = absoluteUrl(seo.image)
   const logoUrl = absoluteUrl(seo.logo)
-  const waIT = contact.form.whatsapp.staffIT.wa
-  const waCS = contact.form.whatsapp.staffCS.wa
+  const waTargets = getWhatsAppTargets()
+  const waIT = (waTargets.find((t) => t.key === "staffIT") || waTargets[0]).wa
+  const waCS = (waTargets.find((t) => t.key === "staffCS") || waTargets[0]).wa
 
   const address = {
     "@type": "PostalAddress",
@@ -166,12 +171,16 @@ export function injectJsonLd() {
   return true
 }
 
-/** Set <title> & <link rel="canonical"> sesuai route yang dibuka. */
-export function syncSeoForRoute() {
+/**
+ * Set <title> & <link rel="canonical"> sesuai route yang dibuka.
+ * @param {Object} [overrides] opsional: { title, description, path }
+ *        dipakai halaman produk/katalog untuk SEO per-halaman.
+ */
+export function syncSeoForRoute(overrides = {}) {
   if (typeof document === "undefined") return
-  const canonicalUrl = `${SITE_URL}/`
+  const canonicalUrl = `${SITE_URL}${overrides.path || "/"}`
 
-  document.title = SITE_TITLE
+  document.title = overrides.title || SITE_TITLE
 
   let link = document.querySelector('link[rel="canonical"]')
   if (!link) {

@@ -1,0 +1,23 @@
+{
+  "brand": {
+    "name": "Kafeinarts",
+    "logo": "assets/img/logo-header.png",
+    "favicon": "assets/img/favicon.png",
+    "appleTouchIcon": "assets/img/apple-touch-icon.png",
+    "accent": "#00205D",
+    "headingColor": "#37517e"
+  },
+  "seo": {
+    "url": "https://kafeinarts.vercel.app",
+    "name": "Kafeinarts Interactive",
+    "title": "Kafeinarts — Jasa SaaS, Website & Sistem Manajemen di Depok",
+    "description": "Kafeinarts Interactive: mitra teknis SaaS full-stack, pembuatan website & aplikasi, cloud dan keamanan sistem di Depok, Jawa Barat. Konsultasi gratis!",
+    "image": "assets/img/og-image.png",
+    "imageAlt": "Kafeinarts Interactive - Mitra SaaS, Website & Sistem Manajemen",
+    "logo": "assets/img/logo-512.png",
+    "inLanguage": "id-ID",
+    "sameAs": ["https://github.com/Kafeinarts/Kafeinarts"],
+    "areaServed": ["Depok", "Jawa Barat", "Indonesia"],
+    "geo": { "latitude": -6.4025, "longitude": 106.7942 }
+  }
+}
