@@ -38,19 +38,22 @@ async function main() {
     resources: "usable",
     pretendToBeVisual: true,
     virtualConsole,
+    // Polyfill API yang tidak diimplementasi JSDOM SEBELUM script apa pun jalan
+    beforeParse(window) {
+      window.scrollTo = () => {}
+      window.scrollBy = () => {}
+      window.matchMedia =
+        window.matchMedia ||
+        (() => ({
+          matches: false,
+          addListener: () => {},
+          removeListener: () => {},
+          addEventListener: () => {},
+          removeEventListener: () => {},
+        }))
+    },
   })
   const { window } = dom
-
-  // Polyfill minimal untuk matchMedia (dipakai library/komponen)
-  if (!window.matchMedia) {
-    window.matchMedia = () => ({
-      matches: false,
-      addListener: () => {},
-      removeListener: () => {},
-      addEventListener: () => {},
-      removeEventListener: () => {},
-    })
-  }
 
   // Tunggu app ter-mount (chunk-vendors + app dieksekusi)
   await new Promise((resolve) => setTimeout(resolve, 6000))
