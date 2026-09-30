@@ -1,0 +1,18 @@
+{
+  "title": "Kontak",
+  "subtitle": "Mari diskusikan kebutuhan proyek digital Anda. Kami siap membantu dari tahap perencanaan hingga implementasi.",
+  "info": {
+    "address": "Depok, Jawa Barat, Indonesia",
+    "phone": "+62 858-1704-8266",
+    "email": "halo@kafeinarts.com",
+    "mapSrc": "https://maps.google.com/maps?q=Depok,%20West%20Java,%20Indonesia&t=&z=12&ie=UTF8&iwloc=&output=embed"
+  },
+  "whatsapp": {
+    "defaultTarget": "general",
+    "targets": [
+      { "key": "general", "label": "Kafeinarts", "display": "0858-1704-8266", "wa": "6285817048266" },
+      { "key": "staffIT", "label": "Staff IT", "display": "0858-1704-8200", "wa": "6285817048200" },
+      { "key": "staffCS", "label": "Staff Customer Service", "display": "0895-3318-47715", "wa": "62895331847715" }
+    ]
+  }
+}

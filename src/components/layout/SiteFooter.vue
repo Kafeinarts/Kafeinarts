@@ -20,11 +20,7 @@
               </div>
               <div class="loading" v-if="loading" :style="{ display: 'block' }">Memuat...</div>
               <div class="error-message" v-if="error" :style="{ display: 'block' }">{{ error }}</div>
-              <div
-                class="sent-message"
-                v-if="subscribed"
-                :style="{ display: 'block' }"
-              >
+              <div class="sent-message" v-if="subscribed" :style="{ display: 'block' }">
                 Permintaan berlangganan Anda telah terkirim. Terima kasih!
               </div>
             </form>
@@ -38,9 +34,9 @@
       <div class="row gy-4">
         <!-- Info Kontak -->
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="#hero" class="d-flex align-items-center">
+          <router-link :to="{ name: 'home' }" class="d-flex align-items-center">
             <span class="sitename">{{ data.about.title }}</span>
-          </a>
+          </router-link>
           <div class="footer-contact pt-3">
             <p v-for="(line, i) in data.about.address" :key="i">{{ line }}</p>
             <p class="mt-3">
@@ -51,35 +47,42 @@
         </div>
 
         <!-- Link Navigasi -->
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
           <h3>Tautan Berguna</h3>
           <ul>
             <li v-for="link in data.links.useful" :key="link.label">
               <i class="bi bi-chevron-right"></i>
-              <a :href="link.href">{{ link.label }}</a>
+              <router-link :to="link.to">{{ link.label }}</router-link>
             </li>
           </ul>
         </div>
 
-        <!-- Link Layanan -->
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h3>Layanan Kami</h3>
+        <!-- Link Produk -->
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
+          <h3>Produk Kami</h3>
           <ul>
             <li v-for="link in data.links.services" :key="link.label">
               <i class="bi bi-chevron-right"></i>
-              <a :href="link.href">{{ link.label }}</a>
+              <router-link :to="link.to">{{ link.label }}</router-link>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Dukungan -->
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
+          <h3>Dukungan</h3>
+          <ul>
+            <li v-for="link in data.links.support" :key="link.label">
+              <i class="bi bi-chevron-right"></i>
+              <router-link :to="link.to">{{ link.label }}</router-link>
             </li>
           </ul>
         </div>
 
         <!-- Sosial Media -->
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-2 col-md-3 col-6">
           <h3>Ikuti Kami</h3>
-          <p>
-            Temukan inspirasi digital, pembaruan proyek, dan wawasan seputar dunia
-            teknologi di media sosial kami.
-          </p>
-          <div class="social-links d-flex">
+          <div class="social-links d-flex flex-wrap">
             <a
               v-for="s in data.social"
               :key="s.icon"

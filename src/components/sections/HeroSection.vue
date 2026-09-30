@@ -14,12 +14,12 @@
 
           <!-- Tombol Call-to-Action -->
           <div class="d-flex flex-wrap gap-3 hero-cta">
-            <a :href="hero.ctaPrimary.href" class="btn-hero-primary">
+            <router-link :to="hero.ctaPrimary.to" class="btn-hero-primary">
               <i class="bi me-2" :class="hero.ctaPrimary.icon"></i>{{ hero.ctaPrimary.label }}
-            </a>
-            <a :href="hero.ctaSecondary.href" class="btn-hero-outline">
+            </router-link>
+            <router-link :to="hero.ctaSecondary.to" class="btn-hero-outline">
               <i class="bi me-2" :class="hero.ctaSecondary.icon"></i>{{ hero.ctaSecondary.label }}
-            </a>
+            </router-link>
           </div>
         </div>
 

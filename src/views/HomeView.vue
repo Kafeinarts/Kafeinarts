@@ -3,29 +3,34 @@
     <!-- Hero - 100vh full screen -->
     <HeroSection />
 
-    <!-- About -->
+    <!-- About (ringkas, detail di /about) -->
     <AboutSection />
 
-    <!-- Why Us -->
+    <!-- Why Us (ringkas, detail di /why-us) -->
     <WhyUsSection />
 
-    <!-- Skills -->
-    <SkillsSection />
-
-    <!-- Services -->
+    <!-- Services (ringkas, detail di /services) -->
     <ServicesSection />
+
+    <!-- Produk unggulan -->
+    <section class="section light-background">
+      <div class="container">
+        <SectionHeading title="Produk Unggulan" subtitle="Sistem dan website siap pakai — dapat diorder atau dikonsultasikan dulu." />
+        <div class="row gy-4">
+          <div v-for="product in featuredProducts" :key="product.slug" class="col-xl-4 col-md-6 d-flex" data-aos="fade-up">
+            <ProductCard :product="product" />
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <router-link :to="{ name: 'products' }" class="btn-hero-primary text-decoration-none">
+            <i class="bi bi-grid me-2"></i>Lihat Semua Produk
+          </router-link>
+        </div>
+      </div>
+    </section>
 
     <!-- Call To Action -->
     <CtaSection />
-
-    <!-- FAQ -->
-    <FaqSection />
-
-    <!-- Team (data dari siteData, foto di assets/img/teams/) -->
-    <TeamSection />
-
-    <!-- Contact + WhatsApp 2 tujuan -->
-    <ContactSection />
   </main>
 </template>
 
@@ -33,12 +38,11 @@
 import HeroSection from "@/components/sections/HeroSection.vue"
 import AboutSection from "@/components/sections/AboutSection.vue"
 import WhyUsSection from "@/components/sections/WhyUsSection.vue"
-import SkillsSection from "@/components/sections/SkillsSection.vue"
 import ServicesSection from "@/components/sections/ServicesSection.vue"
 import CtaSection from "@/components/sections/CtaSection.vue"
-import FaqSection from "@/components/sections/FaqSection.vue"
-import TeamSection from "@/components/sections/TeamSection.vue"
-import ContactSection from "@/components/sections/ContactSection.vue"
+import SectionHeading from "@/components/ui/SectionHeading.vue"
+import ProductCard from "@/components/ui/ProductCard.vue"
+import { siteData } from "@/data/siteData"
 
 export default {
   name: "HomeView",
@@ -46,12 +50,15 @@ export default {
     HeroSection,
     AboutSection,
     WhyUsSection,
-    SkillsSection,
     ServicesSection,
     CtaSection,
-    FaqSection,
-    TeamSection,
-    ContactSection,
+    SectionHeading,
+    ProductCard,
+  },
+  data() {
+    return {
+      featuredProducts: siteData.products.slice(0, 6),
+    }
   },
 }
 </script>

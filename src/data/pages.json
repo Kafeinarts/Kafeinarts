@@ -1,0 +1,368 @@
+{
+  "hero": {
+    "title": "Inovasi Digital Bersama<br>Kafeinarts Interactive",
+    "subtitle": "Mitra teknis andal dalam merancang sistem manajemen dan produk SaaS <em>full-stack</em> yang tangguh untuk mempercepat operasional serta skalabilitas bisnis Anda.",
+    "ctaPrimary": {
+      "label": "Pelajari Lebih Lanjut",
+      "to": { "name": "about" },
+      "icon": "bi-book"
+    },
+    "ctaSecondary": {
+      "label": "Hubungi Kami",
+      "to": { "name": "contact" },
+      "icon": "bi-telephone"
+    },
+    "image": "assets/img/hero-img.png",
+    "imageAlt": "Kafeinarts Interactive SaaS Dashboard"
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Perpaduan energi kreatif dan keahlian teknis untuk produk digital yang fungsional sekaligus estetis.",
+    "intro": "Di <strong>Kafeinarts</strong>, kami memadukan energi kreatif dan keahlian teknis untuk membangun produk digital yang fungsional sekaligus estetis. Kami percaya bahwa arsitektur sistem yang baik harus dibarengi dengan antarmuka yang brilian.",
+    "features": [
+      {
+        "icon": "bi-check2-circle",
+        "title": "Pengembangan SaaS & Web",
+        "desc": "Solusi <em>full-stack</em> yang andal, efisien, dan siap berskala."
+      },
+      {
+        "icon": "bi-check2-circle",
+        "title": "Desain Intuitif (UI/UX)",
+        "desc": "Menyajikan pengalaman pengguna yang mulus dan menarik secara visual."
+      },
+      {
+        "icon": "bi-check2-circle",
+        "title": "Teknologi Modern",
+        "desc": "Menggunakan <em>tech-stack</em> terkini untuk performa aplikasi yang optimal."
+      }
+    ],
+    "story": {
+      "title": "Cerita Kami",
+      "text": "Berawal dari dedikasi tinggi terhadap pengembangan <em>software</em> dan seni digital, Kafeinarts hadir sebagai mitra teknis andal untuk bisnis Anda. Kami tidak sekadar menulis kode; kami merancang ekosistem digital yang utuh—dari infrastruktur <em>backend</em> yang tangguh untuk sistem manajemen atau operasional, hingga <em>frontend</em> interaktif yang memanjakan mata. Kami siap membantu Anda mengubah ide kompleks menjadi produk digital yang berkinerja tinggi.",
+      "cta": { "label": "Kenali Tim Kami", "to": { "name": "team" } }
+    },
+    "values": {
+      "title": "Nilai Kerja Kami",
+      "subtitle": "Empat prinsip yang memandu setiap proyek yang kami kerjakan.",
+      "items": [
+        {
+          "icon": "bi-gem",
+          "title": "Kualitas",
+          "desc": "Setiap baris kode dan elemen desain ditulis dengan standar profesional."
+        },
+        {
+          "icon": "bi-people",
+          "title": "Kolaborasi",
+          "desc": "Klien adalah partner — komunikasi transparan dari awal hingga rilis."
+        },
+        {
+          "icon": "bi-lightning-charge",
+          "title": "Ketepatan",
+          "desc": "Timeline terukur dan progres yang dilaporkan secara berkala."
+        },
+        {
+          "icon": "bi-arrow-repeat",
+          "title": "Evolusi",
+          "desc": "Produk digital harus terus berkembang mengikuti kebutuhan bisnis."
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Cara Kami Bekerja",
+      "subtitle": "Alur kerja yang terstruktur dari ide hingga peluncuran.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Discovery",
+          "desc": "Diskusi kebutuhan, target, dan kendala bisnis Anda."
+        },
+        {
+          "step": "02",
+          "title": "Desain & Arsitektur",
+          "desc": "Penyusunan mockup UI/UX dan rancangan teknis sistem."
+        },
+        {
+          "step": "03",
+          "title": "Pengembangan",
+          "desc": "Implementasi kode dengan review dan testing berkala."
+        },
+        {
+          "step": "04",
+          "title": "Rilis & Dukungan",
+          "desc": "Deployment, pelatihan admin, dan maintenance berkelanjutan."
+        }
+      ]
+    }
+  },
+  "whyUs": {
+    "title": "Kelebihan Kami",
+    "subtitle": "Mengapa bisnis memilih Kafeinarts sebagai mitra transformasi digitalnya.",
+    "heading": "<span>Mengapa Memilih Kafeinarts? </span><strong>Mitra Tepat untuk Transformasi Digital Anda</strong>",
+    "desc": "Kami tidak sekadar menulis kode atau menggambar desain. Kami merancang solusi teknologi yang disesuaikan dengan kebutuhan bisnis Anda, menggabungkan performa tinggi di balik layar dengan visual yang memukau di layar depan.",
+    "image": "assets/img/why-us.png",
+    "imageAlt": "Kafeinarts Web Development Illustration",
+    "items": [
+      {
+        "id": "01",
+        "title": "Pendekatan Full-Stack & Desain Estetis",
+        "desc": "Dari arsitektur <em>database</em> yang kokoh hingga antarmuka pengguna yang responsif. Kami memastikan setiap baris kode dan elemen desain bekerja secara harmonis untuk menciptakan pengalaman pengguna (UI/UX) yang intuitif dan berkesan.",
+        "active": true
+      },
+      {
+        "id": "02",
+        "title": "Solusi SaaS yang Skalabel & Efisien",
+        "desc": "Aplikasi yang kami bangun dirancang untuk tumbuh bersama bisnis Anda. Kami berfokus pada digitalisasi alur kerja dan sistem manajemen yang kompleks agar operasional harian Anda menjadi lebih cepat, terstruktur, dan efisien.",
+        "active": false
+      },
+      {
+        "id": "03",
+        "title": "Teknologi Modern & Keandalan Jangka Panjang",
+        "desc": "Kami memanfaatkan <em>tech-stack</em> pengembangan web terkini untuk membangun ekosistem digital yang tangguh. Hasilnya adalah produk <em>software</em> yang tidak hanya cepat saat diluncurkan, tetapi juga aman dan mudah dipelihara di masa depan.",
+        "active": false
+      }
+    ],
+    "highlights": [
+      {
+        "icon": "bi-award",
+        "title": "Standar Profesional",
+        "desc": "Proses kerja mengikuti best practice industri dengan dokumentasi lengkap."
+      },
+      {
+        "icon": "bi-headset",
+        "title": "Dukungan Responsif",
+        "desc": "Tim support siap membantu kendala teknis Anda secara cepat."
+      },
+      {
+        "icon": "bi-shield-check",
+        "title": "Keamanan Terjaga",
+        "desc": "Audit keamanan dan proteksi data pada setiap sistem yang dibangun."
+      },
+      {
+        "icon": "bi-graph-up-arrow",
+        "title": "Fokus Pertumbuhan",
+        "desc": "Sistem dirancang agar bisnis Anda mudah berkembang tanpa hambatan teknis."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Keahlian",
+    "subtitle": "Ekosistem teknologi modern & andal yang kami kuasai.",
+    "heading": "Berbekal Ekosistem Teknologi Modern & Andal",
+    "desc": "Kami memadukan arsitektur sistem yang tangguh, framework mutakhir, serta elemen desain visual untuk membangun aplikasi SaaS yang cepat, aman, dan memanjakan mata.",
+    "image": "assets/img/illustration/illustration-10.webp",
+    "imageAlt": "Kafeinarts Technology Stack",
+    "items": [
+      { "label": "Backend (PHP, Laravel, Node.js)", "value": 90 },
+      { "label": "Frontend (HTML, CSS, Tailwind, JS)", "value": 95 },
+      { "label": "Database & Arsitektur (MySQL)", "value": 85 },
+      { "label": "UI/UX & Multimedia Design", "value": 80 }
+    ],
+    "stack": {
+      "title": "Tech Stack yang Kami Gunakan",
+      "subtitle": "Kombinasi teknologi teruji untuk setiap lapisan aplikasi.",
+      "groups": [
+        {
+          "icon": "bi-server",
+          "title": "Backend",
+          "items": ["PHP", "Laravel", "Node.js"]
+        },
+        {
+          "icon": "bi-window-stack",
+          "title": "Frontend",
+          "items": ["Vue.js", "Tailwind CSS", "Bootstrap"]
+        },
+        {
+          "icon": "bi-database",
+          "title": "Database",
+          "items": ["MySQL", "PostgreSQL", "Redis"]
+        },
+        {
+          "icon": "bi-cloud",
+          "title": "Cloud & DevOps",
+          "items": ["Vercel", "VPS", "CI/CD"]
+        }
+      ]
+    }
+  },
+  "services": {
+    "title": "Layanan",
+    "subtitle": "Solusi digital menyeluruh untuk kebutuhan bisnis Anda.",
+    "items": [
+      {
+        "icon": "bi-laptop",
+        "title": "Website & Sistem Bisnis",
+        "desc": "Hadirkan wajah profesional di dunia digital sekaligus otomatisasi proses operasional harian Anda dalam satu platform.",
+        "delay": 100
+      },
+      {
+        "icon": "bi-phone",
+        "title": "Aplikasi Pelanggan",
+        "desc": "Jangkau target pasar lebih dekat melalui aplikasi smartphone yang dirancang untuk meningkatkan loyalitas dan interaksi pelanggan.",
+        "delay": 200
+      },
+      {
+        "icon": "bi-cloud-arrow-up",
+        "title": "Infrastruktur Digital",
+        "desc": "Sistem penyimpanan terpusat yang fleksibel, memastikan bisnis Anda tetap berjalan lancar dan siap dikembangkan kapan saja.",
+        "delay": 300
+      },
+      {
+        "icon": "bi-shield-lock",
+        "title": "Perlindungan Data",
+        "desc": "Amankan aset digital, privasi pelanggan, dan data rahasia perusahaan Anda agar bisnis dapat terus beroperasi dengan tenang.",
+        "delay": 400
+      }
+    ],
+    "process": {
+      "title": "Proses Kerja",
+      "subtitle": "Empat tahap sederhana dari ide menjadi produk digital.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Konsultasi",
+          "desc": "Diskusikan kebutuhan dan tujuan bisnis Anda bersama tim kami.",
+          "icon": "bi-chat-dots"
+        },
+        {
+          "step": "02",
+          "title": "Proposal & Penawaran",
+          "desc": "Terima rancangan solusi, timeline, dan estimasi investasi yang transparan.",
+          "icon": "bi-file-earmark-text"
+        },
+        {
+          "step": "03",
+          "title": "Pengerjaan",
+          "desc": "Proses pengembangan dengan update progres berkala yang jelas.",
+          "icon": "bi-code-slash"
+        },
+        {
+          "step": "04",
+          "title": "Rilis & Maintenance",
+          "desc": "Peluncuran, pelatihan, dan dukungan pemeliharaan jangka panjang.",
+          "icon": "bi-rocket-takeoff"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Pertanyaan yang sering diajukan seputar layanan Kafeinarts.",
+    "items": [
+      {
+        "q": "Layanan digital apa saja yang disediakan oleh Kafeinarts?",
+        "a": "Kami berfokus pada pengembangan produk SaaS (Software as a Service), pembuatan website atau aplikasi web khusus (custom), perancangan antarmuka pengguna (UI/UX), hingga pengelolaan <em>cloud</em> dan keamanan sistem untuk mendukung operasional bisnis Anda dari hulu ke hilir.",
+        "active": true,
+        "delay": 200
+      },
+      {
+        "q": "Berapa lama estimasi waktu pengerjaan untuk satu proyek aplikasi SaaS?",
+        "a": "Waktu pengerjaan sangat bergantung pada skala, fitur, dan kompleksitas proyek. Untuk sistem manajemen skala kecil hingga menengah biasanya memakan waktu 4-8 minggu. Kami akan memberikan jadwal (<em>timeline</em>) yang transparan dan terukur setelah tahap diskusi dan analisis kebutuhan awal selesai.",
+        "active": false,
+        "delay": 300
+      },
+      {
+        "q": "Teknologi apa saja yang digunakan dalam proses pengembangan?",
+        "a": "Kami menyusun arsitektur sistem menggunakan ekosistem teknologi yang tangguh dan modern. Secara umum, kami memanfaatkan PHP, Laravel, atau Node.js untuk <em>backend</em>; HTML, CSS, Tailwind, dan JavaScript untuk <em>frontend</em> yang responsif; serta arsitektur <em>database</em> relasional seperti MySQL untuk menjamin integritas data Anda.",
+        "active": false,
+        "delay": 400
+      },
+      {
+        "q": "Apakah ada layanan pemeliharaan (maintenance) setelah aplikasi dirilis?",
+        "a": "Tentu saja. Kami memahami bahwa produk digital membutuhkan pengawasan agar tetap aman dan berjalan optimal. Kami menawarkan paket dukungan teknis dan pemeliharaan jangka panjang untuk menangani perbaikan <em>bug</em>, pembaruan keamanan, hingga penambahan fitur baru di masa mendatang.",
+        "active": false,
+        "delay": 500
+      },
+      {
+        "q": "Bagaimana langkah pertama untuk memulai kerja sama?",
+        "a": "Sangat mudah! Anda cukup menghubungi kami melalui form kontak atau tombol konsultasi. Kita akan menjadwalkan diskusi santai untuk memahami kendala, target, dan kebutuhan bisnis Anda. Setelah itu, kami akan menyusun draf proposal yang mencakup solusi teknis serta estimasi investasi yang dibutuhkan.",
+        "active": false,
+        "delay": 600
+      }
+    ]
+  },
+  "team": {
+    "title": "Tim Kami",
+    "subtitle": "Kenali talenta kreatif & teknis di balik setiap inovasi Kafeinarts",
+    "swiper": {
+      "loop": true,
+      "speed": 600,
+      "autoplay": { "delay": 4000, "disableOnInteraction": false },
+      "slidesPerView": 1,
+      "spaceBetween": 24,
+      "grabCursor": true,
+      "pagination": {
+        "el": ".swiper-pagination",
+        "type": "bullets",
+        "clickable": true
+      },
+      "navigation": {
+        "nextEl": ".swiper-button-next",
+        "prevEl": ".swiper-button-prev"
+      },
+      "breakpoints": {
+        "576": { "slidesPerView": 2, "spaceBetween": 20 },
+        "768": { "slidesPerView": 3, "spaceBetween": 22 },
+        "992": { "slidesPerView": 4, "spaceBetween": 24 },
+        "1200": { "slidesPerView": 4, "spaceBetween": 24 }
+      }
+    },
+    "members": [
+      {
+        "name": "Fahrul Saputra",
+        "role": "Chief Executive Officer",
+        "img": "assets/img/teams/1.png",
+        "alt": "Fahrul Saputra - Chief Executive Officer",
+        "bio": "Memimpin visi & strategi Kafeinarts dengan fokus pada inovasi produk SaaS yang berdampak.",
+        "delay": 100
+      },
+      {
+        "name": "Arif Permana Putrasuryana",
+        "role": "Supervisor System Developer",
+        "img": "assets/img/teams/2.png",
+        "alt": "Arif Permana Putrasuryana - Supervisor System Developer",
+        "bio": "Mengawal arsitektur sistem & kualitas kode untuk performa aplikasi yang skalabel.",
+        "delay": 150
+      },
+      {
+        "name": "Arief Ramadhan Al-Hazmi",
+        "role": "Digital Marketer",
+        "img": "assets/img/teams/3.png",
+        "alt": "Arief Ramadhan Al-Hazmi - Digital Marketer",
+        "bio": "Merancang strategi pemasaran digital yang kreatif untuk pertumbuhan brand & akuisisi pengguna.",
+        "delay": 200
+      },
+      {
+        "name": "Hanif Wisanggeni Prabowo",
+        "role": "Back End Developer",
+        "img": "assets/img/teams/4.png",
+        "alt": "Hanif Wisanggeni Prabowo - Back End Developer",
+        "bio": "Membangun fondasi backend yang tangguh, aman, dan efisien untuk operasional harian.",
+        "delay": 250
+      },
+      {
+        "name": "Naufal Daffa Bayu Putra.T",
+        "role": "Digital Marketer",
+        "img": "assets/img/teams/5.png",
+        "alt": "Naufal Daffa Bayu Putra.T - Digital Marketer",
+        "bio": "Mengelola kampanye & analitik untuk meningkatkan engagement dan konversi pelanggan.",
+        "delay": 300
+      },
+      {
+        "name": "Alfarobby",
+        "role": "Front end Developer",
+        "img": "assets/img/teams/6.png",
+        "alt": "Alfarobby - Front end Developer",
+        "bio": "Membangun fondasi frontend yang responsif dan user-friendly.",
+        "delay": 350
+      },
+      {
+        "name": "Muhammad Nur Maulana",
+        "role": "UI/UX Designer",
+        "img": "assets/img/teams/7.png",
+        "alt": "Muhammad Nur Maulana - UI/UX Designer",
+        "bio": "Pembuatan desain UI/UX yang menarik dan user-friendly.",
+        "delay": 400
+      }
+    ]
+  }
+}

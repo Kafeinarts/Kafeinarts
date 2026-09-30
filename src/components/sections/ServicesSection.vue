@@ -2,15 +2,15 @@
   <section id="services" class="services section light-background">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Layanan Kami</h2>
-      <p>Solusi teknologi end-to-end untuk mendukung pertumbuhan dan efisiensi bisnis Anda</p>
+      <h2>{{ services.title }}</h2>
+      <p>{{ services.subtitle }}</p>
     </div>
     <!-- End Section Title -->
 
     <div class="container">
       <div class="row gy-4">
         <div
-          v-for="service in services"
+          v-for="service in services.items"
           :key="service.title"
           class="col-xl-3 col-md-6 d-flex"
           data-aos="fade-up"
@@ -20,7 +20,9 @@
             <div class="icon mx-auto mb-4 d-flex align-items-center justify-content-center">
               <i class="bi fs-1" :class="service.icon"></i>
             </div>
-            <h3><a href="#contact" class="stretched-link">{{ service.title }}</a></h3>
+            <h3>
+              <router-link :to="{ name: 'services' }" class="stretched-link">{{ service.title }}</router-link>
+            </h3>
             <p>{{ service.desc }}</p>
           </div>
         </div>
