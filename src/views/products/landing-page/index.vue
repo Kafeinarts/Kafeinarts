@@ -3,30 +3,33 @@
     ============================================================
     HALAMAN PRODUK — Landing Page
     ============================================================
-    Konten  : src/data/products/landing-page.json (detail, harga, FAQ, dst.)
+    Konten  : public/data/products/landing-page.json
+              → di-fetch runtime, terlihat di DevTools → tab Network
     Layout  : src/views/products/components/ProductDetailView.vue
-    Route   : /products/landing-page (otomatis dari src/router/index.js)
+    Route   : /products/landing-page (didaftarkan otomatis dari data)
 
     Untuk mengubah isi halaman ini, edit file JSON-nya saja:
-    → src/data/products/landing-page.json
+    → public/data/products/landing-page.json
     -->
   <ProductDetailView :product="product" />
 </template>
 
 <script>
-// Import JSON + pemetaan rapi (tertata di satu tempat).
-import productJson from "@/data/products/landing-page.json"
-import { mapProduct } from "@/data/products/index.js"
+// Data dibaca dari runtime store (fetch JSON) — bukan import statis.
 import ProductDetailView from "@/views/products/components/ProductDetailView.vue"
+import { getProductBySlug, mapProduct } from "@/data/products/index.js"
 
 export default {
   name: "LandingPageProduct",
   components: { ProductDetailView },
-  data() {
-    return {
-      // Pemetaan JSON → objek siap pakai (slug, harga terformat, dsb.)
-      product: mapProduct(productJson),
-    }
+  computed: {
+    // Reaktif: otomatis ter-update bila data store berubah.
+    product() {
+      return (
+        getProductBySlug("landing-page") ||
+        mapProduct({ meta: { slug: "landing-page", name: "Landing Page" } })
+      )
+    },
   },
 }
 </script>

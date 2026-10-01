@@ -3,30 +3,33 @@
     ============================================================
     HALAMAN PRODUK — Web Profil Bisnis
     ============================================================
-    Konten  : src/data/products/web-profile.json (detail, harga, FAQ, dst.)
+    Konten  : public/data/products/web-profile.json
+              → di-fetch runtime, terlihat di DevTools → tab Network
     Layout  : src/views/products/components/ProductDetailView.vue
-    Route   : /products/web-profile (otomatis dari src/router/index.js)
+    Route   : /products/web-profile (didaftarkan otomatis dari data)
 
     Untuk mengubah isi halaman ini, edit file JSON-nya saja:
-    → src/data/products/web-profile.json
+    → public/data/products/web-profile.json
     -->
   <ProductDetailView :product="product" />
 </template>
 
 <script>
-// Import JSON + pemetaan rapi (tertata di satu tempat).
-import productJson from "@/data/products/web-profile.json"
-import { mapProduct } from "@/data/products/index.js"
+// Data dibaca dari runtime store (fetch JSON) — bukan import statis.
 import ProductDetailView from "@/views/products/components/ProductDetailView.vue"
+import { getProductBySlug, mapProduct } from "@/data/products/index.js"
 
 export default {
   name: "WebProfileProduct",
   components: { ProductDetailView },
-  data() {
-    return {
-      // Pemetaan JSON → objek siap pakai (slug, harga terformat, dsb.)
-      product: mapProduct(productJson),
-    }
+  computed: {
+    // Reaktif: otomatis ter-update bila data store berubah.
+    product() {
+      return (
+        getProductBySlug("web-profile") ||
+        mapProduct({ meta: { slug: "web-profile", name: "Web Profil Bisnis" } })
+      )
+    },
   },
 }
 </script>

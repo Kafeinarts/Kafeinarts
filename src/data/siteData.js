@@ -6,8 +6,9 @@
  *   - nav.json           : struktur menu navbar
  *   - pages.json         : konten halaman (hero, about, whyUs, skills, services, faq, team)
  *   - catalog.json       : halaman katalog produk (title, kategori, urutan)
- *   - products/index.js  : agregator seluruh produk (jangan diubah manual)
- *   - products/<slug>.json : KONTEN LENGKAP tiap produk (detail, harga, FAQ)
+ *   - products/index.js  : runtime store produk (fetch JSON saat app jalan)
+ *   - public/data/products/<slug>.json : KONTEN LENGKAP tiap produk (detail,
+ *     harga, FAQ) — di-fetch runtime, terlihat di DevTools → tab Network.
  *   - consultation.json  : wizard konsultasi/penawaran
  *   - contact.json       : kontak & tujuan WhatsApp
  *   - footer.json        : newsletter, link, sosial media
@@ -20,7 +21,7 @@ import brandJson from "./brand.json";
 import navJson from "./nav.json";
 import pagesJson from "./pages.json";
 import catalogJson from "./catalog.json";
-import { products as productDetails } from "./products/index.js";
+import { productsState as productStore } from "./products/index.js";
 import consultationJson from "./consultation.json";
 import contactJson from "./contact.json";
 import footerJson from "./footer.json";
@@ -32,9 +33,10 @@ export const siteData = {
   navCta: navJson.cta,
   ...pagesJson,
   ...catalogJson,
-  // products dari catalog.json hanya berisi slug+shortName (urutan katalog);
-  // digantikan detail lengkap hasil mapping dari folder data/products/.
-  products: productDetails,
+  // products = array reaktif dari runtime store (public/data/products/*.json).
+  // Referensinya stabil: array diisi in-place setelah fetch selesai, sehingga
+  // semua komponen yang membaca siteData.products otomatis ter-update.
+  products: productStore.items,
   ...consultationJson,
   // contact dibungkus agar aksesnya siteData.contact.info / .whatsapp
   contact: contactJson,

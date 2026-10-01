@@ -155,10 +155,11 @@ Kafeinarts/
 │   │   ├── siteData.js            # ★ Index seluruh konten (import semua JSON)
 │   │   ├── brand.json / nav.json / pages.json / contact.json / footer.json / consultation.json
 │   │   ├── catalog.json           # Halaman katalog produk (title, kategori, urutan)
-│   │   └── products/              # ★ KONTEN LENGKAP TIAP PRODUK (1 file JSON per produk)
-│   │       ├── erp.json / simrs.json / lms.json / cms.json / event-management.json
-│   │       ├── company-profile.json / landing-page.json / web-profile.json / e-commerce.json
-│   │       └── index.js           # Agregator: mapping JSON → objek produk + format harga
+│   │   └── products/index.js      # Runtime store produk (fetch + reactive + format harga)
+│   │
+│   │   public/data/products/      # ★ KONTEN LENGKAP TIAP PRODUK (di-fetch runtime!)
+│   │   ├── erp.json / simrs.json / lms.json / cms.json / event-management.json
+│   │   └── company-profile.json / landing-page.json / web-profile.json / e-commerce.json
 │   ├── utils/
 │   │   ├── asset.js               # asset('assets/img/x.png') → '/assets/img/x.png'
 │   │   ├── aos.js                 # initAOS() / refreshAOS()
@@ -234,13 +235,18 @@ Semua section memakai `AOS` dan grid responsif Bootstrap 5.
 **Konten situs terpusat di `src/data/` (file JSON per modul), dirangkai oleh `src/data/siteData.js`.**
 Jika hanya ingin mengubah konten (teks, foto, nomor, FAQ, tim), cukup edit file JSON terkait.
 
-### ★ Produk — satu file JSON per produk
+### ★ Produk — satu file JSON per produk (di-fetch runtime)
 
-Konten halaman tiap produk ada di **`src/data/products/<slug>.json`** (bukan di komponen Vue).
-Mengubah isi website produk = mengedit JSON-nya saja:
+Konten halaman tiap produk ada di **`public/data/products/<slug>.json`** (bukan di komponen Vue).
+File ini di-**fetch saat runtime** oleh store `src/data/products/index.js`, sehingga:
+
+- Mengubah isi website produk = **edit JSON-nya saja** — tanpa menyentuh komponen Vue.
+- Setiap JSON terlihat di **DevTools → tab Network** sebagai request terpisah
+  (`erp.json`, `simrs.json`, dst.) — mudah diverifikasi.
+- Data dimuat di `main.js` (sebelum mount), lalu route produk didaftarkan dinamis.
 
 ```text
-src/data/products/erp.json   →  seluruh konten /products/erp
+public/data/products/erp.json  →  seluruh konten /products/erp
 ├── meta       : slug, nama, ikon, warna, kategori
 ├── hero       : tagline, headline, deskripsi, highlights
 ├── overview   : paragraf "sekilas tentang" + poin keunggulan
@@ -253,13 +259,14 @@ src/data/products/erp.json   →  seluruh konten /products/erp
 ```
 
 - Harga ditulis angka (`"price": 3500000`) → otomatis diformat `Rp 3.500.000` oleh
-  `formatPrice()` di `src/data/products/index.js`; atau pakai `"priceLabel": "Hubungi Kami"`.
-- Halaman Vue-nya tipis: `src/views/products/<slug>/index.vue` hanya meng-import JSON,
-  memetakan dengan `mapProduct()`, lalu merender `ProductDetailView.vue` (layout bersama).
+  `formatPrice()`; atau pakai `"priceLabel": "Hubungi Kami"`.
+- Halaman Vue-nya tipis: `src/views/products/<slug>/index.vue` hanya membaca store
+  (`getProductBySlug`) lalu merender `ProductDetailView.vue` (layout bersama).
 - Katalog `/products` & menu navbar otomatis mengikuti (`priceFrom` = paket termurah).
 
-**Tambah produk baru:** buat `<slug>.json` + daftarkan di `PRODUCTS_JSON` (`src/data/products/index.js`)
-+ buat `src/views/products/<slug>/index.vue` (contoh: `erp/index.vue`). Route & menu otomatis.
+**Tambah produk baru:** buat `public/data/products/<slug>.json` + daftarkan slug di
+`PRODUCT_SLUGS` (`src/data/products/index.js`) + buat `src/views/products/<slug>/index.vue`
+(contoh: `erp/index.vue`). Route, menu, dan katalog otomatis mengikuti.
 
 ```js
 import { siteData } from "@/data/siteData"

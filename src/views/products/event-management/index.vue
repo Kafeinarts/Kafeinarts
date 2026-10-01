@@ -3,30 +3,33 @@
     ============================================================
     HALAMAN PRODUK — Kafeinarts EMS (Event Management System)
     ============================================================
-    Konten  : src/data/products/event-management.json (detail, harga, FAQ, dst.)
+    Konten  : public/data/products/event-management.json
+              → di-fetch runtime, terlihat di DevTools → tab Network
     Layout  : src/views/products/components/ProductDetailView.vue
-    Route   : /products/event-management (otomatis dari src/router/index.js)
+    Route   : /products/event-management (didaftarkan otomatis dari data)
 
     Untuk mengubah isi halaman ini, edit file JSON-nya saja:
-    → src/data/products/event-management.json
+    → public/data/products/event-management.json
     -->
   <ProductDetailView :product="product" />
 </template>
 
 <script>
-// Import JSON + pemetaan rapi (tertata di satu tempat).
-import productJson from "@/data/products/event-management.json"
-import { mapProduct } from "@/data/products/index.js"
+// Data dibaca dari runtime store (fetch JSON) — bukan import statis.
 import ProductDetailView from "@/views/products/components/ProductDetailView.vue"
+import { getProductBySlug, mapProduct } from "@/data/products/index.js"
 
 export default {
   name: "EventManagementProduct",
   components: { ProductDetailView },
-  data() {
-    return {
-      // Pemetaan JSON → objek siap pakai (slug, harga terformat, dsb.)
-      product: mapProduct(productJson),
-    }
+  computed: {
+    // Reaktif: otomatis ter-update bila data store berubah.
+    product() {
+      return (
+        getProductBySlug("event-management") ||
+        mapProduct({ meta: { slug: "event-management", name: "Kafeinarts EMS" } })
+      )
+    },
   },
 }
 </script>
