@@ -67,7 +67,7 @@
             data-aos="fade-up"
             :data-aos-delay="(i + 1) * 100"
           >
-            <div class="pricing-card" :class="{ featured: plan.featured }">
+            <div class="pricing-card" :class="{ featured: plan.featured }" :style="{ '--plan-color': product.color }">
               <span v-if="plan.featured" class="pricing-badge">Paling Populer</span>
               <h4 class="pricing-name">{{ plan.name }}</h4>
               <p class="pricing-tagline">{{ plan.tagline }}</p>
@@ -88,9 +88,10 @@
                 :href="planOrderUrl(plan)"
                 target="_blank"
                 rel="noopener"
-                class="btn text-decoration-none mt-auto"
-                :class="plan.featured ? 'btn-hero-primary' : 'btn-hero-outline'"
+                class="pricing-btn text-decoration-none"
+                :class="plan.featured ? 'pricing-btn-solid' : 'pricing-btn-outline'"
               >
+                <i class="bi" :class="plan.cta && plan.cta.intent === 'price' ? 'bi-calculator' : 'bi-whatsapp'"></i>
                 {{ plan.cta ? plan.cta.label : 'Hubungi Kami' }}
               </a>
             </div>
@@ -283,11 +284,11 @@
           <h3>{{ product.cta.heading }}</h3>
           <p>{{ product.cta.description }}</p>
           <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a :href="orderUrl" target="_blank" rel="noopener" class="btn-hero-primary text-decoration-none">
-              <i class="bi bi-whatsapp me-2"></i>Hubungi via WhatsApp
+            <a :href="orderUrl" target="_blank" rel="noopener" class="cta-btn cta-btn-wa text-decoration-none">
+              <i class="bi bi-whatsapp"></i>Hubungi via WhatsApp
             </a>
-            <router-link :to="{ name: 'products' }" class="btn-hero-outline text-decoration-none">
-              <i class="bi bi-grid me-2"></i>Lihat Semua Produk
+            <router-link :to="{ name: 'products' }" class="cta-btn cta-btn-ghost text-decoration-none">
+              <i class="bi bi-grid"></i>Lihat Semua Produk
             </router-link>
           </div>
         </div>
@@ -549,8 +550,9 @@ export default {
 }
 
 .pricing-tagline {
-  font-size: 0.85rem;
-  color: var(--default-color);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--heading-color);
   margin-bottom: 14px;
 }
 
@@ -574,7 +576,7 @@ export default {
 }
 
 .pricing-desc {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: var(--default-color);
   margin-bottom: 16px;
@@ -594,8 +596,10 @@ export default {
   display: flex;
   align-items: flex-start;
   gap: 9px;
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--heading-color);
 }
 
 .pricing-features i {
@@ -604,17 +608,118 @@ export default {
   flex-shrink: 0;
 }
 
-.pricing-card .btn {
-  width: 100%;
-  text-align: center;
-}
-
 .pricing-note {
   text-align: center;
-  font-size: 0.85rem;
-  color: var(--default-color);
+  font-size: 0.88rem;
+  color: var(--heading-color);
   margin: 26px auto 0;
   max-width: 720px;
+}
+
+/* ============================================================
+   Tombol CTA pricing — selalu jelas sebagai tombol di latar putih
+   (solid = paket featured, outline berwarna = paket lain)
+   ============================================================ */
+.pricing-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Tombol utama paket featured: blok penuh warna aksen produk */
+.pricing-btn-solid {
+  color: #fff;
+  background: var(--plan-color, var(--accent-color));
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--plan-color, var(--accent-color)), transparent 62%);
+}
+
+.pricing-btn-solid:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--plan-color, var(--accent-color)), transparent 50%);
+}
+
+/* Tombol paket lain: outline tegas berwarna aksen produk (bukan abu-abu) */
+.pricing-btn-outline {
+  color: var(--plan-color, var(--accent-color));
+  background: color-mix(in srgb, var(--plan-color, var(--accent-color)), transparent 94%);
+  border: 2px solid var(--plan-color, var(--accent-color));
+}
+
+.pricing-btn-outline:hover {
+  color: #fff;
+  background: var(--plan-color, var(--accent-color));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--plan-color, var(--accent-color)), transparent 62%);
+}
+
+.pricing-btn i {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* ============================================================
+   Tombol CTA bawah (latar navy) — WhatsApp hijau khas + ghost putih
+   ============================================================ */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.cta-btn-wa {
+  color: #fff;
+  background: #25d366;
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+}
+
+.cta-btn-wa:hover {
+  color: #fff;
+  background: #1fb857;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.45);
+}
+
+.cta-btn-ghost {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.cta-btn-ghost:hover {
+  color: #00205d;
+  background: #fff;
+  border-color: #fff;
+  transform: translateY(-2px);
 }
 
 /* ============================================================
