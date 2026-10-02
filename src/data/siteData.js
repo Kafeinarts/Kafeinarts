@@ -15,7 +15,7 @@
  *
  * Cara menambah/mengubah data: edit file JSON terkait — tidak perlu
  * menyentuh komponen. Import dari file ini (index) agar konsisten.
- * Untuk produk: edit src/data/products/<slug>.json (satu file per produk).
+ * Untuk produk: edit public/data/products/<slug>.json (satu file per produk).
  */
 import brandJson from "./brand.json";
 import navJson from "./nav.json";

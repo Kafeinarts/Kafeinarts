@@ -384,7 +384,7 @@ import { priceLabel } from "@/data/products/index.js"
  * ProductDetailView — halaman detail satu produk.
  * ------------------------------------------------------------------
  * SELURUH konten dibaca dari properti `product` yang dipetakan dari
- * src/data/products/<slug>.json oleh index.vue masing-masing produk.
+ * public/data/products/<slug>.json oleh index.vue masing-masing produk.
  * Komponen ini tidak tahu isi spesifik produk apa pun (presentational).
  *
  * Struktur section: Hero (dengan tombol Lihat Demo + modal konfirmasi) →

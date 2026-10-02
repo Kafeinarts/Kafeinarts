@@ -247,6 +247,8 @@ File ini di-**fetch saat runtime** oleh store `src/data/products/index.js`, sehi
 
 ```text
 public/data/products/erp.json  →  seluruh konten /products/erp
+├── is_demo    : true = punya demo; false = belum (tombol Lihat Demo ikut tersembunyi)
+├── url_demo   : URL halaman demo (diisi hanya bila is_demo = true)
 ├── meta       : slug, nama, ikon, warna, kategori
 ├── hero       : tagline, headline, deskripsi, highlights
 ├── overview   : paragraf "sekilas tentang" + poin keunggulan
@@ -263,6 +265,8 @@ public/data/products/erp.json  →  seluruh konten /products/erp
 - Halaman Vue-nya tipis: `src/views/products/<slug>/index.vue` hanya membaca store
   (`getProductBySlug`) lalu merender `ProductDetailView.vue` (layout bersama).
 - Katalog `/products` & menu navbar otomatis mengikuti (`priceFrom` = paket termurah).
+- Tombol **Lihat Demo** di header halaman produk hanya muncul bila `is_demo: true` **dan**
+  `url_demo` terisi — diklik → modal konfirmasi → buka demo di tab baru (`target="_blank"`).
 
 **Tambah produk baru:** buat `public/data/products/<slug>.json` + daftarkan slug di
 `PRODUCT_SLUGS` (`src/data/products/index.js`) + buat `src/views/products/<slug>/index.vue`
