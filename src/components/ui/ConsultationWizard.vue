@@ -185,6 +185,7 @@
 <script>
 import { siteData } from "@/data/siteData"
 import { buildConsultationMessage, buildWaUrl, getPrimaryWhatsApp } from "@/utils/whatsapp"
+import { notifyWarning } from "@/utils/notify"
 
 /**
  * ConsultationWizard — wizard multi-step konsultasi/penawaran.
@@ -240,11 +241,11 @@ export default {
     validateStep() {
       if (this.currentStep === 1) {
         if (!this.form.name) {
-          alert("Mohon isi nama Anda.")
+          notifyWarning("Mohon isi nama Anda.")
           return false
         }
         if (!/^[0-9]{8,13}$/.test(this.form.phone)) {
-          alert("Mohon isi nomor WhatsApp yang valid (8-13 digit tanpa spasi).")
+          notifyWarning("Mohon isi nomor WhatsApp yang valid (8-13 digit tanpa spasi).")
           return false
         }
       }
