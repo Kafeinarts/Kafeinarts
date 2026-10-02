@@ -1,0 +1,15 @@
+# Format commit (conventional — ikuti gaya riwayat repo ini):
+#   <type>(<scope>): <ringkasan pendek>
+#
+# type  : feat | fix | style | docs | refactor | test | chore | perf | build
+# scope : products | ui | data | views | router | test | git   (opsional)
+# ringkasan: bahasa Indonesia, kalimat imperative, TANPA titik di akhir.
+#
+# Contoh:
+#   feat(products): tambah field is_demo & url_demo pada JSON produk
+#   feat(ui): tombol Lihat Demo + modal konfirmasi buka tab baru
+#   fix(test): sinkronkan data.integrity.js dengan lokasi JSON di public/
+#   chore(git): aktifkan pre-commit data integrity & commit template
+#
+# Catatan: pre-commit menjalankan `node tests/data.integrity.js` —
+# commit akan ditolak bila JSON produk tidak valid / tidak sinkron.
