@@ -8,12 +8,17 @@
  * Yang dicek:
  *   1. src/data/products.json TIDAK boleh ada (menyaingi folder src/data/products/
  *      → import "@/data/products" diam-diam jatuh ke file JSON → hero undefined).
- *   2. Setiap src/data/products/<slug>.json valid, slug = nama file, punya
- *      meta.name + hero.description.
+ *   2. Setiap public/data/products/<slug>.json valid, slug = nama file, punya
+ *      meta.name + hero.description; field demo bertipe benar (is_demo boolean,
+ *      url_demo string).
  *   3. Setiap produk punya halaman Vue di src/views/products/<slug>/index.vue.
- *   4. Setiap file JSON produk didaftarkan di src/data/products/index.js.
+ *   4. Setiap produk terdaftar di PRODUCT_SLUGS (src/data/products/index.js).
  *   5. Slug unik, dan daftar slug di catalog.json = isi folder products/.
  *   6. Semua file JSON yang di-import siteData.js benar-benar ada.
+ *
+ * Catatan: JSON produk di-fetch runtime dari public/data/products/ (lihat
+ * commit "data produk di-fetch runtime"); folder src/data/products/ hanya
+ * berisi index.js (store + PRODUCT_SLUGS).
  *
  * Dipakai oleh `npm test` (juga oleh CI).
  */
@@ -22,7 +27,8 @@ const path = require("path")
 
 const ROOT = path.resolve(__dirname, "..")
 const DATA = path.join(ROOT, "src", "data")
-const PRODUCT_DATA = path.join(DATA, "products")
+// JSON produk di-fetch runtime dari public/ (bukan di-bundle dari src/)
+const PRODUCT_DATA = path.join(ROOT, "public", "data", "products")
 const PRODUCT_VIEWS = path.join(ROOT, "src", "views", "products")
 
 const errors = []
@@ -44,7 +50,7 @@ const files = fs
   .sort()
 
 const slugs = []
-const indexPath = path.join(PRODUCT_DATA, "index.js")
+const indexPath = path.join(DATA, "products", "index.js")
 const indexSource = fs.existsSync(indexPath) ? fs.readFileSync(indexPath, "utf8") : ""
 
 if (!indexSource) {
@@ -75,15 +81,23 @@ for (const file of files) {
     fail(`${rel}: pricing.plans kosong`)
   }
 
+  // Field demo: is_demo boolean + url_demo string ("" = belum ada demo)
+  if ("is_demo" in json && typeof json.is_demo !== "boolean") {
+    fail(`${rel}: is_demo harus boolean (true = punya demo, false = belum)`)
+  }
+  if ("url_demo" in json && typeof json.url_demo !== "string") {
+    fail(`${rel}: url_demo harus string ("" = belum ada, isi URL bila is_demo true)`)
+  }
+
   // 3. Halaman Vue untuk produk ini
   const view = path.join(PRODUCT_VIEWS, slug, "index.vue")
   if (!fs.existsSync(view)) {
     fail(`src/views/products/${slug}/index.vue tidak ada — route /products/${slug} akan error`)
   }
 
-  // 4. Sudah didaftarkan di agregator?
-  if (indexSource && indexSource.indexOf(`./${file}`) === -1) {
-    fail(`src/data/products/index.js belum meng-import ./${file} (PRODUCTS_JSON)`)
+  // 4. Sudah terdaftar di PRODUCT_SLUGS?
+  if (indexSource && indexSource.indexOf(`"${slug}"`) === -1) {
+    fail(`src/data/products/index.js: PRODUCT_SLUGS belum memuat "${slug}"`)
   }
 }
 

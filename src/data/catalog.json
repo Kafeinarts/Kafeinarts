@@ -27,7 +27,7 @@
       "label": "Website"
     }
   ],
-  "_catatan": "Detail tiap produk (fitur, harga, FAQ) ada di src/data/products/<slug>.json",
+  "_catatan": "Detail tiap produk (fitur, harga, FAQ) ada di src/data/products/<slug>.json. Field demo: is_demo true + url_demo diisi = tombol \"Lihat Demo\" muncul di header halaman produk (modal konfirmasi → buka tab baru); is_demo false ATAU url_demo kosong = tombol disembunyikan.",
   "products": [
     { "slug": "erp", "shortName": "ERP" },
     { "slug": "simrs", "shortName": "SIMRS" },

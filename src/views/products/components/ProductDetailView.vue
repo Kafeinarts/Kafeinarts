@@ -32,6 +32,15 @@
               <a :href="orderUrl" target="_blank" rel="noopener" class="btn-hero-primary text-decoration-none">
                 <i class="bi bi-lightning-charge me-2"></i>Order Sekarang
               </a>
+              <button
+                v-if="hasDemo"
+                type="button"
+                class="btn-hero-outline btn-demo-trigger"
+                data-bs-toggle="modal"
+                data-bs-target="#demoConfirmModal"
+              >
+                <i class="bi bi-box-arrow-up-right me-2"></i>Lihat Demo
+              </button>
               <router-link
                 :to="{ name: 'consultation', query: { intent: 'price', product: product.slug } }"
                 class="btn-hero-outline text-decoration-none"
@@ -48,6 +57,54 @@
         </div>
       </div>
     </section>
+
+    <!-- ============================================================
+         MODAL KONFIRMASI MENUJU DEMO — dibuka di tab baru (target blank)
+         Dirender selalu (tanpa v-if): hanya tombol "Lihat Demo" yang
+         v-if="hasDemo". Elemen tetap ada agar watcher slug bisa menutup
+         instance Bootstrap dengan bersih saat pindah produk — kalau
+         elemennya dicabut saat terbuka, backdrop + body-lock bocor.
+         Posisi setelah hero agar konten dialog mudah dijangkau
+         tooling (snapshot/a11y); visualnya tetap fixed di tengah.
+         ============================================================ -->
+    <div
+      class="modal fade"
+      id="demoConfirmModal"
+      tabindex="-1"
+      aria-labelledby="demoConfirmModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content demo-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="demoConfirmModalLabel">
+              <i class="bi bi-box-arrow-up-right me-2"></i>Menuju Halaman Demo
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-2">
+              Anda akan membuka demo <strong>{{ product.name }}</strong> di tab browser baru.
+            </p>
+            <p class="demo-modal-url mb-0">
+              <i class="bi bi-link-45deg me-1"></i>{{ product.url_demo }}
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <a
+              :href="product.url_demo"
+              target="_blank"
+              rel="noopener"
+              class="btn demo-modal-go"
+              @click="closeDemoModal"
+            >
+              <i class="bi bi-box-arrow-up-right me-1"></i>Buka Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ============================================================
          PAKET HARGA
@@ -330,8 +387,8 @@ import { priceLabel } from "@/data/products/index.js"
  * src/data/products/<slug>.json oleh index.vue masing-masing produk.
  * Komponen ini tidak tahu isi spesifik produk apa pun (presentational).
  *
- * Struktur section: Hero → Harga → Fitur → Overview → Alur Kerja →
- * Use Case → FAQ → CTA + Produk Terkait.
+ * Struktur section: Hero (dengan tombol Lihat Demo + modal konfirmasi) →
+ * Harga → Fitur → Overview → Alur Kerja → Use Case → FAQ → CTA + Produk Terkait.
  */
 export default {
   name: "ProductDetailView",
@@ -345,6 +402,13 @@ export default {
   computed: {
     pricing() {
       return this.product.pricing || { heading: "Harga", subheading: "", plans: [] }
+    },
+    /**
+     * Tombol "Lihat Demo" hanya tampil bila produk punya demo nyata:
+     * is_demo = true DAN url_demo terisi (kosong = belum ada demonya).
+     */
+    hasDemo() {
+      return Boolean(this.product.is_demo && this.product.url_demo)
     },
     relatedProducts() {
       const slug = this.product.slug
@@ -363,6 +427,9 @@ export default {
   watch: {
     // Navigasi antar halaman produk memakai komponen yang sama
     "product.slug"() {
+      // Modal demo (bila sedang terbuka) ikut ditutup agar tidak
+      // tertinggal menampilkan produk sebelumnya.
+      this.closeDemoModal()
       this.$nextTick(() => this.syncPage())
     },
   },
@@ -388,6 +455,20 @@ export default {
         intent,
       })
       return buildWaUrl(primary.wa, message)
+    },
+    /**
+     * Tutup modal demo — dipanggil dari @click "Buka Demo" & watcher slug.
+     * "Buka Demo" SENGAJA TIDAK memakai data-bs-dismiss: handler dismiss
+     * Bootstrap memanggil preventDefault() untuk <a>/<area>, sehingga
+     * navigasi target="_blank"-nya dibatalkan. Dengan @click + navigasi
+     * native, tab baru terbuka (ctrl/klik-kanan tetap berfungsi) dan modal
+     * ikut tertutup di halaman asal.
+     */
+    closeDemoModal() {
+      const el = document.getElementById("demoConfirmModal")
+      if (!el || !window.bootstrap || !window.bootstrap.Modal) return
+      const instance = window.bootstrap.Modal.getInstance(el)
+      if (instance) instance.hide()
     },
     syncPage() {
       this.$nextTick(() => {
@@ -1017,6 +1098,60 @@ export default {
   margin-left: auto;
   color: var(--accent-color);
   flex-shrink: 0;
+}
+
+/* ============================================================
+   Tombol & modal "Lihat Demo"
+   ============================================================ */
+/* <button> butuh cursor & reset kecil agar selaras dengan <a> hero */
+.btn-demo-trigger {
+  cursor: pointer;
+}
+
+.demo-modal-content {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 32, 93, 0.28);
+}
+
+.demo-modal-content .modal-header {
+  background: linear-gradient(135deg, #00205d, #04307f);
+  border-bottom: none;
+}
+
+.demo-modal-content .modal-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+.demo-modal-content .btn-close {
+  filter: invert(1) grayscale(1) brightness(2);
+  opacity: 0.85;
+}
+
+.demo-modal-url {
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+  border: 1px dashed color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.88rem;
+  color: var(--accent-color);
+  word-break: break-all;
+}
+
+.demo-modal-go {
+  color: #fff;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  font-weight: 600;
+}
+
+.demo-modal-go:hover {
+  color: #fff;
+  background: #04307f;
+  border-color: #04307f;
 }
 
 /* ============================================================

@@ -1,4 +1,6 @@
 {
+  "is_demo": true,
+  "url_demo": "",
   "meta": {
     "slug": "erp",
     "name": "Kafeinarts ERP",

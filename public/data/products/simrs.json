@@ -1,4 +1,6 @@
 {
+  "is_demo": false,
+  "url_demo": "",
   "meta": {
     "slug": "simrs",
     "name": "Kafeinarts SIMRS",
