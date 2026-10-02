@@ -58,7 +58,7 @@ if (!indexSource) {
 }
 
 for (const file of files) {
-  const rel = `src/data/products/${file}`
+  const rel = `public/data/products/${file}`
   const slug = file.replace(/\.json$/, "")
   slugs.push(slug)
 
