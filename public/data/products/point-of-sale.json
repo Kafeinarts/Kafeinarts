@@ -1,6 +1,6 @@
 {
   "is_demo": true,
-  "url_demo": "",
+  "url_demo": "https://cashy-pied.vercel.app/",
   "meta": {
     "slug": "point-of-sale",
     "name": "Point of Sales",
