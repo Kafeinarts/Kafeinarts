@@ -1,0 +1,215 @@
+{
+  "is_demo": false,
+  "url_demo": "",
+  "meta": {
+    "slug": "point-of-sale",
+    "name": "Point of Sales",
+    "shortName": "POS",
+    "category": "system",
+    "icon": "bi-shop",
+    "color": "#0f766e",
+    "route": "/products/point-of-sale"
+  },
+  "hero": {
+    "name": "Point of Sales",
+    "tagline": "Kasir cepat untuk retail, F&B, dan multi-outlet.",
+    "headline": "Point of sale ringan yang tetap jalan saat internet mati",
+    "description": "Sistem kasir dengan mode offline-first: transaksi cepat, cetak struk thermal, manajemen stok real-time, hak akses per kasir, dan laporan penjualan harian — dari satu outlet sampai banyak cabang.",
+    "icon": "bi-shop",
+    "highlights": [
+      "Mode offline-first",
+      "Struk thermal",
+      "Laporan real-time"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang Point of Sales",
+    "paragraphs": [
+      "Pembukuan manual dan proses kasir yang lambat membuat antrean menumpuk, stok meleset, dan untung-rugi toko sulit dipastikan di akhir hari.",
+      "Point of Sales kami menyatukan transaksi, stok, dan laporan dalam satu sistem yang cepat dioperasikan kasir dan mudah dipantau pemilik — bahkan saat koneksi internet terputus."
+    ],
+    "points": [
+      "Transaksi di bawah 5 detik",
+      "Stok berkurang otomatis tiap penjualan",
+      "Laporan harian siap cetak",
+      "Multi-kasir dengan hak akses"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Kebutuhan kasir harian sampai laporan pemilik.",
+    "items": [
+      {
+        "icon": "bi-cart",
+        "title": "Kasir Cepat",
+        "desc": "Cari item lewat nama atau barcode, terapkan diskon & pajak, selesaikan transaksi dalam hitungan detik."
+      },
+      {
+        "icon": "bi-box-seam",
+        "title": "Manajemen Stok",
+        "desc": "Stok berkurang otomatis saat penjualan, lengkap dengan stok opname dan peringatan stok menipis."
+      },
+      {
+        "icon": "bi-printer",
+        "title": "Cetak Struk Thermal",
+        "desc": "Terhubung printer struk 58/80mm dengan tata letak rapi dan QR pembayaran opsional."
+      },
+      {
+        "icon": "bi-upc-scan",
+        "title": "Scan Barcode",
+        "desc": "Gunakan scanner USB atau kamera HP untuk memindai barcode produk tanpa input manual."
+      },
+      {
+        "icon": "bi-graph-up",
+        "title": "Laporan Penjualan",
+        "desc": "Rekap harian dan bulanan, produk terlaris, margin per item, serta performa tiap kasir."
+      },
+      {
+        "icon": "bi-shield-check",
+        "title": "Hak Akses Kasir",
+        "desc": "Akun per kasir dengan shift, rekam jejak transaksi, dan laporan selisih kas."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Investasi sekali bayar untuk operasional yang tertata.",
+    "note": "Harga lisensi per outlet; pelatihan, update, dan dukungan teknis mengikuti paket yang dipilih.",
+    "plans": [
+      {
+        "name": "Starter",
+        "tagline": "Untuk toko & kafe tunggal",
+        "price": 3500000,
+        "currency": "IDR",
+        "period": "lisensi",
+        "description": "Satu outlet dengan kasir, stok, dan laporan dasar.",
+        "features": [
+          "1 outlet, 2 akun kasir",
+          "Transaksi & struk thermal",
+          "Manajemen stok + opname",
+          "Laporan penjualan harian",
+          "Pelatihan awal (daring)"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Business",
+        "tagline": "Paling populer untuk yang berkembang",
+        "price": 7500000,
+        "currency": "IDR",
+        "period": "lisensi",
+        "description": "Multi-kasir, barcode, dan laporan lanjutan untuk toko ramai.",
+        "features": [
+          "Semua fitur Starter",
+          "Akun kasir tanpa batas",
+          "Barcode & label produk",
+          "Diskon, membership, dan piutang",
+          "Laporan lanjutan & margin",
+          "Backup otomatis harian",
+          "Support 1 tahun"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "tagline": "Untuk banyak cabang & integrasi",
+        "priceLabel": "Hubungi Kami",
+        "description": "Multi-outlet terpusat dengan integrasi ke sistem lain.",
+        "features": [
+          "Multi-cabang terpusat",
+          "Sinkronisasi stok antar cabang",
+          "Integrasi akuntansi & e-commerce",
+          "API khusus",
+          "On-site training & SLA"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Pengerjaan",
+    "subheading": "Dari pemetaan alur kasir hingga operasional harian.",
+    "steps": [
+      {
+        "title": "Pemetaan Alur Kasir",
+        "desc": "Kami pelajari jenis usaha, item jual, dan alur pembayaran Anda."
+      },
+      {
+        "title": "Konfigurasi Sistem",
+        "desc": "Item, harga, stok awal, printer, dan hak akses disiapkan sesuai toko."
+      },
+      {
+        "title": "Pelatihan Tim",
+        "desc": "Kasir dilatih memakai sistem dengan skenario transaksi nyata."
+      },
+      {
+        "title": "Go-Live & Pendampingan",
+        "desc": "Sistem dijalankan, kami dampingi di hari-hari pertama operasional."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai jenis usaha dengan kebutuhan kasir berbeda.",
+    "items": [
+      {
+        "icon": "bi-shop",
+        "title": "Retail & Minimarket",
+        "desc": "Rak, barcode, dan stok terkelola sampai satuan terkecil."
+      },
+      {
+        "icon": "bi-cup-hot",
+        "title": "Kafe & Restoran",
+        "desc": "Order cepat untuk dine-in atau kemasan beserta rekap shift harian."
+      },
+      {
+        "icon": "bi-truck",
+        "title": "Grosir & Distributor",
+        "desc": "Transaksi banyak item dengan harga grosir bertingkat."
+      },
+      {
+        "icon": "bi-building",
+        "title": "Multi-Outlet",
+        "desc": "Penjualan tiap cabang dipantau dari satu dashboard terpusat."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan calon pengguna.",
+    "items": [
+      {
+        "q": "Apakah bisa dipakai tanpa internet?",
+        "a": "Bisa. Mode offline menyimpan transaksi secara lokal di perangkat dan menyinkronkannya otomatis begitu koneksi kembali tersedia."
+      },
+      {
+        "q": "Printer struk apa yang didukung?",
+        "a": "Printer thermal 58mm/80mm melalui USB maupun Bluetooth (ESC/POS). Kami bantu menguji kompatibilitasnya sebelum Anda membeli printer."
+      },
+      {
+        "q": "Ke mana data penjualan disimpan?",
+        "a": "Tersimpan di perangkat Anda dan di-backup harian ke cloud pada paket Business. Pemilik selalu memiliki akses penuh ke seluruh datanya."
+      },
+      {
+        "q": "Berapa lama sistem siap dipakai?",
+        "a": "Konfigurasi awal 1–2 hari untuk satu outlet; pelatihan kasir umumnya selesai dalam satu hari dan sistem bisa langsung digunakan."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Point of Sales?",
+    "description": "Ceritakan jenis usaha dan jumlah kasirnya — kami usulkan paket serta alur implementasinya."
+  }
+}

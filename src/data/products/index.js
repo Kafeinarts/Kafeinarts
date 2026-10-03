@@ -23,10 +23,12 @@ export const PRODUCT_SLUGS = [
   "lms",
   "cms",
   "event-management",
+  "point-of-sale",
   "company-profile",
   "landing-page",
   "web-profile",
   "e-commerce",
+  "undangan-digital",
 ]
 
 /**

@@ -1,0 +1,218 @@
+{
+  "is_demo": false,
+  "url_demo": "",
+  "meta": {
+    "slug": "undangan-digital",
+    "name": "Website Undangan Digital",
+    "shortName": "Undangan Digital",
+    "category": "website",
+    "icon": "bi-envelope-heart",
+    "color": "#e11d48",
+    "route": "/products/undangan-digital"
+  },
+  "hero": {
+    "name": "Website Undangan Digital",
+    "tagline": "Undangan pernikahan & acara yang elegan dibuka dari HP.",
+    "headline": "Satu tautan undangan yang dibagikan lewat WhatsApp",
+    "description": "Website undangan digital dengan RSVP, galeri foto, musik latar, peta lokasi, countdown, dan live streaming — tampil serasi dengan tema acara, langsung dibuka dari tautan WhatsApp tanpa perlu aplikasi tambahan.",
+    "icon": "bi-envelope-heart",
+    "highlights": [
+      "Tayang 2–5 hari",
+      "RSVP & buku tamu",
+      "Musik & live streaming"
+    ]
+  },
+  "overview": {
+    "heading": "Sekilas Tentang Undangan Digital",
+    "paragraphs": [
+      "Undangan cetak mahal dan lama dikerjakan, sementara tanggal acara sering berubah — ditambah daftar tamu yang sulit direkap dari balasan chat satu per satu.",
+      "Undangan digital kami dibuka dari HP, dikirim lewat WhatsApp, dan langsung mencatat kehadiran tamu — tampil elegan, biaya ringan, tanpa ribet cetak ulang."
+    ],
+    "points": [
+      "Template elegan siap pakai",
+      "RSVP & rekap kehadiran otomatis",
+      "Musik, galeri, dan peta lokasi",
+      "Bagikan via WhatsApp & QR code"
+    ]
+  },
+  "features": {
+    "heading": "Fitur Utama",
+    "subheading": "Semua yang tamu butuhkan dalam satu undangan.",
+    "items": [
+      {
+        "icon": "bi-palette",
+        "title": "Template Elegan",
+        "desc": "Pilihan desain dengan warna dan tipografi yang disesuaikan dengan tema acara Anda."
+      },
+      {
+        "icon": "bi-calendar-check",
+        "title": "RSVP & Buku Tamu",
+        "desc": "Tamu mengonfirmasi kehadiran langsung di undangan; rekap siap diekspor ke Excel."
+      },
+      {
+        "icon": "bi-images",
+        "title": "Galeri Foto & Love Story",
+        "desc": "Galeri prewedding dan lini masa kisah cinta yang tampil rapi di layar HP."
+      },
+      {
+        "icon": "bi-music-note",
+        "title": "Musik & Live Streaming",
+        "desc": "Musik latar pilihan Anda serta embed YouTube untuk mengundang tamu yang berhalangan hadir."
+      },
+      {
+        "icon": "bi-geo-alt",
+        "title": "Peta & Navigasi",
+        "desc": "Lokasi acara terpetakan dengan tombol navigasi langsung ke Google Maps atau Waze."
+      },
+      {
+        "icon": "bi-clock",
+        "title": "Countdown & Bagikan Mudah",
+        "desc": "Hitung mundur menuju hari-H dan tombol bagik yang memudahkan tamu meneruskan undangan."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Pilihan Harga",
+    "subheading": "Lebih hemat dari undangan cetak — tanpa biaya cetak ulang.",
+    "note": "Semua paket termasuk hosting undangan, tautan khusus, dan bantuan update konten sebelum hari-H.",
+    "plans": [
+      {
+        "name": "Basic",
+        "tagline": "Untuk undangan sederhana & elegan",
+        "price": 350000,
+        "currency": "IDR",
+        "period": "undangan",
+        "description": "Satu desain template dengan fitur inti undangan digital.",
+        "features": [
+          "1 desain template elegan",
+          "Nama, tanggal & waktu acara",
+          "Galeri foto 10 gambar",
+          "Musik latar & peta lokasi",
+          "Form RSVP sederhana",
+          "Aktif 6 bulan"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Konsultasikan Harga",
+          "intent": "price"
+        }
+      },
+      {
+        "name": "Premium",
+        "tagline": "Paling populer untuk pernikahan",
+        "price": 750000,
+        "currency": "IDR",
+        "period": "undangan",
+        "description": "Personalisasi penuh dengan RSVP lengkap dan live streaming.",
+        "features": [
+          "Semua fitur Basic",
+          "Custom warna & font",
+          "Galeri 30 foto + video",
+          "Love story timeline",
+          "Live streaming YouTube/Zoom",
+          "RSVP + ekspor daftar tamu",
+          "Countdown & buku ucapan",
+          "Aktif 12 bulan"
+        ],
+        "featured": true,
+        "cta": {
+          "label": "Order Paket Ini",
+          "intent": "order"
+        }
+      },
+      {
+        "name": "Custom",
+        "tagline": "Desain khusus sesuai konsep acara",
+        "priceLabel": "Hubungi Kami",
+        "description": "Undangan dibuat dari nol mengikuti konsep dan identitas acara Anda.",
+        "features": [
+          "Desain custom dari nol",
+          "Domain khusus undangan",
+          "QR code untuk check-in tamu",
+          "Amplop digital untuk hadiah",
+          "Revisi hingga 5 kali",
+          "Prioritas pengerjaan"
+        ],
+        "featured": false,
+        "cta": {
+          "label": "Diskusikan Kebutuhan",
+          "intent": "price"
+        }
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "Alur Kerja Pengerjaan",
+    "subheading": "Dari materi acara hingga siap dibagikan.",
+    "steps": [
+      {
+        "title": "Konsultasi & Pilih Template",
+        "desc": "Ceritakan tema acara; kami bantu memilih desain yang paling cocok."
+      },
+      {
+        "title": "Personalisasi Konten",
+        "desc": "Nama, tanggal, lokasi, foto, dan musik kami isi sesuai materi dari Anda."
+      },
+      {
+        "title": "Review & Revisi",
+        "desc": "Tautan preview dikirim untuk direview sebelum undangan ditayangkan."
+      },
+      {
+        "title": "Tayang & Bagikan",
+        "desc": "Undangan siap dibagikan lewat WhatsApp, QR code, atau tautan langsung."
+      }
+    ]
+  },
+  "useCases": {
+    "heading": "Cocok Untuk",
+    "subheading": "Berbagai jenis acara yang ingin terkesan rapi.",
+    "items": [
+      {
+        "icon": "bi-heart",
+        "title": "Pernikahan",
+        "desc": "Undangan pasangan lengkap dengan love story dan galeri prewedding."
+      },
+      {
+        "icon": "bi-gift",
+        "title": "Ulang Tahun & Khitanan",
+        "desc": "Acara keluarga yang hangat dengan tema warna ceria dan foto kenangan."
+      },
+      {
+        "icon": "bi-people",
+        "title": "Syukuran & Aqiqah",
+        "desc": "Bagikan tautan ke kerabat dekat beserta doa dan ucapan terima kasih."
+      },
+      {
+        "icon": "bi-calendar-event",
+        "title": "Acara Kantor & Komunitas",
+        "desc": "Undangan gathering, seminar, atau reuni dengan RSVP terpusat."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Pertanyaan Umum",
+    "subheading": "Hal yang paling sering ditanyakan pemesan undangan.",
+    "items": [
+      {
+        "q": "Berapa lama pengerjaannya?",
+        "a": "2–5 hari kerja setelah materi (foto, teks, tanggal) lengkap. Untuk paket Custom dengan desain khusus, perkiraan 1–2 minggu."
+      },
+      {
+        "q": "Apakah tamu wajib mengisi RSVP?",
+        "a": "Tidak wajib — namun form RSVP membuat Anda tahu jumlah kehadiran, dan semua jawaban bisa diekspor ke Excel untuk kebutuhan katering."
+      },
+      {
+        "q": "Bisa menggunakan foto dan musik sendiri?",
+        "a": "Bisa. Kirimkan file-nya dan kami masukkan; pastikan foto dan musik tersebut boleh digunakan untuk keperluan undangan."
+      },
+      {
+        "q": "Bagaimana cara membagikannya kepada tamu?",
+        "a": "Berupa tautan (link) yang bisa langsung dibagikan lewat WhatsApp, dipindai sebagai QR code pada kartu ucapan, atau dicetak di souvenir."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Tertarik dengan Undangan Digital?",
+    "description": "Kirim tanggal acara, tema, dan jumlah foto yang ingin ditampilkan — kami bantu susun undangan digitalnya."
+  }
+}

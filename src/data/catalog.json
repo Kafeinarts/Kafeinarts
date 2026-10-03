@@ -34,9 +34,11 @@
     { "slug": "lms", "shortName": "LMS" },
     { "slug": "cms", "shortName": "CMS" },
     { "slug": "event-management", "shortName": "Event Management" },
+    { "slug": "point-of-sale", "shortName": "Point of Sales" },
     { "slug": "company-profile", "shortName": "Company Profile" },
     { "slug": "landing-page", "shortName": "Landing Page" },
     { "slug": "web-profile", "shortName": "Web Profile" },
-    { "slug": "e-commerce", "shortName": "E-Commerce" }
+    { "slug": "e-commerce", "shortName": "E-Commerce" },
+    { "slug": "undangan-digital", "shortName": "Undangan Digital" }
   ]
 }
