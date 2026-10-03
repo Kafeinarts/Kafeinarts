@@ -32,13 +32,12 @@ export function buildWaUrl(waNumber, text) {
 export function buildConsultationMessage(p) {
   const intentLabel = p.intent === "order" ? "ORDER SEKARANG" : "KONSULTASI HARGA"
   const lines = [
-    `Halo Kafeinarts 👋`,
+    `Halo Kafeinarts !`,
     ``,
     `Saya ingin *${intentLabel}* melalui website kafeinarts.`,
     ``,
     `*Detail Kebutuhan*`,
     `- Produk/Layanan: ${p.product || p.serviceType || "-"}`,
-    `- Jenis: ${p.serviceType || "-"}`,
     ``,
     `*Profil*`,
     `- Nama: ${p.name}`,
